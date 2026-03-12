@@ -1,0 +1,9158 @@
+{
+  "total": 200,
+  "source": "douban.com/top250",
+  "updated": "2026-03-12 14:49:34",
+  "movies": [
+    {
+      "rank": 1,
+      "title": "肖申克的救赎",
+      "title_cn": "肖申克的救赎",
+      "rating": 9.7,
+      "year": "1994",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1292052/",
+      "cover_url": "movie_images/001_肖申克的救赎.jpg",
+      "quote": "",
+      "local_cover": "001_肖申克的救赎.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "弗兰克·德拉邦特",
+      "actors": [
+        "蒂姆·罗宾斯",
+        "摩根·弗里曼",
+        "鲍勃·冈顿"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片提名",
+        "IMDb评分第一"
+      ],
+      "story": "银行家安迪被冤枉入狱，用智慧和坚持度过了20年，最终用计谋获得了自由。告诉我们希望永不熄灭。"
+    },
+    {
+      "rank": 2,
+      "title": "霸王别姬",
+      "title_cn": "霸王别姬",
+      "rating": 9.6,
+      "year": "1993",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1291546/",
+      "cover_url": "movie_images/002_霸王别姬.jpg",
+      "quote": "",
+      "local_cover": "002_霸王别姬.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "陈凯歌",
+      "actors": [
+        "张国荣",
+        "张丰毅",
+        "巩俐",
+        "葛优"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳金棕榈奖",
+        "张国荣经典"
+      ],
+      "story": "两位京剧名伶半个世纪的恩怨情仇，从清末到文革，展现了中国戏曲的辉煌与落幕。"
+    },
+    {
+      "rank": 3,
+      "title": "泰坦尼克号",
+      "title_cn": "泰坦尼克号",
+      "rating": 9.5,
+      "year": "1997",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292722/",
+      "cover_url": "movie_images/003_泰坦尼克号.jpg",
+      "quote": "",
+      "local_cover": "003_泰坦尼克号.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 9,
+        "守护者": 7,
+        "探险家": 8
+      },
+      "director": "詹姆斯·卡梅隆",
+      "actors": [
+        "莱昂纳多·迪卡普里奥",
+        "凯特·温斯莱特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "全球票房冠军"
+      ],
+      "story": "穷画家杰克与富家女露丝在泰坦尼克号上相遇相爱，最终生死永别。爱情可以超越阶级。"
+    },
+    {
+      "rank": 4,
+      "title": "阿甘正传",
+      "title_cn": "阿甘正传",
+      "rating": 9.5,
+      "year": "1994",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292720/",
+      "cover_url": "movie_images/004_阿甘正传.jpg",
+      "quote": "",
+      "local_cover": "004_阿甘正传.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 9,
+        "探险家": 4
+      },
+      "director": "罗伯特·泽米吉斯",
+      "actors": [
+        "汤姆·汉克斯",
+        "罗宾·怀特",
+        "加里·西尼斯"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "经典美国梦"
+      ],
+      "story": "智商只有75的阿甘凭借单纯和坚持，跑进大学、参军、创业，成为人生赢家。"
+    },
+    {
+      "rank": 5,
+      "title": "千与千寻",
+      "title_cn": "千与千寻",
+      "rating": 9.4,
+      "year": "2001",
+      "genre": "动画/冒险",
+      "url": "https://movie.douban.com/subject/1291561/",
+      "cover_url": "movie_images/005_千与千寻.jpg",
+      "quote": "",
+      "local_cover": "005_千与千寻.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 6,
+        "探险家": 8
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "柊瑠美",
+        "入野自由",
+        "夏木真理",
+        "坂本龙一"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "宫崎骏代表作"
+      ],
+      "story": "少女千寻误入神隐世界，为了救父母必须工作。成长就是学会勇敢和善良。"
+    },
+    {
+      "rank": 6,
+      "title": "美丽人生",
+      "title_cn": "美丽人生",
+      "rating": 9.5,
+      "year": "1997",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1292063/",
+      "cover_url": "movie_images/006_美丽人生.jpg",
+      "quote": "",
+      "local_cover": "006_美丽人生.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 9
+      },
+      "director": "罗伯托·贝尼尼",
+      "actors": [
+        "罗伯托·贝尼尼",
+        "尼可莱塔·布拉斯基",
+        "乔治·坎塔里尼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片",
+        "豆瓣评分第一"
+      ],
+      "story": "犹太父亲用想象力保护儿子的童心，在纳粹集中营中展现了父爱的伟大。"
+    },
+    {
+      "rank": 7,
+      "title": "星际穿越",
+      "title_cn": "星际穿越",
+      "rating": 9.4,
+      "year": "2014",
+      "genre": "科幻/冒险",
+      "url": "https://movie.douban.com/subject/1889243/",
+      "cover_url": "movie_images/007_星际穿越.jpg",
+      "quote": "",
+      "local_cover": "007_星际穿越.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 8
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "马修·麦康纳",
+        "安妮·海瑟薇"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳视觉效果",
+        "诺兰神作"
+      ],
+      "story": "父亲穿越虫洞寻找人类新家园，女儿在地球等父亲回来。爱能跨越时空。"
+    },
+    {
+      "rank": 8,
+      "title": "这个杀手不太冷",
+      "title_cn": "这个杀手不太冷",
+      "rating": 9.4,
+      "year": "1994",
+      "genre": "剧情/动作",
+      "url": "https://movie.douban.com/subject/1295644/",
+      "cover_url": "movie_images/008_这个杀手不太冷.jpg",
+      "quote": "",
+      "local_cover": "008_这个杀手不太冷.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 8,
+        "守护者": 8,
+        "探险家": 8
+      },
+      "director": "吕克·贝松",
+      "actors": [
+        "让·雷诺",
+        "娜塔莉·波特曼",
+        "加里·奥德曼",
+        "丹尼·艾罗"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "经典法式黑帮片",
+        "让·雷诺代表作"
+      ],
+      "story": "孤独杀手莱昂收养了少女玛蒂尔达，他们彼此温暖了对方孤独的灵魂。"
+    },
+    {
+      "rank": 9,
+      "title": "盗梦空间",
+      "title_cn": "盗梦空间",
+      "rating": 9.4,
+      "year": "2010",
+      "genre": "科幻/动作",
+      "url": "https://movie.douban.com/subject/3541415/",
+      "cover_url": "movie_images/009_盗梦空间.jpg",
+      "quote": "",
+      "local_cover": "009_盗梦空间.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 2,
+        "守护者": 2,
+        "探险家": 7
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "莱昂纳多·迪卡普里奥",
+        "玛丽昂·歌迪亚"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳摄影",
+        "诺兰烧脑神作"
+      ],
+      "story": "盗梦师柯布进入他人梦境窃取机密，却发现自己在多层梦境中迷失。"
+    },
+    {
+      "rank": 10,
+      "title": "楚门的世界",
+      "title_cn": "楚门的世界",
+      "rating": 9.4,
+      "year": "1998",
+      "genre": "剧情/科幻",
+      "url": "https://movie.douban.com/subject/1292064/",
+      "cover_url": "movie_images/010_楚门的世界.jpg",
+      "quote": "",
+      "local_cover": "010_楚门的世界.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 6
+      },
+      "director": "彼得·威尔",
+      "actors": [
+        "金·凯瑞",
+        "劳拉·琳妮",
+        "诺亚·艾默里奇",
+        "艾德·哈里斯"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "柏林金熊奖",
+        "反乌托邦经典"
+      ],
+      "story": "楚门发现自己活在一档真人秀节目中的人生，决定逃离这个虚假的世界。"
+    },
+    {
+      "rank": 11,
+      "title": "辛德勒的名单",
+      "title_cn": "辛德勒的名单",
+      "rating": 9.5,
+      "year": "1993",
+      "genre": "剧情/历史",
+      "url": "https://movie.douban.com/subject/1295124/",
+      "cover_url": "movie_images/011_辛德勒的名单.jpg",
+      "quote": "",
+      "local_cover": "011_辛德勒的名单.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 2
+      },
+      "director": "史蒂文·斯皮尔伯格",
+      "actors": [
+        "连姆·尼森",
+        "本·金斯利",
+        "拉尔夫·费因斯",
+        "艾伯丝·戴维兹"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "斯皮尔伯格经典"
+      ],
+      "story": "商人辛德勒在二战中救下1200名犹太人，诠释了人性的光辉。"
+    },
+    {
+      "rank": 12,
+      "title": "忠犬八公的故事",
+      "title_cn": "忠犬八公的故事",
+      "rating": 9.4,
+      "year": "2009",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/3011091/",
+      "cover_url": "movie_images/012_忠犬八公的故事.jpg",
+      "quote": "",
+      "local_cover": "012_忠犬八公的故事.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 2
+      },
+      "director": "拉斯·霍尔斯道姆",
+      "actors": [
+        "理查·基尔",
+        "萨拉·罗默尔",
+        "琼·艾伦",
+        "杰瑞米·雷纳"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "催泪神作",
+        "人狗情深"
+      ],
+      "story": "教授收养了八公，八公每天在车站等教授下班，一等就是十年。"
+    },
+    {
+      "rank": 13,
+      "title": "海上钢琴师",
+      "title_cn": "海上钢琴师",
+      "rating": 9.3,
+      "year": "1998",
+      "genre": "剧情/音乐",
+      "url": "https://movie.douban.com/subject/1292001/",
+      "cover_url": "movie_images/013_海上钢琴师.jpg",
+      "quote": "",
+      "local_cover": "013_海上钢琴师.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "朱塞佩·托纳多雷",
+      "actors": [
+        "蒂姆·罗斯",
+        "普鲁内拉·德斯特",
+        "比尔·努恩",
+        "梅兰妮·蒂埃里"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳评审团奖",
+        "经典音乐片"
+      ],
+      "story": "钢琴天才1900从未离开过船，他的人生就像他的音乐一样纯粹。"
+    },
+    {
+      "rank": 14,
+      "title": "疯狂动物城",
+      "title_cn": "疯狂动物城",
+      "rating": 9.3,
+      "year": "2016",
+      "genre": "动画/冒险",
+      "url": "https://movie.douban.com/subject/25662329/",
+      "cover_url": "movie_images/014_疯狂动物城.jpg",
+      "quote": "",
+      "local_cover": "014_疯狂动物城.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "拜伦·霍华德",
+      "actors": [
+        "金妮弗·古德温",
+        "杰森·贝特曼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "迪士尼巅峰"
+      ],
+      "story": "兔朱迪警官与狐狸尼克一起破案，证明了偏见可以被打破。"
+    },
+    {
+      "rank": 15,
+      "title": "三傻大闹宝莱坞",
+      "title_cn": "三傻大闹宝莱坞",
+      "rating": 9.2,
+      "year": "2009",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/3793023/",
+      "cover_url": "movie_images/015_三傻大闹宝莱坞.jpg",
+      "quote": "",
+      "local_cover": "015_三傻大闹宝莱坞.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 7
+      },
+      "director": "拉库马·希拉尼",
+      "actors": [
+        "阿米尔·汗",
+        "卡琳娜·卡普尔",
+        "马达范",
+        "沙尔曼·乔希"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "宝莱坞最高分",
+        "教育反思"
+      ],
+      "story": "三个工程系学生的大学生活，讽刺了填鸭式教育，告诉我们跟随内心。"
+    },
+    {
+      "rank": 16,
+      "title": "机器人总动员",
+      "title_cn": "机器人总动员",
+      "rating": 9.3,
+      "year": "2008",
+      "genre": "动画/科幻",
+      "url": "https://movie.douban.com/subject/2131459/",
+      "cover_url": "movie_images/016_机器人总动员.jpg",
+      "quote": "",
+      "local_cover": "016_机器人总动员.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 5,
+        "探险家": 7
+      },
+      "director": "安德鲁·斯坦顿",
+      "actors": [
+        "本·贝尔特",
+        "艾丽莎·奈特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯经典"
+      ],
+      "story": "机器人瓦力在废弃地球上爱上了来自飞船的伊娃，为了爱情穿越太空。"
+    },
+    {
+      "rank": 17,
+      "title": "放牛班的春天",
+      "title_cn": "放牛班的春天",
+      "rating": 9.3,
+      "year": "2004",
+      "genre": "剧情/音乐",
+      "url": "https://movie.douban.com/subject/1291549/",
+      "cover_url": "movie_images/017_放牛班的春天.jpg",
+      "quote": "",
+      "local_cover": "017_放牛班的春天.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 3,
+        "守护者": 4,
+        "探险家": 6
+      },
+      "director": "克里斯托夫·巴拉蒂",
+      "actors": [
+        "热拉尔·朱诺",
+        "让-巴蒂斯特·莫尼耶",
+        "弗朗索瓦·贝利昂",
+        "凯德·麦拉德"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片提名",
+        "天籁童声"
+      ],
+      "story": "音乐老师马修用合唱团改变了问题学生的人生，音乐拯救灵魂。"
+    },
+    {
+      "rank": 18,
+      "title": "无间道",
+      "title_cn": "无间道",
+      "rating": 9.3,
+      "year": "2002",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1307914/",
+      "cover_url": "movie_images/018_无间道.jpg",
+      "quote": "",
+      "local_cover": "018_无间道.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 4,
+        "守护者": 6,
+        "探险家": 5
+      },
+      "director": "刘伟强",
+      "actors": [
+        "刘德华",
+        "梁朝伟"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "香港金像奖",
+        "卧底电影巅峰"
+      ],
+      "story": "警方卧底和黑帮卧底身份暴露，在黑白两道中迷失自己。"
+    },
+    {
+      "rank": 19,
+      "title": "控方证人",
+      "title_cn": "控方证人",
+      "rating": 9.6,
+      "year": "1957",
+      "genre": "剧情/悬疑",
+      "url": "https://movie.douban.com/subject/1296141/",
+      "cover_url": "movie_images/019_控方证人.jpg",
+      "quote": "",
+      "local_cover": "019_控方证人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "比利·怀尔德",
+      "actors": [
+        "泰隆·鲍华",
+        "玛琳·黛德丽",
+        "查尔斯·劳顿",
+        "爱尔莎·兰切斯特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "阿加莎经典"
+      ],
+      "story": "律师为一个被指控谋杀的老妇人辩护，发现了惊人的真相。"
+    },
+    {
+      "rank": 20,
+      "title": "寻梦环游记",
+      "title_cn": "寻梦环游记",
+      "rating": 9.1,
+      "year": "2017",
+      "genre": "动画/音乐",
+      "url": "https://movie.douban.com/subject/20495023/",
+      "cover_url": "movie_images/020_寻梦环游记.jpg",
+      "quote": "",
+      "local_cover": "020_寻梦环游记.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 6,
+        "探险家": 7
+      },
+      "director": "李·昂克里奇",
+      "actors": [
+        "安东尼·冈萨雷斯",
+        "盖尔·加西亚·贝纳尔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯催泪"
+      ],
+      "story": "墨西哥少年米格尔穿越到亡灵世界，追逐自己的音乐梦想。"
+    },
+    {
+      "rank": 21,
+      "title": "大话西游之大圣娶亲",
+      "title_cn": "大话西游之大圣娶亲",
+      "rating": 9.2,
+      "year": "1995",
+      "genre": "喜剧/爱情",
+      "url": "https://movie.douban.com/subject/1292213/",
+      "cover_url": "movie_images/021_大话西游之大圣娶亲.jpg",
+      "quote": "",
+      "local_cover": "021_大话西游之大圣娶亲.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 8
+      },
+      "director": "刘镇伟",
+      "actors": [
+        "周星驰",
+        "朱茵"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰巅峰",
+        "经典台词"
+      ],
+      "story": "至尊宝为了救白晶晶穿越到五百年前，却遇见了紫霞仙子。"
+    },
+    {
+      "rank": 22,
+      "title": "熔炉",
+      "title_cn": "熔炉",
+      "rating": 9.3,
+      "year": "2011",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/5912992/",
+      "cover_url": "movie_images/022_熔炉.jpg",
+      "quote": "",
+      "local_cover": "022_熔炉.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 9,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "黄东赫",
+      "actors": [
+        "孔刘",
+        "郑有美"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "推动韩国立法",
+        "社会意义重大"
+      ],
+      "story": "韩国聋哑学校教师揭露校园性暴力事件，为了正义而战。"
+    },
+    {
+      "rank": 23,
+      "title": "触不可及",
+      "title_cn": "触不可及",
+      "rating": 9.3,
+      "year": "2011",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/6786002/",
+      "cover_url": "movie_images/023_触不可及.jpg",
+      "quote": "",
+      "local_cover": "023_触不可及.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 7,
+        "探险家": 4
+      },
+      "director": "奥利维·那卡什 / 艾力克·托兰达",
+      "actors": [
+        "弗朗索瓦·克鲁奥",
+        "奥马尔·赛",
+        "布丽吉特·罗西耶",
+        "索菲·马尼阿"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "全球票房黑马",
+        "法式幽默"
+      ],
+      "story": "瘫痪贵族与贫民窟黑人护工成为挚友，跨越阶层的真挚友情。"
+    },
+    {
+      "rank": 24,
+      "title": "教父",
+      "title_cn": "教父",
+      "rating": 9.3,
+      "year": "1972",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1291841/",
+      "cover_url": "movie_images/024_教父.jpg",
+      "quote": "",
+      "local_cover": "024_教父.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 4,
+        "守护者": 8,
+        "探险家": 3
+      },
+      "director": "弗朗西斯·福特·科波拉",
+      "actors": [
+        "马龙·白兰度",
+        "阿尔·帕西诺"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "黑帮片圣经"
+      ],
+      "story": "黑帮家族教父维托·柯里昂的权力更迭与家族传承。"
+    },
+    {
+      "rank": 25,
+      "title": "末代皇帝",
+      "title_cn": "末代皇帝",
+      "rating": 9.3,
+      "year": "1987",
+      "genre": "剧情/历史",
+      "url": "https://movie.douban.com/subject/1293172/",
+      "cover_url": "movie_images/025_末代皇帝.jpg",
+      "quote": "",
+      "local_cover": "025_末代皇帝.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 4
+      },
+      "director": "贝纳尔多·贝托鲁奇",
+      "actors": [
+        "尊龙",
+        "陈冲",
+        "邬君梅",
+        "彼得·奥图尔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "溥仪传奇"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 26,
+      "title": "哈利·波特与魔法石",
+      "title_cn": "哈利·波特与魔法石",
+      "rating": 9.2,
+      "year": "2001",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1295038/",
+      "cover_url": "movie_images/026_哈利波特与魔法石.jpg",
+      "quote": "",
+      "local_cover": "026_哈利波特与魔法石.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 2
+      },
+      "director": "克里斯·哥伦布",
+      "actors": [
+        "丹尼尔·雷德克里夫",
+        "艾玛·沃特森",
+        "鲁伯特·格林特",
+        "艾伦·里克曼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "全球现象级",
+        "魔法世界开山"
+      ],
+      "story": "哈利波特在霍格沃茨学习魔法，结交朋友，对抗伏地魔。"
+    },
+    {
+      "rank": 27,
+      "title": "当幸福来敲门",
+      "title_cn": "当幸福来敲门",
+      "rating": 9.1,
+      "year": "2006",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1849031/",
+      "cover_url": "movie_images/027_当幸福来敲门.jpg",
+      "quote": "",
+      "local_cover": "027_当幸福来敲门.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 4,
+        "探险家": 2
+      },
+      "director": "加布里尔·穆奇诺",
+      "actors": [
+        "威尔·史密斯",
+        "贾登·史密斯",
+        "坦迪·牛顿",
+        "布莱恩·豪威"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "威尔·史密斯代表作",
+        "励志典范"
+      ],
+      "story": "推销员克里斯带着儿子睡收容所，最终成为著名股票经纪人。"
+    },
+    {
+      "rank": 28,
+      "title": "龙猫",
+      "title_cn": "龙猫",
+      "rating": 9.2,
+      "year": "1988",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1291560/",
+      "cover_url": "movie_images/028_龙猫.jpg",
+      "quote": "",
+      "local_cover": "028_龙猫.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 8,
+        "守护者": 7,
+        "探险家": 5
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "日高法子",
+        "坂本千夏"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏代表作",
+        "童真温暖"
+      ],
+      "story": "小姐妹在乡间遇见了森林精灵龙猫，度过了纯真的童年时光。"
+    },
+    {
+      "rank": 29,
+      "title": "活着",
+      "title_cn": "活着",
+      "rating": 9.3,
+      "year": "1994",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1292365/",
+      "cover_url": "movie_images/029_活着.jpg",
+      "quote": "",
+      "local_cover": "029_活着.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "张艺谋",
+      "actors": [
+        "葛优",
+        "巩俐"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳评审团奖",
+        "张艺谋经典"
+      ],
+      "story": "福贵经历战乱、饥荒、文革，艰难地活着，生命的韧性令人动容。"
+    },
+    {
+      "rank": 30,
+      "title": "怦然心动",
+      "title_cn": "怦然心动",
+      "rating": 9.1,
+      "year": "2010",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/3319755/",
+      "cover_url": "movie_images/030_怦然心动.jpg",
+      "quote": "",
+      "local_cover": "030_怦然心动.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "罗伯·莱纳",
+      "actors": [
+        "玛德琳·卡罗尔",
+        "卡兰·麦克奥利菲",
+        "艾丹·奎因",
+        "约翰·玛哈尼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "青春爱情经典",
+        "青梅竹马"
+      ],
+      "story": "布莱斯和朱莉从小学到高中的成长故事，青春萌动的爱情。"
+    },
+    {
+      "rank": 31,
+      "title": "蝙蝠侠：黑暗骑士",
+      "title_cn": "蝙蝠侠：黑暗骑士",
+      "rating": 9.2,
+      "year": "2008",
+      "genre": "动作/科幻",
+      "url": "https://movie.douban.com/subject/1851857/",
+      "cover_url": "movie_images/031_蝙蝠侠黑暗骑士.jpg",
+      "quote": "",
+      "local_cover": "031_蝙蝠侠黑暗骑士.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 7
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "克里斯蒂安·贝尔",
+        "希斯·莱杰"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳男配",
+        "暗黑DC巅峰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 32,
+      "title": "指环王3：王者无敌",
+      "title_cn": "指环王3：王者无敌",
+      "rating": 9.3,
+      "year": "2003",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1291552/",
+      "cover_url": "movie_images/032_指环王3王者无敌.jpg",
+      "quote": "",
+      "local_cover": "032_指环王3王者无敌.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 8,
+        "守护者": 8,
+        "探险家": 3
+      },
+      "director": "彼得·杰克逊",
+      "actors": [
+        "伊利亚·伍德",
+        "西恩·奥斯汀",
+        "伊恩·麦克莱恩",
+        "维果·莫腾森",
+        "凯特·布兰切特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "史诗三部曲"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 33,
+      "title": "我不是药神",
+      "title_cn": "我不是药神",
+      "rating": 9.0,
+      "year": "2018",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/26752088/",
+      "cover_url": "movie_images/033_我不是药神.jpg",
+      "quote": "",
+      "local_cover": "033_我不是药神.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 8,
+        "守护者": 7,
+        "探险家": 6
+      },
+      "director": "文牧野",
+      "actors": [
+        "徐峥",
+        "王传君"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "金马奖最佳影片",
+        "现实主义"
+      ],
+      "story": "程勇走私印度仿制药救白血病病人，反映了现实主义议题。"
+    },
+    {
+      "rank": 34,
+      "title": "乱世佳人",
+      "title_cn": "乱世佳人",
+      "rating": 9.3,
+      "year": "1939",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1300267/",
+      "cover_url": "movie_images/034_乱世佳人.jpg",
+      "quote": "",
+      "local_cover": "034_乱世佳人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 3,
+        "探险家": 2
+      },
+      "director": "维克多·弗莱明",
+      "actors": [
+        "费雯·丽",
+        "克拉克·盖博",
+        "奥利维娅·德哈维兰",
+        "托马斯·米切尔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "影史经典"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 35,
+      "title": "飞屋环游记",
+      "title_cn": "飞屋环游记",
+      "rating": 9.1,
+      "year": "2009",
+      "genre": "动画/冒险",
+      "url": "https://movie.douban.com/subject/2129039/",
+      "cover_url": "movie_images/035_飞屋环游记.jpg",
+      "quote": "",
+      "local_cover": "035_飞屋环游记.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 7,
+        "守护者": 7,
+        "探险家": 8
+      },
+      "director": "皮特·道格特",
+      "actors": [
+        "乔丹·长井",
+        "贝丝·哈塞尔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "梦想与冒险"
+      ],
+      "story": "老人带着房屋气球环球旅行，实现了对妻子的承诺。"
+    },
+    {
+      "rank": 36,
+      "title": "让子弹飞",
+      "title_cn": "让子弹飞",
+      "rating": 9.0,
+      "year": "2010",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/3742360/",
+      "cover_url": "movie_images/036_让子弹飞.jpg",
+      "quote": "",
+      "local_cover": "036_让子弹飞.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 5,
+        "守护者": 9,
+        "探险家": 6
+      },
+      "director": "姜文",
+      "actors": [
+        "姜文",
+        "周润发"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "姜文代表作",
+        "黑色幽默"
+      ],
+      "story": "张麻子在鹅城与黄四郎斗智斗勇，革命的理想主义。"
+    },
+    {
+      "rank": 37,
+      "title": "哈尔的移动城堡",
+      "title_cn": "哈尔的移动城堡",
+      "rating": 9.1,
+      "year": "2004",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1308807/",
+      "cover_url": "movie_images/037_哈尔的移动城堡.jpg",
+      "quote": "",
+      "local_cover": "037_哈尔的移动城堡.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "倍赏千惠子",
+        "木村拓哉"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏佳作",
+        "奇幻爱情"
+      ],
+      "story": "少女被诅咒变成九十岁的老婆婆，与火魔哈尔相恋。"
+    },
+    {
+      "rank": 38,
+      "title": "十二怒汉",
+      "title_cn": "十二怒汉",
+      "rating": 9.4,
+      "year": "1957",
+      "genre": "剧情/悬疑",
+      "url": "https://movie.douban.com/subject/1293182/",
+      "cover_url": "movie_images/038_十二怒汉.jpg",
+      "quote": "",
+      "local_cover": "038_十二怒汉.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": " Sidney Lumet",
+      "actors": [
+        "亨利·方达",
+        "马丁·鲍尔萨姆",
+        "李·科布",
+        "E.G.马绍尔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "法律经典"
+      ],
+      "story": "十二陪审团讨论一个贫民窟男孩是否弑父，展示了正义的力量。"
+    },
+    {
+      "rank": 39,
+      "title": "海蒂和爷爷",
+      "title_cn": "海蒂和爷爷",
+      "rating": 9.3,
+      "year": "2015",
+      "genre": "剧情/家庭",
+      "url": "https://movie.douban.com/subject/25958717/",
+      "cover_url": "movie_images/039_海蒂和爷爷.jpg",
+      "quote": "",
+      "local_cover": "039_海蒂和爷爷.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 8,
+        "守护者": 6,
+        "探险家": 6
+      },
+      "director": "阿兰·葛斯彭纳",
+      "actors": [
+        "阿努克·斯特芬",
+        "布鲁诺·甘茨",
+        "昆林·艾格匹",
+        "伊莎贝拉·垃圾桶"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "瑞士经典",
+        "阿尔卑斯风光"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 40,
+      "title": "素媛",
+      "title_cn": "素媛",
+      "rating": 9.3,
+      "year": "2013",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/21937452/",
+      "cover_url": "movie_images/040_素媛.jpg",
+      "quote": "",
+      "local_cover": "040_素媛.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 4,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "李濬益",
+      "actors": [
+        "薛景求",
+        "严志媛"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "韩国票房冠军",
+        "社会反思"
+      ],
+      "story": "小女孩被性侵后如何重建生活，展现了社会的温暖。"
+    },
+    {
+      "rank": 41,
+      "title": "猫鼠游戏",
+      "title_cn": "猫鼠游戏",
+      "rating": 9.1,
+      "year": "2002",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1305487/",
+      "cover_url": "movie_images/041_猫鼠游戏.jpg",
+      "quote": "",
+      "local_cover": "041_猫鼠游戏.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "史蒂文·斯皮尔伯格",
+      "actors": [
+        "莱昂纳多·迪卡普里奥",
+        "汤姆·汉克斯",
+        "克里斯托弗·普鲁默",
+        "马丁·冯·特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "斯皮尔伯格作品",
+        "天才骗子"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 42,
+      "title": "天空之城",
+      "title_cn": "天空之城",
+      "rating": 9.2,
+      "year": "1986",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1291583/",
+      "cover_url": "movie_images/042_天空之城.jpg",
+      "quote": "",
+      "local_cover": "042_天空之城.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 7,
+        "探险家": 9
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "田中真弓",
+        "鹫尾真知子"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏经典",
+        "飞行梦想"
+      ],
+      "story": "少女希达与少年巴鲁寻找天空之城，追逐飞行梦想。"
+    },
+    {
+      "rank": 43,
+      "title": "鬼子来了",
+      "title_cn": "鬼子来了",
+      "rating": 9.3,
+      "year": "2000",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1291858/",
+      "cover_url": "movie_images/043_鬼子来了.jpg",
+      "quote": "",
+      "local_cover": "043_鬼子来了.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 2
+      },
+      "director": "姜文",
+      "actors": [
+        "姜文",
+        "姜宏波",
+        "丛志军",
+        "吴大维"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳评审团奖",
+        "姜文巅峰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 44,
+      "title": "摔跤吧！爸爸",
+      "title_cn": "摔跤吧！爸爸",
+      "rating": 9.0,
+      "year": "2016",
+      "genre": "剧情/动作",
+      "url": "https://movie.douban.com/subject/26387939/",
+      "cover_url": "movie_images/044_摔跤吧！爸爸.jpg",
+      "quote": "",
+      "local_cover": "044_摔跤吧爸爸.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 6,
+        "守护者": 7,
+        "探险家": 7
+      },
+      "director": "尼特什·提瓦瑞",
+      "actors": [
+        "阿米尔·汗",
+        "法缇玛·萨那·纱卡",
+        "桑亚·玛荷塔",
+        "阿帕尔夏克提·库尔那"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "阿米尔·汗作品",
+        "女性励志"
+      ],
+      "story": "爸爸把女儿培养成摔跤冠军，打破了印度性别偏见。"
+    },
+    {
+      "rank": 45,
+      "title": "少年派的奇幻漂流",
+      "title_cn": "少年派的奇幻漂流",
+      "rating": 9.1,
+      "year": "2012",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1929463/",
+      "cover_url": "movie_images/045_少年派的奇幻漂流.jpg",
+      "quote": "",
+      "local_cover": "045_少年派的奇幻漂流.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 9,
+        "守护者": 6,
+        "探险家": 6
+      },
+      "director": "李安",
+      "actors": [
+        "苏拉·沙玛",
+        "伊尔凡·可汗",
+        "塔布",
+        "阿迪勒·侯赛因"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳导演",
+        "李安佳作"
+      ],
+      "story": "少年与孟加拉虎在海上漂流227天，信仰与生存的故事。"
+    },
+    {
+      "rank": 46,
+      "title": "钢琴家",
+      "title_cn": "钢琴家",
+      "rating": 9.3,
+      "year": "2002",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1296736/",
+      "cover_url": "movie_images/046_钢琴家.jpg",
+      "quote": "",
+      "local_cover": "046_钢琴家.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 4
+      },
+      "director": "罗曼·波兰斯基",
+      "actors": [
+        "艾德里安·布洛迪",
+        "托马斯·克莱舒曼",
+        "艾米莉娅·福克斯",
+        "米哈乌·科热维茨"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳金棕榈奖",
+        "二战史诗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 47,
+      "title": "指环王2：双塔奇兵",
+      "title_cn": "指环王2：双塔奇兵",
+      "rating": 9.2,
+      "year": "2002",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1291572/",
+      "cover_url": "movie_images/047_指环王2双塔奇兵.jpg",
+      "quote": "",
+      "local_cover": "047_指环王2双塔奇兵.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 5,
+        "守护者": 3,
+        "探险家": 8
+      },
+      "director": "彼得·杰克逊",
+      "actors": [
+        "伊利亚·伍德",
+        "西恩·奥斯汀",
+        "伊恩·麦克莱恩",
+        "维果·莫腾森",
+        "凯特·布兰切特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "中土史诗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 48,
+      "title": "死亡诗社",
+      "title_cn": "死亡诗社",
+      "rating": 9.2,
+      "year": "1989",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1291548/",
+      "cover_url": "movie_images/048_死亡诗社.jpg",
+      "quote": "",
+      "local_cover": "048_死亡诗社.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 4,
+        "守护者": 5,
+        "探险家": 2
+      },
+      "director": "彼得·威尔",
+      "actors": [
+        "罗宾·威廉姆斯",
+        "伊桑·霍克",
+        "罗伯特·肖恩·莱纳德",
+        "迪伦·克洛斯"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片提名",
+        "教育经典"
+      ],
+      "story": "基丁老师让学生撕掉课本，活出自己的人生。"
+    },
+    {
+      "rank": 49,
+      "title": "大话西游之月光宝盒",
+      "title_cn": "大话西游之月光宝盒",
+      "rating": 9.0,
+      "year": "1995",
+      "genre": "喜剧/爱情",
+      "url": "https://movie.douban.com/subject/1299398/",
+      "cover_url": "movie_images/049_大话西游之月光宝盒.jpg",
+      "quote": "",
+      "local_cover": "049_大话西游之月光宝盒.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 8
+      },
+      "director": "刘镇伟",
+      "actors": [
+        "周星驰",
+        "莫文蔚"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰经典",
+        "无厘头巅峰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 50,
+      "title": "何以为家",
+      "title_cn": "何以为家",
+      "rating": 9.1,
+      "year": "2018",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/30170448/",
+      "cover_url": "movie_images/050_何以为家.jpg",
+      "quote": "",
+      "local_cover": "050_何以为家.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 7,
+        "探险家": 7
+      },
+      "director": "娜丁·拉巴菲",
+      "actors": [
+        "赞恩·阿尔·拉菲亚",
+        "约丹诺斯·希费罗",
+        "博鲁瓦蒂夫·特雷杰·班科尔",
+        "卡萨尔·艾尔·哈达里"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳评审团奖",
+        "现实主义"
+      ],
+      "story": "12岁男孩起诉父母为何生下他，触目惊心的现实。"
+    },
+    {
+      "rank": 51,
+      "title": "绿皮书",
+      "title_cn": "绿皮书",
+      "rating": 8.9,
+      "year": "2018",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/27060077/",
+      "cover_url": "movie_images/051_绿皮书.jpg",
+      "quote": "",
+      "local_cover": "051_绿皮书.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "种族和解"
+      ],
+      "story": "黑人钢琴家与白人司机南下巡演，跨越种族偏见。"
+    },
+    {
+      "rank": 52,
+      "title": "闻香识女人",
+      "title_cn": "闻香识女人",
+      "rating": 9.1,
+      "year": "1992",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1298624/",
+      "cover_url": "movie_images/052_闻香识女人.jpg",
+      "quote": "",
+      "local_cover": "052_闻香识女人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 9,
+        "守护者": 9,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "经典探戈"
+      ],
+      "story": "失明退伍军人与学生互相救赎，经典探戈场景。"
+    },
+    {
+      "rank": 53,
+      "title": "大闹天宫",
+      "title_cn": "大闹天宫",
+      "rating": 9.4,
+      "year": "1961",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1418019/",
+      "cover_url": "movie_images/053_大闹天宫.jpg",
+      "quote": "",
+      "local_cover": "053_大闹天宫.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 54,
+      "title": "黑客帝国",
+      "title_cn": "黑客帝国",
+      "rating": 9.1,
+      "year": "1999",
+      "genre": "科幻/动作",
+      "url": "https://movie.douban.com/subject/1291843/",
+      "cover_url": "movie_images/054_黑客帝国.jpg",
+      "quote": "",
+      "local_cover": "054_黑客帝国.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 5,
+        "守护者": 6,
+        "探险家": 9
+      },
+      "director": "拉娜·沃卓斯基",
+      "actors": [
+        "基努·里维斯",
+        "劳伦斯·菲什伯恩"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "科幻里程碑",
+        "子弹时间"
+      ],
+      "story": "尼奥发现现实是机器创造的虚拟世界，选择成为救世主。"
+    },
+    {
+      "rank": 55,
+      "title": "指环王1：护戒使者",
+      "title_cn": "指环王1：护戒使者",
+      "rating": 9.1,
+      "year": "2001",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1291571/",
+      "cover_url": "movie_images/055_指环王1护戒使者.jpg",
+      "quote": "",
+      "local_cover": "055_指环王1护戒使者.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 56,
+      "title": "罗马假日",
+      "title_cn": "罗马假日",
+      "rating": 9.1,
+      "year": "1953",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1293839/",
+      "cover_url": "movie_images/056_罗马假日.jpg",
+      "quote": "",
+      "local_cover": "056_罗马假日.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "奥黛丽·赫本"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 57,
+      "title": "教父2",
+      "title_cn": "教父2",
+      "rating": 9.3,
+      "year": "1974",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1299131/",
+      "cover_url": "movie_images/057_教父2.jpg",
+      "quote": "",
+      "local_cover": "057_教父2.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 4,
+        "守护者": 8,
+        "探险家": 3
+      },
+      "director": "弗朗西斯·福特·科波拉",
+      "actors": [
+        "阿尔·帕西诺",
+        "罗伯特·德尼罗"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 58,
+      "title": "狮子王",
+      "title_cn": "狮子王",
+      "rating": 9.1,
+      "year": "1994",
+      "genre": "动画/冒险",
+      "url": "https://movie.douban.com/subject/1301753/",
+      "cover_url": "movie_images/058_狮子王.jpg",
+      "quote": "",
+      "local_cover": "058_狮子王.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 5,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "迪士尼巅峰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 59,
+      "title": "天堂电影院",
+      "title_cn": "天堂电影院",
+      "rating": 9.2,
+      "year": "1988",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1291828/",
+      "cover_url": "movie_images/059_天堂电影院.jpg",
+      "quote": "",
+      "local_cover": "059_天堂电影院.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片",
+        "电影情怀"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 60,
+      "title": "饮食男女",
+      "title_cn": "饮食男女",
+      "rating": 9.2,
+      "year": "1994",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1291818/",
+      "cover_url": "movie_images/060_饮食男女.jpg",
+      "quote": "",
+      "local_cover": "060_饮食男女.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 4,
+        "探险家": 2
+      },
+      "director": "李安",
+      "actors": [
+        "郎雄",
+        "张艾嘉"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "李安家庭三部曲",
+        "中国美食"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 61,
+      "title": "辩护人",
+      "title_cn": "辩护人",
+      "rating": 9.2,
+      "year": "2013",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/21937445/",
+      "cover_url": "movie_images/061_辩护人.jpg",
+      "quote": "",
+      "local_cover": "061_辩护人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 7,
+        "守护者": 8,
+        "探险家": 7
+      },
+      "director": "杨宇硕",
+      "actors": [
+        "宋康昊",
+        "任时完"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "韩国票房冠军",
+        "法律与人性"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 62,
+      "title": "本杰明·巴顿奇事",
+      "title_cn": "本杰明·巴顿奇事",
+      "rating": 9.0,
+      "year": "2008",
+      "genre": "剧情/奇幻",
+      "url": "https://movie.douban.com/subject/1485260/",
+      "cover_url": "movie_images/062_本杰明巴顿奇事.jpg",
+      "quote": "",
+      "local_cover": "062_本杰明巴顿奇事.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 3,
+        "守护者": 8,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳特效",
+        "布拉德·皮特"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 63,
+      "title": "搏击俱乐部",
+      "title_cn": "搏击俱乐部",
+      "rating": 9.0,
+      "year": "1999",
+      "genre": "剧情/动作",
+      "url": "https://movie.douban.com/subject/1292000/",
+      "cover_url": "movie_images/063_搏击俱乐部.jpg",
+      "quote": "",
+      "local_cover": "063_搏击俱乐部.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "大卫·芬奇",
+      "actors": [
+        "布拉德·皮特",
+        "爱德华·诺顿"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "大卫·芬奇神作",
+        "反消费主义"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 64,
+      "title": "美丽心灵",
+      "title_cn": "美丽心灵",
+      "rating": 9.1,
+      "year": "2001",
+      "genre": "剧情/传记",
+      "url": "https://movie.douban.com/subject/1306029/",
+      "cover_url": "movie_images/064_美丽心灵.jpg",
+      "quote": "",
+      "local_cover": "064_美丽心灵.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "天才传记"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 65,
+      "title": "穿条纹睡衣的男孩",
+      "title_cn": "穿条纹睡衣的男孩",
+      "rating": 9.2,
+      "year": "2008",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/3008247/",
+      "cover_url": "movie_images/065_穿条纹睡衣的男孩.jpg",
+      "quote": "",
+      "local_cover": "065_穿条纹睡衣的男孩.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 3,
+        "守护者": 7,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "反战佳作",
+        "结局震撼"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 66,
+      "title": "情书",
+      "title_cn": "情书",
+      "rating": 8.9,
+      "year": "1995",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292220/",
+      "cover_url": "movie_images/066_情书.jpg",
+      "quote": "",
+      "local_cover": "066_情书.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 5,
+        "守护者": 7,
+        "探险家": 6
+      },
+      "director": "岩井俊二",
+      "actors": [
+        "中山美穗",
+        "丰川悦司"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "岩井俊二经典",
+        "暗恋极致"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 67,
+      "title": "哈利·波特与死亡圣器(下)",
+      "title_cn": "哈利·波特与死亡圣器(下)",
+      "rating": 9.0,
+      "year": "2011",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/3011235/",
+      "cover_url": "movie_images/067_哈利波特与死亡圣器(下).jpg",
+      "quote": "",
+      "local_cover": "067_哈利波特与死亡圣器下.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 9,
+        "守护者": 3,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 68,
+      "title": "两杆大烟枪",
+      "title_cn": "两杆大烟枪",
+      "rating": 9.1,
+      "year": "1998",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1293350/",
+      "cover_url": "movie_images/068_两杆大烟枪.jpg",
+      "quote": "",
+      "local_cover": "068_两杆大烟枪.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 8,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "盖·里奇代表作",
+        "英式幽默"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 69,
+      "title": "窃听风暴",
+      "title_cn": "窃听风暴",
+      "rating": 9.2,
+      "year": "2006",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/1900841/",
+      "cover_url": "movie_images/069_窃听风暴.jpg",
+      "quote": "",
+      "local_cover": "069_窃听风暴.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 7,
+        "守护者": 7,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片",
+        "东德史诗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 70,
+      "title": "音乐之声",
+      "title_cn": "音乐之声",
+      "rating": 9.1,
+      "year": "1965",
+      "genre": "剧情/音乐",
+      "url": "https://movie.douban.com/subject/1294408/",
+      "cover_url": "movie_images/070_音乐之声.jpg",
+      "quote": "",
+      "local_cover": "070_音乐之声.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 7,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "传唱至今"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 71,
+      "title": "功夫",
+      "title_cn": "功夫",
+      "rating": 8.9,
+      "year": "2004",
+      "genre": "喜剧/动作",
+      "url": "https://movie.douban.com/subject/1291543/",
+      "cover_url": "movie_images/071_功夫.jpg",
+      "quote": "",
+      "local_cover": "071_功夫.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 5
+      },
+      "director": "周星驰",
+      "actors": [
+        "周星驰",
+        "黄圣依"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰集大成",
+        "武侠喜剧"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 72,
+      "title": "哈利·波特与阿兹卡班的囚徒",
+      "title_cn": "哈利·波特与阿兹卡班的囚徒",
+      "rating": 9.0,
+      "year": "2004",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1291544/",
+      "cover_url": "movie_images/072_哈利波特与阿兹卡班的囚徒.jpg",
+      "quote": "",
+      "local_cover": "072_哈利波特与阿兹卡班的囚徒.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 73,
+      "title": "西西里的美丽传说",
+      "title_cn": "西西里的美丽传说",
+      "rating": 8.9,
+      "year": "2000",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292402/",
+      "cover_url": "movie_images/073_西西里的美丽传说.jpg",
+      "quote": "",
+      "local_cover": "073_西西里的美丽传说.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 6,
+        "守护者": 6,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "莫妮卡·贝鲁奇",
+        "美丽传说"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 74,
+      "title": "阿凡达",
+      "title_cn": "阿凡达",
+      "rating": 8.8,
+      "year": "2009",
+      "genre": "科幻/冒险",
+      "url": "https://movie.douban.com/subject/1652587/",
+      "cover_url": "movie_images/074_阿凡达.jpg",
+      "quote": "",
+      "local_cover": "074_阿凡达.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 7
+      },
+      "director": "詹姆斯·卡梅隆",
+      "actors": [
+        "萨姆·沃辛顿",
+        "佐伊·索尔达娜"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "3D革命"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 75,
+      "title": "看不见的客人",
+      "title_cn": "看不见的客人",
+      "rating": 8.8,
+      "year": "2016",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/26580232/",
+      "cover_url": "movie_images/075_看不见的客人.jpg",
+      "quote": "",
+      "local_cover": "075_看不见的客人.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "西班牙悬疑",
+        "反转再反转"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 76,
+      "title": "拯救大兵瑞恩",
+      "title_cn": "拯救大兵瑞恩",
+      "rating": 9.1,
+      "year": "1998",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1292849/",
+      "cover_url": "movie_images/076_拯救大兵瑞恩.jpg",
+      "quote": "",
+      "local_cover": "076_拯救大兵瑞恩.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 5
+      },
+      "director": "史蒂文·斯皮尔伯格",
+      "actors": [
+        "汤姆·汉克斯",
+        "马特·达蒙"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳导演",
+        "战争史诗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 77,
+      "title": "沉默的羔羊",
+      "title_cn": "沉默的羔羊",
+      "rating": 8.9,
+      "year": "1991",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/1293544/",
+      "cover_url": "movie_images/077_沉默的羔羊.jpg",
+      "quote": "",
+      "local_cover": "077_沉默的羔羊.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 5,
+        "守护者": 7,
+        "探险家": 3
+      },
+      "director": "乔纳森·戴米",
+      "actors": [
+        "朱迪·福斯特",
+        "安东尼·霍普金斯"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "汉尼拔经典"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 78,
+      "title": "小鞋子",
+      "title_cn": "小鞋子",
+      "rating": 9.2,
+      "year": "1997",
+      "genre": "剧情/儿童",
+      "url": "https://movie.douban.com/subject/1303021/",
+      "cover_url": "movie_images/078_小鞋子.jpg",
+      "quote": "",
+      "local_cover": "078_小鞋子.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "伊朗电影巅峰",
+        "儿童纯真"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 79,
+      "title": "布达佩斯大饭店",
+      "title_cn": "布达佩斯大饭店",
+      "rating": 8.9,
+      "year": "2014",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/11525673/",
+      "cover_url": "movie_images/079_布达佩斯大饭店.jpg",
+      "quote": "",
+      "local_cover": "079_布达佩斯大饭店.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 5,
+        "守护者": 6,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳艺术指导",
+        "韦斯·安德森"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 80,
+      "title": "蝴蝶效应",
+      "title_cn": "蝴蝶效应",
+      "rating": 8.9,
+      "year": "2004",
+      "genre": "科幻/悬疑",
+      "url": "https://movie.douban.com/subject/1292343/",
+      "cover_url": "movie_images/080_蝴蝶效应.jpg",
+      "quote": "",
+      "local_cover": "080_蝴蝶效应.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 3,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "埃里克·布雷斯",
+      "actors": [
+        "艾什顿·库彻",
+        "艾米·斯马特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "科幻悬疑经典",
+        "命运轮回"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 81,
+      "title": "飞越疯人院",
+      "title_cn": "飞越疯人院",
+      "rating": 9.1,
+      "year": "1975",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1292224/",
+      "cover_url": "movie_images/081_飞越疯人院.jpg",
+      "quote": "",
+      "local_cover": "081_飞越疯人院.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "自由主题"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 82,
+      "title": "禁闭岛",
+      "title_cn": "禁闭岛",
+      "rating": 8.9,
+      "year": "2010",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/2334904/",
+      "cover_url": "movie_images/082_禁闭岛.jpg",
+      "quote": "",
+      "local_cover": "082_禁闭岛.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 5,
+        "守护者": 9,
+        "探险家": 3
+      },
+      "director": "马丁·斯科塞斯",
+      "actors": [
+        "莱昂纳多·迪卡普里奥",
+        "马克·鲁法洛"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "莱昂纳多",
+        "心理惊悚"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 83,
+      "title": "还有明天",
+      "title_cn": "还有明天",
+      "rating": 9.3,
+      "year": "2023",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/36445098/",
+      "cover_url": "movie_images/083_还有明天.jpg",
+      "quote": "",
+      "local_cover": "083_还有明天.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "戛纳金棕榈奖",
+        "女性主义"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 84,
+      "title": "心灵捕手",
+      "title_cn": "心灵捕手",
+      "rating": 9.0,
+      "year": "1997",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1292656/",
+      "cover_url": "movie_images/084_心灵捕手.jpg",
+      "quote": "",
+      "local_cover": "084_心灵捕手.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 6,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳原创剧本",
+        "马特·达蒙"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 85,
+      "title": "致命魔术",
+      "title_cn": "致命魔术",
+      "rating": 8.9,
+      "year": "2006",
+      "genre": "悬疑/科幻",
+      "url": "https://movie.douban.com/subject/1780330/",
+      "cover_url": "movie_images/085_致命魔术.jpg",
+      "quote": "",
+      "local_cover": "085_致命魔术.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 7
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "克里斯蒂安·贝尔",
+        "休·杰克曼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "诺兰烧脑",
+        "魔术师对决"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 86,
+      "title": "低俗小说",
+      "title_cn": "低俗小说",
+      "rating": 8.9,
+      "year": "1994",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1291832/",
+      "cover_url": "movie_images/086_低俗小说.jpg",
+      "quote": "",
+      "local_cover": "086_低俗小说.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 8,
+        "守护者": 6,
+        "探险家": 4
+      },
+      "director": "昆汀·塔伦蒂诺",
+      "actors": [
+        "约翰·特拉沃尔塔",
+        "乌玛·瑟曼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "昆汀经典",
+        "环形叙事"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 87,
+      "title": "超脱",
+      "title_cn": "超脱",
+      "rating": 9.0,
+      "year": "2011",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/5322596/",
+      "cover_url": "movie_images/087_超脱.jpg",
+      "quote": "",
+      "local_cover": "087_超脱.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 9,
+        "守护者": 7,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "艺术佳作",
+        "教育反思"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 88,
+      "title": "哈利·波特与密室",
+      "title_cn": "哈利·波特与密室",
+      "rating": 8.9,
+      "year": "2002",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1296996/",
+      "cover_url": "movie_images/088_哈利波特与密室.jpg",
+      "quote": "",
+      "local_cover": "088_哈利波特与密室.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 7,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 89,
+      "title": "一一",
+      "title_cn": "一一",
+      "rating": 9.1,
+      "year": "2000",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1292434/",
+      "cover_url": "movie_images/089_一一.jpg",
+      "quote": "",
+      "local_cover": "089_一一.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片提名",
+        "杨德昌巅峰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 90,
+      "title": "喜剧之王",
+      "title_cn": "喜剧之王",
+      "rating": 8.8,
+      "year": "1999",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1302425/",
+      "cover_url": "movie_images/090_喜剧之王.jpg",
+      "quote": "",
+      "local_cover": "090_喜剧之王.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 7,
+        "守护者": 9,
+        "探险家": 2
+      },
+      "director": "周星驰",
+      "actors": [
+        "周星驰",
+        "张莫文蔚"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰自传",
+        "小人物奋斗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 91,
+      "title": "摩登时代",
+      "title_cn": "摩登时代",
+      "rating": 9.3,
+      "year": "1936",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1294371/",
+      "cover_url": "movie_images/091_摩登时代.jpg",
+      "quote": "",
+      "local_cover": "091_摩登时代.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "卓别林代表作",
+        "默片经典"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 92,
+      "title": "杀人回忆",
+      "title_cn": "杀人回忆",
+      "rating": 8.9,
+      "year": "2003",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1300299/",
+      "cover_url": "movie_images/092_杀人回忆.jpg",
+      "quote": "",
+      "local_cover": "092_杀人回忆.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 4,
+        "守护者": 7,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "韩国悬疑巅峰",
+        "奉俊昊"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 93,
+      "title": "致命ID",
+      "title_cn": "致命ID",
+      "rating": 8.9,
+      "year": "2003",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1297192/",
+      "cover_url": "movie_images/093_致命ID.jpg",
+      "quote": "",
+      "local_cover": "093_致命ID.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "密室悬疑",
+        "多重人格"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 94,
+      "title": "春光乍泄",
+      "title_cn": "春光乍泄",
+      "rating": 9.0,
+      "year": "1997",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292679/",
+      "cover_url": "movie_images/094_春光乍泄.jpg",
+      "quote": "",
+      "local_cover": "094_春光乍泄.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 9,
+        "守护者": 6,
+        "探险家": 2
+      },
+      "director": "王家卫",
+      "actors": [
+        "梁朝伟",
+        "张国荣"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "王家卫代表作",
+        "张国荣梁朝伟"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 95,
+      "title": "加勒比海盗",
+      "title_cn": "加勒比海盗",
+      "rating": 8.8,
+      "year": "2003",
+      "genre": "动作/冒险",
+      "url": "https://movie.douban.com/subject/1298070/",
+      "cover_url": "movie_images/095_加勒比海盗.jpg",
+      "quote": "",
+      "local_cover": "095_加勒比海盗.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 6,
+        "守护者": 9,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "约翰尼·德普",
+        "海盗传奇"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 96,
+      "title": "海豚湾",
+      "title_cn": "海豚湾",
+      "rating": 9.3,
+      "year": "2009",
+      "genre": "纪录片",
+      "url": "https://movie.douban.com/subject/3442220/",
+      "cover_url": "movie_images/096_海豚湾.jpg",
+      "quote": "",
+      "local_cover": "096_海豚湾.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳纪录片",
+        "环保主题"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 97,
+      "title": "美国往事",
+      "title_cn": "美国往事",
+      "rating": 9.1,
+      "year": "1984",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1292262/",
+      "cover_url": "movie_images/097_美国往事.jpg",
+      "quote": "",
+      "local_cover": "097_美国往事.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "赛尔乔·莱翁内",
+        "黑帮史诗"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 98,
+      "title": "红辣椒",
+      "title_cn": "红辣椒",
+      "rating": 9.0,
+      "year": "2006",
+      "genre": "动画/科幻",
+      "url": "https://movie.douban.com/subject/1865703/",
+      "cover_url": "movie_images/098_红辣椒.jpg",
+      "quote": "",
+      "local_cover": "098_红辣椒.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 8,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "今敏动画神作",
+        "梦境现实"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 99,
+      "title": "七宗罪",
+      "title_cn": "七宗罪",
+      "rating": 8.8,
+      "year": "1995",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1292223/",
+      "cover_url": "movie_images/099_七宗罪.jpg",
+      "quote": "",
+      "local_cover": "099_七宗罪.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 9,
+        "守护者": 4,
+        "探险家": 3
+      },
+      "director": "大卫·芬奇",
+      "actors": [
+        "布拉德·皮特",
+        "摩根·弗里曼"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "大卫·芬奇",
+        "犯罪心理"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 100,
+      "title": "唐伯虎点秋香",
+      "title_cn": "唐伯虎点秋香",
+      "rating": 8.8,
+      "year": "1993",
+      "genre": "喜剧",
+      "url": "https://movie.douban.com/subject/1306249/",
+      "cover_url": "movie_images/100_唐伯虎点秋香.jpg",
+      "quote": "",
+      "local_cover": "100_唐伯虎点秋香.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 7,
+        "探险家": 7
+      },
+      "director": "李力持",
+      "actors": [
+        "周星驰",
+        "巩俐"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰经典",
+        "无厘头喜剧"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 101,
+      "title": "狩猎",
+      "title_cn": "狩猎",
+      "rating": 9.1,
+      "year": "2012",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/6985810/",
+      "cover_url": "movie_images/101_狩猎.jpg",
+      "quote": "",
+      "local_cover": "101_狩猎.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 9,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "丹麦佳作",
+        "社会舆论"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 102,
+      "title": "幽灵公主",
+      "title_cn": "幽灵公主",
+      "rating": 8.9,
+      "year": "1997",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1297359/",
+      "cover_url": "movie_images/102_幽灵公主.jpg",
+      "quote": "",
+      "local_cover": "102_幽灵公主.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 6
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "松田圣子",
+        "吴亦凡"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏巅峰",
+        "人与自然"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 103,
+      "title": "甜蜜蜜",
+      "title_cn": "甜蜜蜜",
+      "rating": 8.9,
+      "year": "1996",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1305164/",
+      "cover_url": "movie_images/103_甜蜜蜜.jpg",
+      "quote": "",
+      "local_cover": "103_甜蜜蜜.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "陈可辛爱情",
+        "经典歌曲"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 104,
+      "title": "寄生虫",
+      "title_cn": "寄生虫",
+      "rating": 8.8,
+      "year": "2019",
+      "genre": "剧情/悬疑",
+      "url": "https://movie.douban.com/subject/27010768/",
+      "cover_url": "movie_images/104_寄生虫.jpg",
+      "quote": "",
+      "local_cover": "104_寄生虫.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 7,
+        "探险家": 4
+      },
+      "director": "奉俊昊",
+      "actors": [
+        "宋康昊",
+        "李善均"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "奉俊昊"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 105,
+      "title": "天书奇谭",
+      "title_cn": "天书奇谭",
+      "rating": 9.2,
+      "year": "1983",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1428581/",
+      "cover_url": "movie_images/105_天书奇谭.jpg",
+      "quote": "",
+      "local_cover": "105_天书奇谭.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 7,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "中国动画经典",
+        "童年回忆"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 106,
+      "title": "蝙蝠侠：黑暗骑士崛起",
+      "title_cn": "蝙蝠侠：黑暗骑士崛起",
+      "rating": 8.9,
+      "year": "2012",
+      "genre": "动作/科幻",
+      "url": "https://movie.douban.com/subject/3395373/",
+      "cover_url": "movie_images/106_蝙蝠侠黑暗骑士崛起.jpg",
+      "quote": "",
+      "local_cover": "106_蝙蝠侠黑暗骑士崛起.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 7
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "克里斯蒂安·贝尔",
+        "汤姆·哈迪"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 107,
+      "title": "7号房的礼物",
+      "title_cn": "7号房的礼物",
+      "rating": 8.9,
+      "year": "2013",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/10777687/",
+      "cover_url": "movie_images/107_7号房的礼物.jpg",
+      "quote": "",
+      "local_cover": "107_7号房的礼物.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "韩国催泪",
+        "父女情深"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 108,
+      "title": "超能陆战队",
+      "title_cn": "超能陆战队",
+      "rating": 8.8,
+      "year": "2014",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/11026735/",
+      "cover_url": "movie_images/108_超能陆战队.jpg",
+      "quote": "",
+      "local_cover": "108_超能陆战队.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 7,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "唐·霍尔",
+      "actors": [
+        "斯科特·埃德希特",
+        "瑞恩·波特"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "大白萌神"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 109,
+      "title": "第六感",
+      "title_cn": "第六感",
+      "rating": 8.9,
+      "year": "1999",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1297630/",
+      "cover_url": "movie_images/109_第六感.jpg",
+      "quote": "",
+      "local_cover": "109_第六感.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 8,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "布鲁斯·威利斯",
+        "惊悚结局"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 110,
+      "title": "茶馆",
+      "title_cn": "茶馆",
+      "rating": 9.5,
+      "year": "1982",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1461403/",
+      "cover_url": "movie_images/110_茶馆.jpg",
+      "quote": "",
+      "local_cover": "110_茶馆.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 6
+      },
+      "director": "谢添",
+      "actors": [
+        "于是之",
+        "郑榕"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "中国电影经典",
+        "老舍名著"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 111,
+      "title": "爱在黎明破晓前",
+      "title_cn": "爱在黎明破晓前",
+      "rating": 8.8,
+      "year": "1995",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1296339/",
+      "cover_url": "movie_images/111_爱在黎明破晓前.jpg",
+      "quote": "",
+      "local_cover": "111_爱在黎明破晓前.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "理查德·林克莱特",
+        "爱情三部曲"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 112,
+      "title": "爱在日落黄昏时",
+      "title_cn": "爱在日落黄昏时",
+      "rating": 8.9,
+      "year": "2004",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1291990/",
+      "cover_url": "movie_images/112_爱在日落黄昏时.jpg",
+      "quote": "",
+      "local_cover": "112_爱在日落黄昏时.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 4,
+        "守护者": 5,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "九年之后",
+        "浪漫重逢"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 113,
+      "title": "被嫌弃的松子的一生",
+      "title_cn": "被嫌弃的松子的一生",
+      "rating": 8.8,
+      "year": "2006",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1787291/",
+      "cover_url": "movie_images/113_被嫌弃的松子的一生.jpg",
+      "quote": "",
+      "local_cover": "113_被嫌弃的松子的一生.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 9,
+        "守护者": 9,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "中岛哲也",
+        "女性悲歌"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 114,
+      "title": "哈利·波特与火焰杯",
+      "title_cn": "哈利·波特与火焰杯",
+      "rating": 8.8,
+      "year": "2005",
+      "genre": "奇幻/冒险",
+      "url": "https://movie.douban.com/subject/1309055/",
+      "cover_url": "movie_images/114_哈利波特与火焰杯.jpg",
+      "quote": "",
+      "local_cover": "114_哈利波特与火焰杯.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 8,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 115,
+      "title": "头脑特工队",
+      "title_cn": "头脑特工队",
+      "rating": 8.8,
+      "year": "2015",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/10533913/",
+      "cover_url": "movie_images/115_头脑特工队.jpg",
+      "quote": "",
+      "local_cover": "115_头脑特工队.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 6,
+        "守护者": 4,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯"
+      ],
+      "story": "小女孩脑中的五种情绪争夺控制权，学会处理情绪的成长故事。"
+    },
+    {
+      "rank": 116,
+      "title": "未麻的部屋",
+      "title_cn": "未麻的部屋",
+      "rating": 9.1,
+      "year": "1997",
+      "genre": "动画/悬疑",
+      "url": "https://movie.douban.com/subject/1395091/",
+      "cover_url": "movie_images/116_未麻的部屋.jpg",
+      "quote": "",
+      "local_cover": "116_未麻的部屋.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "今敏动画",
+        "分裂人格"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 117,
+      "title": "重庆森林",
+      "title_cn": "重庆森林",
+      "rating": 8.8,
+      "year": "1994",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1291999/",
+      "cover_url": "movie_images/117_重庆森林.jpg",
+      "quote": "",
+      "local_cover": "117_重庆森林.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 7,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "王家卫",
+      "actors": [
+        "梁朝伟",
+        "王菲"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "王家卫风格",
+        "都市孤独"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 118,
+      "title": "借东西的小人阿莉埃蒂",
+      "title_cn": "借东西的小人阿莉埃蒂",
+      "rating": 8.9,
+      "year": "2010",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/4202302/",
+      "cover_url": "movie_images/118_借东西的小人阿莉埃蒂.jpg",
+      "quote": "",
+      "local_cover": "118_借东西的小人阿莉埃蒂.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏",
+        "小人国"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 119,
+      "title": "入殓师",
+      "title_cn": "入殓师",
+      "rating": 8.9,
+      "year": "2008",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/2149806/",
+      "cover_url": "movie_images/119_入殓师.jpg",
+      "quote": "",
+      "local_cover": "119_入殓师.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 4,
+        "守护者": 5,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳外语片",
+        "生死思考"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 120,
+      "title": "菊次郎的夏天",
+      "title_cn": "菊次郎的夏天",
+      "rating": 8.9,
+      "year": "1999",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1293359/",
+      "cover_url": "movie_images/120_菊次郎的夏天.jpg",
+      "quote": "",
+      "local_cover": "120_菊次郎的夏天.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 6,
+        "守护者": 6,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "北野武",
+        "温情夏日"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 121,
+      "title": "断背山",
+      "title_cn": "断背山",
+      "rating": 8.8,
+      "year": "2005",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1418834/",
+      "cover_url": "movie_images/121_断背山.jpg",
+      "quote": "",
+      "local_cover": "121_断背山.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 4,
+        "守护者": 6,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "李安代表作",
+        "爱情经典"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 122,
+      "title": "剪刀手爱德华",
+      "title_cn": "剪刀手爱德华",
+      "rating": 8.7,
+      "year": "1990",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1292370/",
+      "cover_url": "movie_images/122_剪刀手爱德华.jpg",
+      "quote": "",
+      "local_cover": "122_剪刀手爱德华.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 5,
+        "守护者": 7,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "蒂姆·波顿",
+        "哥特童话"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 123,
+      "title": "勇敢的心",
+      "title_cn": "勇敢的心",
+      "rating": 8.9,
+      "year": "1995",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1294639/",
+      "cover_url": "movie_images/123_勇敢的心.jpg",
+      "quote": "",
+      "local_cover": "123_勇敢的心.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 3,
+        "守护者": 7,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片",
+        "梅尔·吉布森"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 124,
+      "title": "时空恋旅人",
+      "title_cn": "时空恋旅人",
+      "rating": 8.8,
+      "year": "2013",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/10577869/",
+      "cover_url": "movie_images/124_时空恋旅人.jpg",
+      "quote": "",
+      "local_cover": "124_时空恋旅人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 7,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "英式温情",
+        "时间旅行"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 125,
+      "title": "驯龙高手",
+      "title_cn": "驯龙高手",
+      "rating": 8.8,
+      "year": "2010",
+      "genre": "动画/动作",
+      "url": "https://movie.douban.com/subject/2353023/",
+      "cover_url": "movie_images/125_驯龙高手.jpg",
+      "quote": "",
+      "local_cover": "125_驯龙高手.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 4,
+        "守护者": 7,
+        "探险家": 8
+      },
+      "director": "迪恩·德布洛斯",
+      "actors": [
+        "杰伊·巴鲁切尔",
+        "亚美莉卡·费雷拉"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "梦工厂"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 126,
+      "title": "消失的爱人",
+      "title_cn": "消失的爱人",
+      "rating": 8.7,
+      "year": "2014",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/21318488/",
+      "cover_url": "movie_images/126_消失的爱人.jpg",
+      "quote": "",
+      "local_cover": "126_消失的爱人.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 9,
+        "守护者": 4,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "大卫·芬奇",
+        "婚姻惊悚"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 127,
+      "title": "无人知晓",
+      "title_cn": "无人知晓",
+      "rating": 9.1,
+      "year": "2004",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1292337/",
+      "cover_url": "movie_images/127_无人知晓.jpg",
+      "quote": "",
+      "local_cover": "127_无人知晓.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 3,
+        "守护者": 4,
+        "探险家": 7
+      },
+      "director": "是枝裕和",
+      "actors": [
+        "柳乐优弥",
+        "北浦爱"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "是枝裕和",
+        "儿童现实"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 128,
+      "title": "倩女幽魂",
+      "title_cn": "倩女幽魂",
+      "rating": 8.8,
+      "year": "1987",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1297447/",
+      "cover_url": "movie_images/128_倩女幽魂.jpg",
+      "quote": "",
+      "local_cover": "128_倩女幽魂.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 9
+      },
+      "director": "程小东",
+      "actors": [
+        "张国荣",
+        "王祖贤"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "程小东",
+        "聂小倩"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 129,
+      "title": "傲慢与偏见",
+      "title_cn": "傲慢与偏见",
+      "rating": 8.7,
+      "year": "2005",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1418200/",
+      "cover_url": "movie_images/129_傲慢与偏见.jpg",
+      "quote": "",
+      "local_cover": "129_傲慢与偏见.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 9,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "乔·赖特",
+        "英伦古典"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 130,
+      "title": "花样年华",
+      "title_cn": "花样年华",
+      "rating": 8.8,
+      "year": "2000",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1291557/",
+      "cover_url": "movie_images/130_花样年华.jpg",
+      "quote": "",
+      "local_cover": "130_花样年华.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 9,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "王家卫",
+      "actors": [
+        "梁朝伟",
+        "张曼玉"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "王家卫",
+        "张曼玉"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 131,
+      "title": "新世界",
+      "title_cn": "新世界",
+      "rating": 8.9,
+      "year": "2013",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/10437779/",
+      "cover_url": "movie_images/131_新世界.jpg",
+      "quote": "",
+      "local_cover": "131_新世界.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 6,
+        "守护者": 7,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "韩国黑帮",
+        "卧底故事"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 132,
+      "title": "玩具总动员3",
+      "title_cn": "玩具总动员3",
+      "rating": 8.9,
+      "year": "2010",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/1858711/",
+      "cover_url": "movie_images/132_玩具总动员3.jpg",
+      "quote": "",
+      "local_cover": "132_玩具总动员3.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 9,
+        "守护者": 4,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 133,
+      "title": "一个叫欧维的男人决定去死",
+      "title_cn": "一个叫欧维的男人决定去死",
+      "rating": 8.9,
+      "year": "2015",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/26628357/",
+      "cover_url": "movie_images/133_一个叫欧维的男人决定去死.jpg",
+      "quote": "",
+      "local_cover": "133_一个叫欧维的男人决定去死.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 134,
+      "title": "完美的世界",
+      "title_cn": "完美的世界",
+      "rating": 9.1,
+      "year": "1993",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1300992/",
+      "cover_url": "movie_images/134_完美的世界.jpg",
+      "quote": "",
+      "local_cover": "134_完美的世界.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 9,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "克林特·伊斯特伍德",
+        "公路温情"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 135,
+      "title": "色，戒",
+      "title_cn": "色，戒",
+      "rating": 8.7,
+      "year": "2007",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1828115/",
+      "cover_url": "movie_images/135_色，戒.jpg",
+      "quote": "",
+      "local_cover": "135_色戒.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 7,
+        "守护者": 7,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "李安",
+        "汤唯梁朝伟"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 136,
+      "title": "阳光灿烂的日子",
+      "title_cn": "阳光灿烂的日子",
+      "rating": 8.8,
+      "year": "1994",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/1291875/",
+      "cover_url": "movie_images/136_阳光灿烂的日子.jpg",
+      "quote": "",
+      "local_cover": "136_阳光灿烂的日子.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 5,
+        "守护者": 3,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "姜文处女作",
+        "青春"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 137,
+      "title": "怪兽电力公司",
+      "title_cn": "怪兽电力公司",
+      "rating": 8.8,
+      "year": "2001",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/1291579/",
+      "cover_url": "movie_images/137_怪兽电力公司.jpg",
+      "quote": "",
+      "local_cover": "137_怪兽电力公司.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 7,
+        "守护者": 9,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 138,
+      "title": "小森林 夏秋篇",
+      "title_cn": "小森林 夏秋篇",
+      "rating": 9.0,
+      "year": "2014",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/25814705/",
+      "cover_url": "movie_images/138_小森林 夏秋篇.jpg",
+      "quote": "",
+      "local_cover": "138_小森林_夏秋篇.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 139,
+      "title": "天使爱美丽",
+      "title_cn": "天使爱美丽",
+      "rating": 8.7,
+      "year": "2001",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1292215/",
+      "cover_url": "movie_images/139_天使爱美丽.jpg",
+      "quote": "",
+      "local_cover": "139_天使爱美丽.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 5,
+        "守护者": 6,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "让-皮埃尔·热内",
+        "法式浪漫"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 140,
+      "title": "教父3",
+      "title_cn": "教父3",
+      "rating": 9.0,
+      "year": "1990",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1294240/",
+      "cover_url": "movie_images/140_教父3.jpg",
+      "quote": "",
+      "local_cover": "140_教父3.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 4,
+        "守护者": 8,
+        "探险家": 3
+      },
+      "director": "弗朗西斯·福特·科波拉",
+      "actors": [
+        "阿尔·帕西诺",
+        "黛安·基顿"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 141,
+      "title": "侧耳倾听",
+      "title_cn": "侧耳倾听",
+      "rating": 8.9,
+      "year": "1995",
+      "genre": "动画/爱情",
+      "url": "https://movie.douban.com/subject/1297052/",
+      "cover_url": "movie_images/141_侧耳倾听.jpg",
+      "quote": "",
+      "local_cover": "141_侧耳倾听.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 6,
+        "守护者": 8,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "宫崎骏",
+        "少女情怀"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 142,
+      "title": "哪吒闹海",
+      "title_cn": "哪吒闹海",
+      "rating": 9.2,
+      "year": "1979",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1307315/",
+      "cover_url": "movie_images/142_哪吒闹海.jpg",
+      "quote": "",
+      "local_cover": "142_哪吒闹海.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 8,
+        "守护者": 8,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "中国动画经典",
+        "童年回忆"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 143,
+      "title": "九品芝麻官",
+      "title_cn": "九品芝麻官",
+      "rating": 8.8,
+      "year": "1994",
+      "genre": "喜剧",
+      "url": "https://movie.douban.com/subject/1297518/",
+      "cover_url": "movie_images/143_九品芝麻官.jpg",
+      "quote": "",
+      "local_cover": "143_九品芝麻官.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 7,
+        "守护者": 9,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "周星驰",
+        "贪官污吏"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 144,
+      "title": "被解救的姜戈",
+      "title_cn": "被解救的姜戈",
+      "rating": 8.8,
+      "year": "2012",
+      "genre": "动作/西部",
+      "url": "https://movie.douban.com/subject/6307447/",
+      "cover_url": "movie_images/144_被解救的姜戈.jpg",
+      "quote": "",
+      "local_cover": "144_被解救的姜戈.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 4,
+        "守护者": 5,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 145,
+      "title": "请以你的名字呼唤我",
+      "title_cn": "请以你的名字呼唤我",
+      "rating": 8.8,
+      "year": "2017",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/26799731/",
+      "cover_url": "movie_images/145_请以你的名字呼唤我.jpg",
+      "quote": "",
+      "local_cover": "145_请以你的名字呼唤我.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片提名",
+        "甜茶"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 146,
+      "title": "幸福终点站",
+      "title_cn": "幸福终点站",
+      "rating": 8.8,
+      "year": "2004",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1292274/",
+      "cover_url": "movie_images/146_幸福终点站.jpg",
+      "quote": "",
+      "local_cover": "146_幸福终点站.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 6,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "汤姆·汉克斯",
+        "机场奇遇"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 147,
+      "title": "釜山行",
+      "title_cn": "釜山行",
+      "rating": 8.6,
+      "year": "2016",
+      "genre": "动作/惊悚",
+      "url": "https://movie.douban.com/subject/25986180/",
+      "cover_url": "movie_images/147_釜山行.jpg",
+      "quote": "",
+      "local_cover": "147_釜山行.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 9,
+        "守护者": 3,
+        "探险家": 4
+      },
+      "director": "延尚昊",
+      "actors": [
+        "孔刘",
+        "郑有美"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "韩国票房冠军",
+        "丧尸类型"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 148,
+      "title": "神偷奶爸",
+      "title_cn": "神偷奶爸",
+      "rating": 8.7,
+      "year": "2010",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/3287562/",
+      "cover_url": "movie_images/148_神偷奶爸.jpg",
+      "quote": "",
+      "local_cover": "148_神偷奶爸.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 7,
+        "守护者": 9,
+        "探险家": 5
+      },
+      "director": "皮埃尔·柯芬",
+      "actors": [
+        "史蒂夫·卡瑞尔",
+        "克里斯汀·韦格"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画提名",
+        "小黄人"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 149,
+      "title": "小森林 冬春篇",
+      "title_cn": "小森林 冬春篇",
+      "rating": 9.0,
+      "year": "2015",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/25814707/",
+      "cover_url": "movie_images/149_小森林 冬春篇.jpg",
+      "quote": "",
+      "local_cover": "149_小森林_冬春篇.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 9,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 150,
+      "title": "喜宴",
+      "title_cn": "喜宴",
+      "rating": 9.0,
+      "year": "1993",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1303037/",
+      "cover_url": "movie_images/150_喜宴.jpg",
+      "quote": "",
+      "local_cover": "150_喜宴.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 6,
+        "守护者": 4,
+        "探险家": 3
+      },
+      "director": "李安",
+      "actors": [
+        "赵文瑄",
+        "陈冲"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "李安",
+        "家庭喜剧"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 151,
+      "title": "萤火之森",
+      "title_cn": "萤火之森",
+      "rating": 8.8,
+      "year": "2011",
+      "genre": "动画/爱情",
+      "url": "https://movie.douban.com/subject/5989818/",
+      "cover_url": "movie_images/151_萤火之森.jpg",
+      "quote": "",
+      "local_cover": "151_萤火之森.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 6,
+        "守护者": 7,
+        "探险家": 4
+      },
+      "director": "绿川幸",
+      "actors": [
+        "竹内顺子",
+        "户松遥"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "绿川幸",
+        "妖怪恋"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 152,
+      "title": "告白",
+      "title_cn": "告白",
+      "rating": 8.8,
+      "year": "2010",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/4268598/",
+      "cover_url": "movie_images/152_告白.jpg",
+      "quote": "",
+      "local_cover": "152_告白.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "中岛哲也",
+        "日本复仇"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 153,
+      "title": "玛丽和麦克斯",
+      "title_cn": "玛丽和麦克斯",
+      "rating": 9.0,
+      "year": "2009",
+      "genre": "动画/剧情",
+      "url": "https://movie.douban.com/subject/3072124/",
+      "cover_url": "movie_images/153_玛丽和麦克斯.jpg",
+      "quote": "",
+      "local_cover": "153_玛丽和麦克斯.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 6,
+        "守护者": 4,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "澳大利亚动画",
+        "友情故事"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 154,
+      "title": "七武士",
+      "title_cn": "七武士",
+      "rating": 9.3,
+      "year": "1954",
+      "genre": "动作/剧情",
+      "url": "https://movie.douban.com/subject/1295399/",
+      "cover_url": "movie_images/154_七武士.jpg",
+      "quote": "",
+      "local_cover": "154_七武士.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 5,
+        "守护者": 9,
+        "探险家": 3
+      },
+      "director": "黑泽明",
+      "actors": [
+        "三船敏郎",
+        "志村乔"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "黑泽明巅峰",
+        "武侠源头"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 155,
+      "title": "头号玩家",
+      "title_cn": "头号玩家",
+      "rating": 8.6,
+      "year": "2018",
+      "genre": "科幻/动作",
+      "url": "https://movie.douban.com/subject/4920389/",
+      "cover_url": "movie_images/155_头号玩家.jpg",
+      "quote": "",
+      "local_cover": "155_头号玩家.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "斯皮尔伯格",
+        "游戏世界"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 156,
+      "title": "模仿游戏",
+      "title_cn": "模仿游戏",
+      "rating": 8.8,
+      "year": "2014",
+      "genre": "剧情/传记",
+      "url": "https://movie.douban.com/subject/10463953/",
+      "cover_url": "movie_images/156_模仿游戏.jpg",
+      "quote": "",
+      "local_cover": "156_模仿游戏.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 7,
+        "守护者": 8,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳影片提名",
+        "图灵传记"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 157,
+      "title": "惊魂记",
+      "title_cn": "惊魂记",
+      "rating": 9.0,
+      "year": "1960",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1293181/",
+      "cover_url": "movie_images/157_惊魂记.jpg",
+      "quote": "",
+      "local_cover": "157_惊魂记.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "希区柯克",
+        "心理惊悚"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 158,
+      "title": "大鱼",
+      "title_cn": "大鱼",
+      "rating": 8.8,
+      "year": "2003",
+      "genre": "剧情/奇幻",
+      "url": "https://movie.douban.com/subject/1291545/",
+      "cover_url": "movie_images/158_大鱼.jpg",
+      "quote": "",
+      "local_cover": "158_大鱼.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "蒂姆·波顿",
+        "奇幻温情"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 159,
+      "title": "心灵奇旅",
+      "title_cn": "心灵奇旅",
+      "rating": 8.7,
+      "year": "2020",
+      "genre": "动画/剧情",
+      "url": "https://movie.douban.com/subject/24733428/",
+      "cover_url": "movie_images/159_心灵奇旅.jpg",
+      "quote": "",
+      "local_cover": "159_心灵奇旅.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 8,
+        "守护者": 4,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 160,
+      "title": "射雕英雄传之东成西就",
+      "title_cn": "射雕英雄传之东成西就",
+      "rating": 8.7,
+      "year": "1993",
+      "genre": "喜剧",
+      "url": "https://movie.douban.com/subject/1316510/",
+      "cover_url": "movie_images/160_射雕英雄传之东成西就.jpg",
+      "quote": "",
+      "local_cover": "160_射雕英雄传之东成西就.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 4,
+        "守护者": 9,
+        "探险家": 4
+      },
+      "director": "刘镇伟",
+      "actors": [
+        "梁朝伟",
+        "林青霞"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 161,
+      "title": "血战钢锯岭",
+      "title_cn": "血战钢锯岭",
+      "rating": 8.7,
+      "year": "2016",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/26325320/",
+      "cover_url": "movie_images/161_血战钢锯岭.jpg",
+      "quote": "",
+      "local_cover": "161_血战钢锯岭.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 7,
+        "守护者": 8,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [
+        "梅尔·吉布森",
+        "战争信仰"
+      ],
+      "story": ""
+    },
+    {
+      "rank": 162,
+      "title": "背靠背，脸对脸",
+      "title_cn": "背靠背，脸对脸",
+      "rating": 9.5,
+      "year": "1994",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/1307856/",
+      "cover_url": "movie_images/162_背靠背，脸对脸.jpg",
+      "quote": "",
+      "local_cover": "162_背靠背脸对脸.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 5,
+        "守护者": 9,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 163,
+      "title": "你的名字。",
+      "title_cn": "你的名字。",
+      "rating": 8.5,
+      "year": "2016",
+      "genre": "动画/爱情",
+      "url": "https://movie.douban.com/subject/26683290/",
+      "cover_url": "movie_images/163_你的名字。.jpg",
+      "quote": "",
+      "local_cover": "163_你的名字.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 8,
+        "守护者": 9,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 164,
+      "title": "机器人之梦",
+      "title_cn": "机器人之梦",
+      "rating": 9.1,
+      "year": "2023",
+      "genre": "动画/剧情",
+      "url": "https://movie.douban.com/subject/35426925/",
+      "cover_url": "movie_images/164_机器人之梦.jpg",
+      "quote": "",
+      "local_cover": "164_机器人之梦.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 165,
+      "title": "我是山姆",
+      "title_cn": "我是山姆",
+      "rating": 9.0,
+      "year": "2001",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1306861/",
+      "cover_url": "movie_images/165_我是山姆.jpg",
+      "quote": "",
+      "local_cover": "165_我是山姆.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 166,
+      "title": "阳光姐妹淘",
+      "title_cn": "阳光姐妹淘",
+      "rating": 8.8,
+      "year": "2011",
+      "genre": "剧情/喜剧",
+      "url": "https://movie.douban.com/subject/4917726/",
+      "cover_url": "movie_images/166_阳光姐妹淘.jpg",
+      "quote": "",
+      "local_cover": "166_阳光姐妹淘.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 4,
+        "守护者": 4,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 167,
+      "title": "恐怖直播",
+      "title_cn": "恐怖直播",
+      "rating": 8.7,
+      "year": "2013",
+      "genre": "惊悚/剧情",
+      "url": "https://movie.douban.com/subject/21360417/",
+      "cover_url": "movie_images/167_恐怖直播.jpg",
+      "quote": "",
+      "local_cover": "167_恐怖直播.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 168,
+      "title": "黑客帝国3：矩阵革命",
+      "title_cn": "黑客帝国3：矩阵革命",
+      "rating": 8.8,
+      "year": "2003",
+      "genre": "科幻/动作",
+      "url": "https://movie.douban.com/subject/1302467/",
+      "cover_url": "movie_images/168_黑客帝国3矩阵革命.jpg",
+      "quote": "",
+      "local_cover": "168_黑客帝国3矩阵革命.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 7,
+        "守护者": 5,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 169,
+      "title": "小丑",
+      "title_cn": "小丑",
+      "rating": 8.7,
+      "year": "2019",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/27119724/",
+      "cover_url": "movie_images/169_小丑.jpg",
+      "quote": "",
+      "local_cover": "169_小丑.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 170,
+      "title": "三块广告牌",
+      "title_cn": "三块广告牌",
+      "rating": 8.7,
+      "year": "2017",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/26611804/",
+      "cover_url": "movie_images/170_三块广告牌.jpg",
+      "quote": "",
+      "local_cover": "170_三块广告牌.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 171,
+      "title": "谍影重重3",
+      "title_cn": "谍影重重3",
+      "rating": 8.9,
+      "year": "2007",
+      "genre": "动作/惊悚",
+      "url": "https://movie.douban.com/subject/1578507/",
+      "cover_url": "movie_images/171_谍影重重3.jpg",
+      "quote": "",
+      "local_cover": "171_谍影重重3.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 8,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 172,
+      "title": "末路狂花",
+      "title_cn": "末路狂花",
+      "rating": 9.0,
+      "year": "1991",
+      "genre": "剧情/动作",
+      "url": "https://movie.douban.com/subject/1291992/",
+      "cover_url": "movie_images/172_末路狂花.jpg",
+      "quote": "",
+      "local_cover": "172_末路狂花.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 4,
+        "守护者": 4,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 173,
+      "title": "电锯惊魂",
+      "title_cn": "电锯惊魂",
+      "rating": 8.7,
+      "year": "2004",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1417598/",
+      "cover_url": "movie_images/173_电锯惊魂.jpg",
+      "quote": "",
+      "local_cover": "173_电锯惊魂.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 3,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 174,
+      "title": "高山下的花环",
+      "title_cn": "高山下的花环",
+      "rating": 9.5,
+      "year": "1984",
+      "genre": "剧情/战争",
+      "url": "https://movie.douban.com/subject/1422283/",
+      "cover_url": "movie_images/174_高山下的花环.jpg",
+      "quote": "",
+      "local_cover": "174_高山下的花环.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 9,
+        "守护者": 7,
+        "探险家": 5
+      },
+      "director": "谢晋",
+      "actors": [
+        "周里京",
+        "斯琴高娃"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 175,
+      "title": "无间道2",
+      "title_cn": "无间道2",
+      "rating": 8.8,
+      "year": "2003",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1307106/",
+      "cover_url": "movie_images/175_无间道2.jpg",
+      "quote": "",
+      "local_cover": "175_无间道2.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 4,
+        "守护者": 6,
+        "探险家": 5
+      },
+      "director": "刘伟强",
+      "actors": [
+        "梁朝伟",
+        "刘德华"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 176,
+      "title": "达拉斯买家俱乐部",
+      "title_cn": "达拉斯买家俱乐部",
+      "rating": 8.8,
+      "year": "2013",
+      "genre": "剧情/传记",
+      "url": "https://movie.douban.com/subject/1793929/",
+      "cover_url": "movie_images/176_达拉斯买家俱乐部.jpg",
+      "quote": "",
+      "local_cover": "176_达拉斯买家俱乐部.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 3,
+        "守护者": 4,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 177,
+      "title": "疯狂原始人",
+      "title_cn": "疯狂原始人",
+      "rating": 8.7,
+      "year": "2013",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/1907966/",
+      "cover_url": "movie_images/177_疯狂原始人.jpg",
+      "quote": "",
+      "local_cover": "177_疯狂原始人.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 178,
+      "title": "绿里奇迹",
+      "title_cn": "绿里奇迹",
+      "rating": 8.9,
+      "year": "1999",
+      "genre": "剧情/奇幻",
+      "url": "https://movie.douban.com/subject/1300374/",
+      "cover_url": "movie_images/178_绿里奇迹.jpg",
+      "quote": "",
+      "local_cover": "178_绿里奇迹.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 3,
+        "守护者": 7,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 179,
+      "title": "爱在午夜降临前",
+      "title_cn": "爱在午夜降临前",
+      "rating": 8.9,
+      "year": "2013",
+      "genre": "剧情/爱情",
+      "url": "https://movie.douban.com/subject/10808442/",
+      "cover_url": "movie_images/179_爱在午夜降临前.jpg",
+      "quote": "",
+      "local_cover": "179_爱在午夜降临前.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 5,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 180,
+      "title": "疯狂的石头",
+      "title_cn": "疯狂的石头",
+      "rating": 8.6,
+      "year": "2006",
+      "genre": "喜剧",
+      "url": "https://movie.douban.com/subject/1862151/",
+      "cover_url": "movie_images/180_疯狂的石头.jpg",
+      "quote": "",
+      "local_cover": "180_疯狂的石头.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 181,
+      "title": "雨中曲",
+      "title_cn": "雨中曲",
+      "rating": 9.1,
+      "year": "1952",
+      "genre": "剧情/音乐",
+      "url": "https://movie.douban.com/subject/1293460/",
+      "cover_url": "movie_images/181_雨中曲.jpg",
+      "quote": "",
+      "local_cover": "181_雨中曲.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 3,
+        "守护者": 6,
+        "探险家": 7
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 182,
+      "title": "2001太空漫游",
+      "title_cn": "2001太空漫游",
+      "rating": 8.9,
+      "year": "1968",
+      "genre": "科幻",
+      "url": "https://movie.douban.com/subject/1292226/",
+      "cover_url": "movie_images/182_2001太空漫游.jpg",
+      "quote": "",
+      "local_cover": "182_2001太空漫游.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 7,
+        "守护者": 4,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 183,
+      "title": "海街日记",
+      "title_cn": "海街日记",
+      "rating": 8.8,
+      "year": "2015",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/25895901/",
+      "cover_url": "movie_images/183_海街日记.jpg",
+      "quote": "",
+      "local_cover": "183_海街日记.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 6,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 184,
+      "title": "风之谷",
+      "title_cn": "风之谷",
+      "rating": 8.9,
+      "year": "1984",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1291585/",
+      "cover_url": "movie_images/184_风之谷.jpg",
+      "quote": "",
+      "local_cover": "184_风之谷.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 5,
+        "守护者": 8,
+        "探险家": 7
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "岛本须美",
+        "京田尚子"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 185,
+      "title": "上帝之城",
+      "title_cn": "上帝之城",
+      "rating": 9.0,
+      "year": "2002",
+      "genre": "剧情/犯罪",
+      "url": "https://movie.douban.com/subject/1292208/",
+      "cover_url": "movie_images/185_上帝之城.jpg",
+      "quote": "",
+      "local_cover": "185_上帝之城.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 5,
+        "守护者": 3,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 186,
+      "title": "心迷宫",
+      "title_cn": "心迷宫",
+      "rating": 8.7,
+      "year": "2014",
+      "genre": "悬疑/剧情",
+      "url": "https://movie.douban.com/subject/25917973/",
+      "cover_url": "movie_images/186_心迷宫.jpg",
+      "quote": "",
+      "local_cover": "186_心迷宫.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 6,
+        "守护者": 6,
+        "探险家": 9
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 187,
+      "title": "英雄本色",
+      "title_cn": "英雄本色",
+      "rating": 8.6,
+      "year": "1986",
+      "genre": "动作/剧情",
+      "url": "https://movie.douban.com/subject/1297574/",
+      "cover_url": "movie_images/187_英雄本色.jpg",
+      "quote": "",
+      "local_cover": "187_英雄本色.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "吴宇森",
+      "actors": [
+        "周润发",
+        "狄龙"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 188,
+      "title": "记忆碎片",
+      "title_cn": "记忆碎片",
+      "rating": 8.7,
+      "year": "2000",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/1304447/",
+      "cover_url": "movie_images/188_记忆碎片.jpg",
+      "quote": "",
+      "local_cover": "188_记忆碎片.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 5
+      },
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "盖·皮尔斯",
+        "凯瑞-安·莫斯"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 189,
+      "title": "纵横四海",
+      "title_cn": "纵横四海",
+      "rating": 8.8,
+      "year": "1991",
+      "genre": "动作/剧情",
+      "url": "https://movie.douban.com/subject/1295409/",
+      "cover_url": "movie_images/189_纵横四海.jpg",
+      "quote": "",
+      "local_cover": "189_纵横四海.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "吴宇森",
+      "actors": [
+        "周润发",
+        "张国荣"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 190,
+      "title": "无敌破坏王",
+      "title_cn": "无敌破坏王",
+      "rating": 8.7,
+      "year": "2012",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/6534248/",
+      "cover_url": "movie_images/190_无敌破坏王.jpg",
+      "quote": "",
+      "local_cover": "190_无敌破坏王.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 6,
+        "守护者": 3,
+        "探险家": 6
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 191,
+      "title": "卢旺达饭店",
+      "title_cn": "卢旺达饭店",
+      "rating": 8.9,
+      "year": "2004",
+      "genre": "剧情/历史",
+      "url": "https://movie.douban.com/subject/1291822/",
+      "cover_url": "movie_images/191_卢旺达饭店.jpg",
+      "quote": "",
+      "local_cover": "191_卢旺达饭店.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 8,
+        "外交家": 3,
+        "守护者": 4,
+        "探险家": 4
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 192,
+      "title": "东京教父",
+      "title_cn": "东京教父",
+      "rating": 9.0,
+      "year": "2003",
+      "genre": "动画/剧情",
+      "url": "https://movie.douban.com/subject/1310177/",
+      "cover_url": "movie_images/192_东京教父.jpg",
+      "quote": "",
+      "local_cover": "192_东京教父.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 4,
+        "守护者": 8,
+        "探险家": 3
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 193,
+      "title": "小偷家族",
+      "title_cn": "小偷家族",
+      "rating": 8.7,
+      "year": "2018",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/27622447/",
+      "cover_url": "movie_images/193_小偷家族.jpg",
+      "quote": "",
+      "local_cover": "193_小偷家族.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 8,
+        "守护者": 3,
+        "探险家": 6
+      },
+      "director": "是枝裕和",
+      "actors": [
+        "中川雅也",
+        "安藤樱"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 194,
+      "title": "恐怖游轮",
+      "title_cn": "恐怖游轮",
+      "rating": 8.5,
+      "year": "2009",
+      "genre": "悬疑/惊悚",
+      "url": "https://movie.douban.com/subject/3011051/",
+      "cover_url": "movie_images/194_恐怖游轮.jpg",
+      "quote": "",
+      "local_cover": "194_恐怖游轮.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 4,
+        "守护者": 3,
+        "探险家": 8
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 195,
+      "title": "牯岭街少年杀人事件",
+      "title_cn": "牯岭街少年杀人事件",
+      "rating": 8.9,
+      "year": "1991",
+      "genre": "剧情/惊悚",
+      "url": "https://movie.douban.com/subject/1292329/",
+      "cover_url": "movie_images/195_牯岭街少年杀人事件.jpg",
+      "quote": "",
+      "local_cover": "195_牯岭街少年杀人事件.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "mbti_scores": {
+        "分析家": 9,
+        "外交家": 3,
+        "守护者": 5,
+        "探险家": 6
+      },
+      "director": "杨德昌",
+      "actors": [
+        "张震",
+        "杨静怡"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 196,
+      "title": "冰川时代",
+      "title_cn": "冰川时代",
+      "rating": 8.7,
+      "year": "2002",
+      "genre": "动画/喜剧",
+      "url": "https://movie.douban.com/subject/1291578/",
+      "cover_url": "movie_images/196_冰川时代.jpg",
+      "quote": "",
+      "local_cover": "196_冰川时代.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 6,
+        "守护者": 5,
+        "探险家": 9
+      },
+      "director": "克里斯·韦奇",
+      "actors": [
+        "雷·罗马诺",
+        "约翰·莱通用"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 197,
+      "title": "魔女宅急便",
+      "title_cn": "魔女宅急便",
+      "rating": 8.7,
+      "year": "1989",
+      "genre": "动画/奇幻",
+      "url": "https://movie.douban.com/subject/1307811/",
+      "cover_url": "movie_images/197_魔女宅急便.jpg",
+      "quote": "",
+      "local_cover": "197_魔女宅急便.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 4,
+        "外交家": 6,
+        "守护者": 6,
+        "探险家": 5
+      },
+      "director": "宫崎骏",
+      "actors": [
+        "高山南",
+        "佐久间玲"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 198,
+      "title": "芙蓉镇",
+      "title_cn": "芙蓉镇",
+      "rating": 9.3,
+      "year": "1987",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1297880/",
+      "cover_url": "movie_images/198_芙蓉镇.jpg",
+      "quote": "",
+      "local_cover": "198_芙蓉镇.jpg",
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "mbti_scores": {
+        "分析家": 3,
+        "外交家": 6,
+        "守护者": 4,
+        "探险家": 9
+      },
+      "director": "谢晋",
+      "actors": [
+        "刘晓庆",
+        "姜文"
+      ],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 199,
+      "title": "忠犬八公物语",
+      "title_cn": "忠犬八公物语",
+      "rating": 9.2,
+      "year": "1987",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/1959195/",
+      "cover_url": "movie_images/199_忠犬八公物语.jpg",
+      "quote": "",
+      "local_cover": "199_忠犬八公物语.jpg",
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "mbti_scores": {
+        "分析家": 2,
+        "外交家": 9,
+        "守护者": 8,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 200,
+      "title": "岁月神偷",
+      "title_cn": "岁月神偷",
+      "rating": 8.7,
+      "year": "2010",
+      "genre": "剧情",
+      "url": "https://movie.douban.com/subject/3792799/",
+      "cover_url": "movie_images/200_岁月神偷.jpg",
+      "quote": "",
+      "local_cover": "200_岁月神偷.jpg",
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "mbti_group": [
+        "守护者",
+        "分析家"
+      ],
+      "mbti_scores": {
+        "分析家": 7,
+        "外交家": 4,
+        "守护者": 9,
+        "探险家": 2
+      },
+      "director": "",
+      "actors": [],
+      "is_placeholder": false,
+      "awards": [],
+      "story": ""
+    },
+    {
+      "rank": 201,
+      "title_cn": "满江红",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "剧情/悬疑/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭",
+        "成长/自我实现"
+      ],
+      "story": "秦桧率兵与金国谈判途中，岳飞旧部展开惊心动魄的复仇行动。",
+      "cover_url": "movie_images/201_满江红.jpg",
+      "director": "张艺谋",
+      "actors": [
+        "沈腾",
+        "易烊千玺",
+        "张译",
+        "雷佳音",
+        "岳云鹏"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "张艺谋作品",
+        "悬疑反转"
+      ]
+    },
+    {
+      "rank": 202,
+      "title_cn": "流浪地球2",
+      "year": "2023",
+      "rating": 8.3,
+      "genre": "科幻/冒险/灾难",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "职业/事业",
+        "成长/自我实现"
+      ],
+      "story": "地球危机加剧，人类带着地球去流浪，寻找新家园的史诗之旅。",
+      "cover_url": "movie_images/202_流浪地球2.jpg",
+      "director": "郭帆",
+      "actors": [
+        "吴京",
+        "刘德华",
+        "李雪健",
+        "沙溢",
+        "宁理"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "中国科幻里程碑",
+        "吴京刘德华"
+      ]
+    },
+    {
+      "rank": 203,
+      "title_cn": "孤注一掷",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "程序员和模特被高薪诱惑偷渡国外，陷入诈骗集团人间炼狱。",
+      "cover_url": "movie_images/203_孤注一掷.jpg",
+      "director": "申奥",
+      "actors": [
+        "张艺兴",
+        "金晨",
+        "咏梅"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "反诈题材",
+        "张艺兴"
+      ]
+    },
+    {
+      "rank": 204,
+      "title_cn": "消失的她",
+      "year": "2023",
+      "rating": 6.5,
+      "genre": "悬疑/犯罪/剧情",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "丈夫远赴东南亚寻找失踪的妻子，却发现惊人真相。",
+      "cover_url": "movie_images/204_消失的她.jpg",
+      "director": "陈思诚",
+      "actors": [
+        "朱一龙",
+        "倪妮",
+        "文咏珊"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "陈思诚悬疑",
+        "反转结局"
+      ]
+    },
+    {
+      "rank": 205,
+      "title_cn": "八角笼中",
+      "year": "2023",
+      "rating": 7.5,
+      "genre": "剧情/运动",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "退役拳王培养山区孤儿打拳，寻找人生出路的热血故事。",
+      "cover_url": "movie_images/205_八角笼中.jpg",
+      "director": "王宝强",
+      "actors": [
+        "王宝强",
+        "陈永胜",
+        "史彭元"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "王宝强作品",
+        "格斗题材"
+      ]
+    },
+    {
+      "rank": 206,
+      "title_cn": "人生大事",
+      "year": "2023",
+      "rating": 7.3,
+      "genre": "剧情/家庭",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "殡葬师莫三妹收留孤女武小文，在死亡中重新找到人生意义。",
+      "cover_url": "movie_images/206_人生大事.jpg",
+      "director": "刘江江",
+      "actors": [
+        "朱一龙",
+        "杨恩又",
+        "刘陆"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "朱一龙",
+        "殡葬题材"
+      ]
+    },
+    {
+      "rank": 207,
+      "title_cn": "长空之王",
+      "year": "2023",
+      "rating": 6.8,
+      "genre": "剧情/动作",
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/207_长空之王.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 208,
+      "title_cn": "名侦探柯南：黑铁的鱼影",
+      "year": "2023",
+      "rating": 7.6,
+      "genre": "动画/悬疑",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/208_名侦探柯南黑铁的鱼影.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 209,
+      "title_cn": "我和我的父辈",
+      "year": "2022",
+      "rating": 7.0,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/209_我和我的父辈.jpg",
+      "director": "吴京",
+      "actors": [
+        "吴京",
+        "章子怡"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 210,
+      "title_cn": "奇迹笨小孩",
+      "year": "2022",
+      "rating": 7.4,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/210_奇迹笨小孩.jpg",
+      "director": "文牧野",
+      "actors": [
+        "易烊千玺",
+        "田雨",
+        "陈哈琳"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 211,
+      "title_cn": "万里归途",
+      "year": "2022",
+      "rating": 7.2,
+      "genre": "剧情/战争",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/211_万里归途.jpg",
+      "director": "饶晓志",
+      "actors": [
+        "张译",
+        "殷桃",
+        "王俊凯"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 212,
+      "title_cn": "我的父亲母亲",
+      "year": "2022",
+      "rating": 6.8,
+      "genre": "剧情/家庭",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/212_我的父亲母亲.jpg",
+      "director": "张艺谋",
+      "actors": [
+        "章子怡",
+        "郑昊"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 213,
+      "title_cn": "外太空的莫扎特",
+      "year": "2022",
+      "rating": 5.0,
+      "genre": "科幻/喜剧",
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/213_外太空的莫扎特.jpg",
+      "director": "陈凯歌",
+      "actors": [
+        "黄渤",
+        "荣梓杉"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 214,
+      "title_cn": "你是我的春天",
+      "year": "2022",
+      "rating": 6.3,
+      "genre": "剧情/爱情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/214_你是我的春天.jpg",
+      "director": "刘江江",
+      "actors": [
+        "周冬雨",
+        "尹子维"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 215,
+      "title_cn": "妈妈",
+      "year": "2022",
+      "rating": 7.5,
+      "genre": "剧情/家庭",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/215_妈妈.jpg",
+      "director": "杨荔钠",
+      "actors": [
+        "吴彦姝",
+        "奚美娟"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 216,
+      "title_cn": "世间有她",
+      "year": "2022",
+      "rating": 6.0,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/216_世间有她.jpg",
+      "director": "张艾嘉",
+      "actors": [
+        "周迅",
+        "郑秀文"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 217,
+      "title_cn": "还是要说话",
+      "year": "2023",
+      "rating": 7.1,
+      "genre": "剧情/家庭",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/217_还是要说话.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 218,
+      "title_cn": "第二人生",
+      "year": "2023",
+      "rating": 7.8,
+      "genre": "剧情",
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/218_第二人生.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 219,
+      "title_cn": "好像也没那么热血沸腾",
+      "year": "2023",
+      "rating": 7.1,
+      "genre": "剧情/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/219_好像也没那么热血沸腾.jpg",
+      "director": "邢海川",
+      "actors": [
+        "魏翔",
+        "王智"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 220,
+      "title_cn": "坚如磐石",
+      "year": "2023",
+      "rating": 6.3,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "副市长与黑恶势力斗争的背后，涉及巨大阴谋的犯罪片。",
+      "cover_url": "movie_images/220_坚如磐石.jpg",
+      "director": "张艺谋",
+      "actors": [
+        "雷佳音",
+        "张国立",
+        "于和伟"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "张艺谋",
+        "反腐题材"
+      ]
+    },
+    {
+      "rank": 221,
+      "title_cn": "前任4英年早婚",
+      "year": "2023",
+      "rating": 6.5,
+      "genre": "喜剧/爱情",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/221_前任4英年早婚.jpg",
+      "director": "田羽生",
+      "actors": [
+        "韩庚",
+        "郑恺"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 222,
+      "title_cn": "最好的我们",
+      "year": "2023",
+      "rating": 6.8,
+      "genre": "剧情/爱情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/222_最好的我们.jpg",
+      "director": "章笛沙",
+      "actors": [
+        "陈飞宇",
+        "何蓝逗"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 223,
+      "title_cn": "封神第一部",
+      "year": "2023",
+      "rating": 7.8,
+      "genre": "奇幻/冒险/动作",
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "纣王无道，姬昌之子姬发联合姜子牙起兵伐纣的奇幻史诗。",
+      "cover_url": "movie_images/223_封神第一部.jpg",
+      "director": "乌尔善",
+      "actors": [
+        "费翔",
+        "李雪健",
+        "黄渤"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "乌尔善奇幻",
+        "中国神话"
+      ]
+    },
+    {
+      "rank": 224,
+      "title_cn": "想见你",
+      "year": "2022",
+      "rating": 6.5,
+      "genre": "爱情/悬疑",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/224_想见你.jpg",
+      "director": "黄天仁",
+      "actors": [
+        "柯佳嬿",
+        "许光汉",
+        "施柏宇"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 225,
+      "title_cn": "保你平安",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "喜剧/剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/225_保你平安.jpg",
+      "director": "大鹏",
+      "actors": [
+        "大鹏",
+        "李雪琴",
+        "尹正"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 226,
+      "title_cn": "周处除三害",
+      "year": "2023",
+      "rating": 8.1,
+      "genre": "动作/犯罪",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "台湾青年周处除三害，暴力美学与黑色幽默的犯罪动作片。",
+      "cover_url": "movie_images/226_周处除三害.jpg",
+      "director": "黄精甫",
+      "actors": [
+        "阮经天",
+        "袁富华",
+        "陈以文"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "台湾动作",
+        "阮经天"
+      ]
+    },
+    {
+      "rank": 227,
+      "title_cn": "繁花",
+      "year": "2024",
+      "rating": 8.2,
+      "genre": "剧情/爱情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭",
+        "职业/事业"
+      ],
+      "story": "上海商人阿宝在90年代商战中的爱恨情仇与海派文化。",
+      "cover_url": "movie_images/227_繁花.jpg",
+      "director": "王家卫",
+      "actors": [
+        "胡歌",
+        "唐嫣",
+        "马伊琍"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "王家卫首剧",
+        "海派商战"
+      ]
+    },
+    {
+      "rank": 228,
+      "title_cn": "热辣滚烫",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "剧情/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "拳击手杜乐莹经历人生低谷后，通过拳击找回自我，励志逆袭。",
+      "cover_url": "movie_images/228_热辣滚烫.jpg",
+      "director": "贾玲",
+      "actors": [
+        "贾玲",
+        "雷佳音",
+        "张小斐",
+        "杨紫",
+        "沙溢"
+      ],
+      "is_placeholder": false,
+      "awards": [
+        "贾玲自导自演",
+        "女性励志"
+      ]
+    },
+    {
+      "rank": 229,
+      "title_cn": "第二十条",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "检察官为昆山反杀案被告正当防卫辩护，捍卫法律尊严。",
+      "cover_url": "movie_images/229_第二十条.jpg",
+      "director": "张艺谋",
+      "actors": [
+        "雷佳音",
+        "马丽",
+        "张译"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "张艺谋",
+        "正当防卫"
+      ]
+    },
+    {
+      "rank": 230,
+      "title_cn": "飞驰人生2",
+      "year": "2024",
+      "rating": 7.6,
+      "genre": "剧情/喜剧/运动",
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "赛车手张弛重出江湖，挑战最后一届拉力赛的热血故事。",
+      "cover_url": "movie_images/230_飞驰人生2.jpg",
+      "director": "韩寒",
+      "actors": [
+        "沈腾",
+        "范丞丞",
+        "尹正"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "韩寒",
+        "赛车续集"
+      ]
+    },
+    {
+      "rank": 231,
+      "title_cn": "哥你好",
+      "year": "2022",
+      "rating": 6.8,
+      "genre": "喜剧/剧情",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/231_哥你好.jpg",
+      "director": "张栾",
+      "actors": [
+        "马丽",
+        "常远"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 232,
+      "title_cn": "还是觉得你最好",
+      "year": "2022",
+      "rating": 7.4,
+      "genre": "喜剧/爱情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/232_还是觉得你最好.jpg",
+      "director": "陈咏燊",
+      "actors": [
+        "黄子华",
+        "张颖康"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 233,
+      "title_cn": "钢铁意志",
+      "year": "2022",
+      "rating": 6.5,
+      "genre": "剧情/历史",
+      "mbti_group": [
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/233_钢铁意志.jpg",
+      "director": "宁海强",
+      "actors": [
+        "刘烨",
+        "韩雪"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 234,
+      "title_cn": "平凡英雄",
+      "year": "2022",
+      "rating": 6.9,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/234_平凡英雄.jpg",
+      "director": "陈国辉",
+      "actors": [
+        "李冰冰",
+        "冯绍峰"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 235,
+      "title_cn": "搜救",
+      "year": "2022",
+      "rating": 6.5,
+      "genre": "剧情/灾难",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/235_搜救.jpg",
+      "director": "罗永昌",
+      "actors": [
+        "甄子丹",
+        "韩雪"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 236,
+      "title_cn": "小英雄雨来",
+      "year": "2023",
+      "rating": 6.8,
+      "genre": "剧情/儿童",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/236_小英雄雨来.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 237,
+      "title_cn": "非诚勿扰3",
+      "year": "2023",
+      "rating": 6.5,
+      "genre": "喜剧/爱情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/237_非诚勿扰3.jpg",
+      "director": "冯小刚",
+      "actors": [
+        "葛优",
+        "舒淇"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 238,
+      "title_cn": "爱情神话",
+      "year": "2022",
+      "rating": 7.7,
+      "genre": "剧情/爱情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/238_爱情神话.jpg",
+      "director": "邵艺辉",
+      "actors": [
+        "徐峥",
+        "马伊琍"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 239,
+      "title_cn": "毒舌律师",
+      "year": "2023",
+      "rating": 7.5,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/239_毒舌律师.jpg",
+      "director": "吴炜伦",
+      "actors": [
+        "黄子华",
+        "谢君豪"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 240,
+      "title_cn": "白日之下",
+      "year": "2024",
+      "rating": 7.8,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/240_白日之下.jpg",
+      "director": "简君晋",
+      "actors": [
+        "姜大卫",
+        "余香凝"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 241,
+      "title_cn": "年少日记",
+      "year": "2024",
+      "rating": 7.6,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/241_年少日记.jpg",
+      "director": "卓亦谦",
+      "actors": [
+        "卢镇业",
+        "郑素敏"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 242,
+      "title_cn": "涉过愤怒的海",
+      "year": "2023",
+      "rating": 7.5,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/242_涉过愤怒的海.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 243,
+      "title_cn": "河边的错误",
+      "year": "2023",
+      "rating": 7.5,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/243_河边的错误.jpg",
+      "director": "魏书钧",
+      "actors": [
+        "朱一龙",
+        "曾美慧孜"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 244,
+      "title_cn": "三大队",
+      "year": "2023",
+      "rating": 7.2,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/244_三大队.jpg",
+      "director": "戴墨",
+      "actors": [
+        "张译",
+        "魏晨"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 245,
+      "title_cn": "铃芽之旅",
+      "year": "2023",
+      "rating": 7.4,
+      "genre": "动画/剧情",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "少女铃芽关闭地震灾后的往门，踏上自我治愈的奇幻之旅。",
+      "cover_url": "movie_images/245_铃芽之旅.jpg",
+      "director": "新海诚",
+      "actors": [
+        "原菜乃华",
+        "松村北斗"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 246,
+      "title_cn": "蜘蛛侠纵横宇宙",
+      "year": "2023",
+      "rating": 8.6,
+      "genre": "动画/科幻",
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "蜘蛛侠迈尔斯穿梭多元宇宙，对抗敌人的动画大片。",
+      "cover_url": "movie_images/246_蜘蛛侠纵横宇宙.jpg",
+      "director": "华金·桑切斯",
+      "actors": [
+        "沙梅克·摩尔",
+        "海莉·斯坦菲尔德"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 247,
+      "title_cn": "疯狂元素城",
+      "year": "2023",
+      "rating": 7.2,
+      "genre": "动画/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/247_疯狂元素城.jpg",
+      "director": "彼得·孙",
+      "actors": [
+        "莉娅·刘易斯",
+        "贾登·艾恩斯"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 248,
+      "title_cn": "变形金刚超能勇士崛起",
+      "year": "2023",
+      "rating": 6.2,
+      "genre": "科幻/动作",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/248_变形金刚超能勇士崛起.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 249,
+      "title_cn": "闪电侠",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "科幻/动作",
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/249_闪电侠.jpg",
+      "director": "安德斯·穆尔切勒",
+      "actors": [
+        "埃兹拉·米勒",
+        "迈克尔·基顿"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 250,
+      "title_cn": "速度与激情10",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "动作/犯罪",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/250_速度与激情10.jpg",
+      "director": "路易斯·莱特里尔",
+      "actors": [
+        "范·迪塞尔",
+        "米歇尔·罗德里格兹"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 251,
+      "title_cn": "银河护卫队3",
+      "year": "2023",
+      "rating": 8.0,
+      "genre": "科幻/动作",
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/251_银河护卫队3.jpg",
+      "director": "詹姆斯· Gunn",
+      "actors": [
+        "克里斯·帕拉特",
+        "佐伊·索尔达娜"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 252,
+      "title_cn": "碟中谍7致命清算",
+      "year": "2023",
+      "rating": 8.0,
+      "genre": "动作/冒险",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/252_碟中谍7致命清算.jpg",
+      "director": "克里斯托弗·麦奎里",
+      "actors": [
+        "汤姆·克鲁斯",
+        "海莉·阿特维尔"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 253,
+      "title_cn": "奥本海默",
+      "year": "2023",
+      "rating": 8.8,
+      "genre": "剧情/传记/历史",
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "原子弹之父奥本海默的内心挣扎与道德审判的历史传记。",
+      "cover_url": "movie_images/253_奥本海默.jpg",
+      "director": "克里斯托弗·诺兰",
+      "actors": [
+        "基里安·墨菲",
+        "艾米莉·布朗特"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "诺兰新作",
+        "奥斯卡大热"
+      ]
+    },
+    {
+      "rank": 254,
+      "title_cn": "芭比",
+      "year": "2023",
+      "rating": 7.9,
+      "genre": "喜剧/奇幻",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "芭比从玩具世界进入现实世界，探讨女权主义的喜剧。",
+      "cover_url": "movie_images/254_芭比.jpg",
+      "director": "格蕾塔·葛韦格",
+      "actors": [
+        "玛格特·罗比",
+        "瑞恩·高斯林"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "格蕾塔·葛韦格",
+        "全球现象"
+      ]
+    },
+    {
+      "rank": 255,
+      "title_cn": "沙丘2",
+      "year": "2024",
+      "rating": 8.2,
+      "genre": "科幻/冒险",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "保罗在阿拉基斯星球上成长为领袖的科幻史诗。",
+      "cover_url": "movie_images/255_沙丘2.jpg",
+      "director": "丹尼斯·维伦纽瓦",
+      "actors": [
+        "提莫西·查拉梅",
+        "赞达亚"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "维伦纽瓦",
+        "科幻史诗"
+      ]
+    },
+    {
+      "rank": 256,
+      "title_cn": "功夫熊猫4",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "动画/冒险",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/256_功夫熊猫4.jpg",
+      "director": "迈克·米切尔",
+      "actors": [
+        "杰克·布莱克",
+        "奥卡菲娜"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 257,
+      "title_cn": "头脑特工队2",
+      "year": "2024",
+      "rating": 8.4,
+      "genre": "动画/家庭",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/257_头脑特工队2.jpg",
+      "director": "凯尔西·曼",
+      "actors": [
+        "艾米·波勒",
+        "玛雅·鲁道夫"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "皮克斯",
+        "情绪特工"
+      ]
+    },
+    {
+      "rank": 258,
+      "title_cn": "疯狂的麦克斯狂暴女神",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "科幻/动作",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/258_疯狂的麦克斯狂暴女神.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 259,
+      "title_cn": "死侍与金刚狼",
+      "year": "2024",
+      "rating": 8.2,
+      "genre": "科幻/动作",
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "死侍与金刚狼联手对抗敌人的漫威喜剧动作片。",
+      "cover_url": "movie_images/259_死侍与金刚狼.jpg",
+      "director": "肖恩·利维",
+      "actors": [
+        "瑞安·雷诺兹",
+        "休·杰克曼"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "漫威",
+        "R级回归"
+      ]
+    },
+    {
+      "rank": 260,
+      "title_cn": "神偷奶爸4",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "动画/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/260_神偷奶爸4.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 261,
+      "title_cn": "小行星城",
+      "year": "2023",
+      "rating": 7.0,
+      "genre": "喜剧/剧情",
+      "mbti_group": [
+        "分析家",
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/261_小行星城.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 262,
+      "title_cn": "美国小说",
+      "year": "2023",
+      "rating": 7.8,
+      "genre": "喜剧/剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/262_美国小说.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 263,
+      "title_cn": "花月杀手",
+      "year": "2023",
+      "rating": 7.7,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/263_花月杀手.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 264,
+      "title_cn": "特技狂人",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "动作/喜剧",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/264_特技狂人.jpg",
+      "director": "大卫·雷奇",
+      "actors": [
+        "瑞恩·高斯林",
+        "艾米莉·布朗特"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 265,
+      "title_cn": "谈判专家",
+      "year": "2024",
+      "rating": 7.3,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/265_谈判专家.jpg",
+      "director": "邱礼涛",
+      "actors": [
+        "刘青云",
+        "吴镇宇"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 266,
+      "title_cn": "扫黑决不放弃",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/266_扫黑决不放弃.jpg",
+      "director": "五百",
+      "actors": [
+        "肖央",
+        "余凯磊"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 267,
+      "title_cn": "来福大酒店",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/267_来福大酒店.jpg",
+      "director": "刘博文",
+      "actors": [
+        "章宇",
+        "柳岩"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 268,
+      "title_cn": "我才不要和你做朋友呢",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "剧情/喜剧",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/268_我才不要和你做朋友呢.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 269,
+      "title_cn": "彷徨之刃",
+      "year": "2024",
+      "rating": 6.8,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/269_彷徨之刃.jpg",
+      "director": "陈卓",
+      "actors": [
+        "王千源",
+        "周冬雨"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 270,
+      "title_cn": "朱同在三年级丢失了超能力",
+      "year": "2024",
+      "rating": 7.8,
+      "genre": "剧情/喜剧",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/270_朱同在三年级丢失了超能力.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 271,
+      "title_cn": "逆行人生",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/271_逆行人生.jpg",
+      "director": "徐峥",
+      "actors": [
+        "徐峥",
+        "辛芷蕾"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 272,
+      "title_cn": "白蛇浮生",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "动画/奇幻",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/272_白蛇浮生.jpg",
+      "director": "陈健喜",
+      "actors": [
+        "张喆",
+        "杨天翔"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 273,
+      "title_cn": "落凡尘",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "动画/奇幻",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/273_落凡尘.jpg",
+      "director": "钟鼎",
+      "actors": [
+        "李佳桉",
+        "唐小喜"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 274,
+      "title_cn": "伞少女",
+      "year": "2024",
+      "rating": 7.3,
+      "genre": "动画/奇幻",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/274_伞少女.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 275,
+      "title_cn": "误杀3",
+      "year": "2024",
+      "rating": 6.8,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/275_误杀3.jpg",
+      "director": "戴墨",
+      "actors": [
+        "肖央",
+        "冯绍峰"
+      ],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 276,
+      "title_cn": "P计划",
+      "year": "2024",
+      "rating": 6.5,
+      "genre": "喜剧/动作",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/276_P计划.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 277,
+      "title_cn": "孤星计划",
+      "year": "2024",
+      "rating": 6.8,
+      "genre": "剧情/悬疑",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/277_孤星计划.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 278,
+      "title_cn": "被我弄丢的王斤斤",
+      "year": "2024",
+      "rating": 6.8,
+      "genre": "爱情/剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/278_被我弄丢的王斤斤.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 279,
+      "title_cn": "动物园里有什么",
+      "year": "2024",
+      "rating": 6.0,
+      "genre": "喜剧",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/279_动物园里有什么.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 280,
+      "title_cn": "水饺皇后",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "剧情/传记",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/280_水饺皇后.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 281,
+      "title_cn": "再看一次",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "爱情/剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/281_再看一次.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 282,
+      "title_cn": "酱园弄",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/282_酱园弄.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 283,
+      "title_cn": "传说",
+      "year": "2024",
+      "rating": 6.5,
+      "genre": "动作/奇幻",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/283_传说.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 284,
+      "title_cn": "异人之下",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "奇幻/动作",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/284_异人之下.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 285,
+      "title_cn": "解密",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "剧情/悬疑",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/285_解密.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 286,
+      "title_cn": "负负得正",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "爱情/奇幻",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/286_负负得正.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 287,
+      "title_cn": "从21世纪安全撤离",
+      "year": "2024",
+      "rating": 7.6,
+      "genre": "科幻/喜剧",
+      "mbti_group": [
+        "探险家",
+        "分析家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/287_从21世纪安全撤离.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 288,
+      "title_cn": "逆鳞",
+      "year": "2024",
+      "rating": 6.5,
+      "genre": "剧情/犯罪",
+      "mbti_group": [
+        "分析家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/288_逆鳞.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 289,
+      "title_cn": "名侦探柯南百万美元的五棱星",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "动画/悬疑",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/289_名侦探柯南百万美元的五棱.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 290,
+      "title_cn": "海关战线",
+      "year": "2024",
+      "rating": 6.5,
+      "genre": "动作/犯罪",
+      "mbti_group": [
+        "探险家"
+      ],
+      "life_stage": [
+        "职业/事业"
+      ],
+      "story": "",
+      "cover_url": "movie_images/290_海关战线.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 291,
+      "title_cn": "欢迎来到我身边",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "爱情/喜剧",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/291_欢迎来到我身边.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 292,
+      "title_cn": "野孩子",
+      "year": "2024",
+      "rating": 7.2,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/292_野孩子.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 293,
+      "title_cn": "祝你生日快乐",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "剧情/爱情",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/293_祝你生日快乐.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 294,
+      "title_cn": "喜羊羊与灰太狼之守护",
+      "year": "2024",
+      "rating": 7.0,
+      "genre": "动画/儿童",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/294_喜羊羊与灰太狼之守护.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 295,
+      "title_cn": "灌篮高手",
+      "year": "2022",
+      "rating": 8.0,
+      "genre": "动画/运动",
+      "mbti_group": [
+        "探险家",
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/295_灌篮高手.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 296,
+      "title_cn": "名侦探柯南万圣节的新娘",
+      "year": "2022",
+      "rating": 7.7,
+      "genre": "动画/悬疑",
+      "mbti_group": [
+        "分析家",
+        "探险家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/296_名侦探柯南万圣节的新娘.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 297,
+      "title_cn": "青春环游记",
+      "year": "2024",
+      "rating": 6.5,
+      "genre": "真人秀",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/297_青春环游记.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 298,
+      "title_cn": "狗阵",
+      "year": "2024",
+      "rating": 7.5,
+      "genre": "剧情",
+      "mbti_group": [
+        "外交家",
+        "守护者"
+      ],
+      "life_stage": [
+        "成长/自我实现"
+      ],
+      "story": "",
+      "cover_url": "movie_images/298_狗阵.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": []
+    },
+    {
+      "rank": 299,
+      "title_cn": "头脑特工队",
+      "year": "2015",
+      "rating": 8.8,
+      "genre": "动画/家庭",
+      "mbti_group": [
+        "外交家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "小女孩脑中的五种情绪争夺控制权，学会处理情绪的成长故事。",
+      "cover_url": "movie_images/299_头脑特工队.jpg",
+      "director": "",
+      "actors": [],
+      "is_placeholder": true,
+      "awards": [
+        "奥斯卡最佳动画",
+        "皮克斯"
+      ]
+    },
+    {
+      "rank": 300,
+      "title_cn": "你的名字",
+      "year": "2016",
+      "rating": 8.5,
+      "genre": "动画/爱情",
+      "mbti_group": [
+        "外交家",
+        "探险家"
+      ],
+      "life_stage": [
+        "恋爱/家庭"
+      ],
+      "story": "",
+      "cover_url": "movie_images/300_你的名字.jpg",
+      "director": "新海诚",
+      "actors": [
+        "神木隆之介",
+        "上白石萌音"
+      ],
+      "is_placeholder": true,
+      "awards": [
+        "新海诚",
+        "现象级"
+      ]
+    }
+  ]
+}

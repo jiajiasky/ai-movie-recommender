@@ -1,0 +1,11 @@
+# Ignore large image files
+movie_images/*.jpg
+movie_images/*.png
+*.jpg
+*.png
+
+# Ignore node_modules if any
+node_modules/
+
+# Ignore OS files
+.DS_Store

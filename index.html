@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱看电影 - MBTI个性化推荐</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #ff6b6b; --secondary: #4ecdc4; --dark: #2d3436; --gray: #636e72; --light: #f8f9fa; --gradient: linear-gradient(135deg, #ff6b6b 0%, #ffa502 100%); --card-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans SC', -apple-system, sans-serif; background: var(--light); color: var(--dark); min-height: 100vh; }
+        .header { background: var(--gradient); padding: 50px 20px 80px; text-align: center; position: relative; overflow: hidden; }
+        .header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); animation: shimmer 3s ease-in-out infinite; }
+        @keyframes shimmer { 0%, 100% { transform: translate(-10%, -10%); } 50% { transform: translate(10%, 10%); } }
+        .header h1 { color: white; font-size: 2.8rem; font-weight: 700; margin-bottom: 8px; position: relative; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .header .subtitle { color: rgba(255,255,255,0.9); font-size: 1.1rem; position: relative; }
+        .form-container { max-width: 600px; margin: -50px auto 20px; padding: 0 20px; position: relative; z-index: 10; }
+        .form-card { background: white; border-radius: 24px; padding: 30px; box-shadow: var(--card-shadow); }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-weight: 500; margin-bottom: 8px; color: var(--dark); }
+        .form-group select { width: 100%; padding: 12px 16px; border: 2px solid #eee; border-radius: 12px; font-size: 1rem; transition: all 0.3s; background: white; cursor: pointer; }
+        .form-group select:focus { outline: none; border-color: var(--primary); }
+        .btn { width: 100%; padding: 14px; background: var(--gradient); color: white; border: none; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,107,107,0.4); }
+        
+        /* 我的收藏栏 */
+        .my-bar { display: flex; justify-content: center; gap: 15px; padding: 15px; background: white; margin-bottom: 20px; flex-wrap: wrap; }
+        .my-btn { display: flex; align-items: center; gap: 6px; padding: 10px 20px; border: 2px solid #eee; background: white; border-radius: 25px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s; }
+        .my-btn:hover { border-color: var(--primary); }
+        .my-btn.active { background: var(--gradient); color: white; border-color: transparent; }
+        .my-btn .badge { background: var(--primary); color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; }
+        
+        .stats-bar { display: flex; justify-content: center; gap: 30px; padding: 15px; background: white; margin-bottom: 20px; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 1.3rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.8rem; color: var(--gray); }
+        
+        .results { max-width: 900px; margin: 0 auto 60px; padding: 0 20px; }
+        .results-header { text-align: center; margin-bottom: 25px; }
+        .results-header h2 { font-size: 1.5rem; margin-bottom: 6px; }
+        .results-header p { color: var(--gray); font-size: 0.9rem; }
+        
+        .movie-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--card-shadow); margin-bottom: 20px; transition: transform 0.3s; cursor: pointer; }
+        .movie-card:hover { transform: translateY(-4px); }
+        .movie-card.watched { opacity: 0.7; border-left: 4px solid var(--gray); }
+        .movie-card.liked { border-left: 4px solid var(--primary); }
+        .movie-basic { display: flex; flex-direction: column; }
+        @media (min-width: 768px) { .movie-basic { flex-direction: row; } }
+        .movie-poster { width: 100%; height: 200px; object-fit: cover; }
+        @media (min-width: 768px) { .movie-poster { width: 150px; height: auto; min-height: 250px; } }
+        .movie-content { flex: 1; padding: 16px; }
+        .movie-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .movie-title { font-size: 1.2rem; font-weight: 700; }
+        .movie-rating { background: var(--gradient); color: white; padding: 4px 10px; border-radius: 12px; font-weight: 700; font-size: 0.8rem; }
+        .movie-info { display: flex; gap: 8px; margin-bottom: 8px; font-size: 0.75rem; color: var(--gray); }
+        .movie-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+        .tag { padding: 3px 8px; background: #f0f0f0; border-radius: 10px; font-size: 0.7rem; color: #666; }
+        .tag.mbti { background: rgba(78, 205, 196, 0.15); color: #2a9d8f; }
+        .tag.life { background: rgba(255, 107, 107, 0.15); color: #e74c3c; }
+        .movie-recommendation { background: #fafafa; padding: 12px; border-radius: 8px; word-wrap: break-word; overflow-wrap: break-word; }
+        .movie-recommendation p { color: #555; font-size: 0.8rem; line-height: 1.6; word-wrap: break-word; overflow-wrap: break-word; white-space: normal; }
+        
+        .tab-bar { display: flex; justify-content: center; gap: 8px; padding: 15px; background: white; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab-btn { padding: 8px 14px; border: none; background: #f0f0f0; border-radius: 15px; font-size: 0.8rem; cursor: pointer; transition: all 0.3s; }
+        .tab-btn.active { background: var(--gradient); color: white; }
+        
+        .empty-state { text-align: center; padding: 60px 20px; color: var(--gray); }
+        .empty-state .icon { font-size: 3rem; margin-bottom: 15px; }
+        
+        .footer { text-align: center; padding: 30px 20px; color: #999; font-size: 0.85rem; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .movie-card { animation: fadeInUp 0.4s ease forwards; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🎬 爱看电影</h1>
+        <p class="subtitle">基于 MBTI + 人生阶段的个性化电影推荐</p>
+    </header>
+    
+    <div class="form-container">
+        <div class="form-card">
+            <form id="recommendForm">
+                <div class="form-group">
+                    <label>🎯 你的 MBTI</label>
+                    <select id="mbti">
+                        <option value="">请选择 MBTI</option>
+                        <option value="INTJ">INTJ - 建筑师</option>
+                        <option value="INTP">INTP - 逻辑学家</option>
+                        <option value="ENTJ">ENTJ - 指挥官</option>
+                        <option value="ENTP">ENTP - 辩论家</option>
+                        <option value="INFJ">INFJ - 提倡者</option>
+                        <option value="INFP">INFP - 调停者</option>
+                        <option value="ENFJ">ENFJ - 主人公</option>
+                        <option value="ENFP">ENFP - 竞选者</option>
+                        <option value="ISTJ">ISTJ - 物流师</option>
+                        <option value="ISFJ">ISFJ - 守卫者</option>
+                        <option value="ESTJ">ESTJ - 总经理</option>
+                        <option value="ESFJ">ESFJ - 执政官</option>
+                        <option value="ISTP">ISTP - 鉴赏家</option>
+                        <option value="ISFP">ISFP - 探险家</option>
+                        <option value="ESTP">ESTP - 企业家</option>
+                        <option value="ESFP">ESFP - 表演者</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>🌟 人生阶段</label>
+                    <select id="lifeStage">
+                        <option value="">请选择</option>
+                        <option value="职业">💼 职业/事业</option>
+                        <option value="恋爱">💕 恋爱/家庭</option>
+                        <option value="成长">🌱 成长/自我实现</option>
+                    </select>
+                </div>
+                <button  type="submit" class="btn">✨ 开始推荐</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- 我的收藏栏 -->
+    <div class="my-bar">
+        <button class="my-btn" id="btnLiked" onclick="showLiked()">
+            ❤️ 喜欢的 <span class="badge" id="likedCount">0</span>
+        </button>
+        <button class="my-btn" id="btnWatched" onclick="showWatched()">
+            ✓ 看过的 <span class="badge" id="watchedCount">0</span>
+        </button>
+        <button class="my-btn" id="btnAll" onclick="showAll()">
+            🎬 全部
+        </button>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-item"><div class="stat-num" id="totalMovies">200</div><div class="stat-label">精选电影</div></div>
+        <div class="stat-item"><div class="stat-num" id="likedStat">0</div><div class="stat-label">喜欢</div></div>
+        <div class="stat-item"><div class="stat-num" id="watchedStat">0</div><div class="stat-label">看过</div></div>
+    </div>
+    
+    <div class="tab-bar">
+        <button class="tab-btn active" data-filter="all">全部</button>
+        <button class="tab-btn" data-filter="剧情">剧情</button>
+        <button class="tab-btn" data-filter="科幻">科幻</button>
+        <button class="tab-btn" data-filter="爱情">爱情</button>
+        <button class="tab-btn" data-filter="动画">动画</button>
+    </div>
+    
+    <div class="results" id="results"></div>
+    
+    <footer class="footer"><p>🎬 爱看电影 | 用 MBTI 发现属于你的电影</p></footer>
+    
+    <script src="movies_data.js"></script>
+    <script>
+        const mbtiToGroup = {
+            "INTJ": "分析家", "INTP": "分析家", "ENTJ": "分析家", "ENTP": "分析家",
+            "INFJ": "外交家", "INFP": "外交家", "ENFJ": "外交家", "ENFP": "外交家",
+            "ISTJ": "守护者", "ISFJ": "守护者", "ESTJ": "守护者", "ESFJ": "守护者",
+            "ISTP": "探险家", "ISFP": "探险家", "ESTP": "探险家", "ESFP": "探险家"
+        };
+
+// 用户数据存储
+        let likedMovies = JSON.parse(localStorage.getItem('likedMovies') || '[]');
+        let watchedMovies = JSON.parse(localStorage.getItem('watchedMovies') || '[]');
+        
+        const mbtiStyles = {
+            "INTJ": { intro: "如果你喜欢深度思考，这部电影", focus: "剧情逻辑" },
+            "INTP": { intro: "这部电影充满了独特的概念和视角，", focus: "概念创新" },
+            "ENTJ": { intro: "这部电影会点燃你心中的斗志，", focus: "目标达成" },
+            "ENTP": { intro: "保证让你的大脑高速运转，", focus: "创新思维" },
+            "INFJ": { intro: "这是一部能触及灵魂的电影，", focus: "内心世界" },
+            "INFP": { intro: "这部电影专为浪漫的你准备，", focus: "理想主义" },
+            "ENFJ": { intro: "相信我，这部电影会让你深受启发，", focus: "人物成长" },
+            "ENFP": { intro: "准备好开启一段奇幻之旅了吗？", focus: "冒险精神" },
+            "ISTJ": { intro: "这是一部经得起时间考验的经典，", focus: "责任感" },
+            "ISFJ": { intro: "这部电影会给你满满的温暖，", focus: "家庭情感" },
+            "ESTJ": { intro: "这部电影讲述了一个真实而有力量的故事，", focus: "成就" },
+            "ESFJ": { intro: "和最爱的人一起看，效果更佳，", focus: "人际关系" },
+            "ISTP": { intro: "动作场面精彩，", focus: "紧张刺激" },
+            "ISFP": { intro: "画面美感十足，", focus: "美学体验" },
+            "ESTP": { intro: "全程高能，根本停不下来，", focus: "冒险" },
+            "ESFP": { intro: "看完心情会超级好，", focus: "欢乐氛围" }
+        };
+        
+        const lifeMessages = {
+            "成长": "正处于成长阶段，这部电影会给你勇气",
+            "学业": "学业路上，这部电影会给你启发",
+            "职业": "职场之余，这部电影会给你共鸣",
+            "创业": "创业路上，这部电影会给你力量",
+            "恋爱": "爱情中的你，这部电影会触动心弦",
+            "婚姻": "婚姻生活里，这部电影会让你感同身受",
+            "家庭": "家庭时光，和家人一起看更有意义",
+            "自我实现": "追寻自我价值，这部电影会引发共鸣",
+            "人生反思": "这个阶段看这部电影，会有特别感悟",
+            "友情": "关于友谊，这部电影会触动你的心"
+        };
+        
+        let currentFilter = 'all';
+        let recommendedMovies = [];
+        let currentMBTI = '';
+        let currentLifeStage = '';
+        let currentView = 'all'; // all, liked, watched
+        
+        function updateCounts() {
+            document.getElementById('likedCount').textContent = likedMovies.length;
+            document.getElementById('watchedCount').textContent = watchedMovies.length;
+            document.getElementById('likedStat').textContent = likedMovies.length;
+            document.getElementById('watchedStat').textContent = watchedMovies.length;
+        }
+        
+        function saveData() {
+            localStorage.setItem('likedMovies', JSON.stringify(likedMovies));
+            localStorage.setItem('watchedMovies', JSON.stringify(watchedMovies));
+            updateCounts();
+        }
+        
+        function isLiked(movieTitle) {
+            return likedMovies.includes(movieTitle);
+        }
+        
+        function isWatched(movieTitle) {
+            return watchedMovies.includes(movieTitle);
+        }
+        
+        function toggleLike(movieTitle, btn) {
+            event.stopPropagation();
+            if (likedMovies.includes(movieTitle)) {
+                likedMovies = likedMovies.filter(t => t !== movieTitle);
+                btn.innerHTML = '❤️ 喜欢';
+                btn.style.background = 'rgba(255,107,107,0.15)';
+                btn.style.color = '#e74c3c';
+            } else {
+                likedMovies.push(movieTitle);
+                btn.innerHTML = '❤️ 已喜欢';
+                btn.style.background = 'var(--primary)';
+                btn.style.color = 'white';
+            }
+            saveData();
+            if (currentView === 'liked') showLiked();
+        }
+        
+        function toggleWatched(movieTitle, btn) {
+            event.stopPropagation();
+            if (watchedMovies.includes(movieTitle)) {
+                watchedMovies = watchedMovies.filter(t => t !== movieTitle);
+                btn.innerHTML = '✓ 看过';
+                btn.style.background = 'rgba(78,205,196,0.15)';
+                btn.style.color = '#2a9d8f';
+            } else {
+                watchedMovies.push(movieTitle);
+                btn.innerHTML = '✓ 已看过';
+                btn.style.background = 'var(--secondary)';
+                btn.style.color = 'white';
+            }
+            saveData();
+            if (currentView === 'watched') showWatched();
+        }
+        
+        function generateRecommendation(movie, mbti, lifeStage) {
+            let rec = "";
+            
+            // 根据人生阶段生成个性化推荐
+            let life匹配 = "";
+            if (lifeStage === "职业/事业") {
+                life匹配 = "在职场上拼搏的你，会被这部电影深深激励";
+            } else if (lifeStage === "恋爱/家庭") {
+                life匹配 = "在感情中困惑的你，会在这部电影中找到共鸣";
+            } else if (lifeStage === "成长/自我实现") {
+                life匹配 = "正在追求自我成长的你，这部电影会给你力量";
+            } else {
+                life匹配 = "这部电影值得一看";
+            }
+            
+            // 1. 如果有剧情简介
+            if (movie.story && movie.story.length > 15) {
+                // 找到合适的断句位置
+                let storyPart = movie.story;
+                const maxLen = 40;
+                if (storyPart.length > maxLen) {
+                    // 找到最后一个句号或逗号
+                    const p1 = storyPart.lastIndexOf('。');
+                    const p2 = storyPart.lastIndexOf('，');
+                    const p = Math.max(p1, p2);
+                    if (p > 15 && p < maxLen) {
+                        storyPart = storyPart.substring(0, p + 1);
+                    } else {
+                        storyPart = storyPart.substring(0, maxLen) + "...";
+                    }
+                }
+                rec = "📖 " + storyPart + " " + life匹配 + "。";
+            } 
+            // 2. 如果有奖项信息但没剧情
+            else if (movie.awards && movie.awards.length > 0) {
+                const award = movie.awards[Math.floor(Math.random() * movie.awards.length)];
+                rec = "🏆 " + award + "，" + life匹配 + "。";
+            } 
+            // 3. 都没有
+            else {
+                rec = "🎬 " + life匹配 + "。";
+            }
+            
+            // 添加评分
+            if (movie.rating >= 9.0) {
+                rec += " 豆瓣" + movie.rating + "分，必看佳作！";
+            } else if (movie.rating >= 8.0) {
+                rec += " 豆瓣" + movie.rating + "分，口碑佳作！";
+            } else {
+                rec += " 豆瓣" + movie.rating + "分，值得一看！";
+            }
+            
+            return rec;
+        }
+        
+        function renderResults(movieList, mbti, lifeStage) {
+            const resultsDiv = document.getElementById('results');
+            const useMBTI = mbti || currentMBTI;
+            const useLife = lifeStage || currentLifeStage;
+            
+            document.getElementById('totalMovies').textContent = movies.length;
+            
+            let html = '<div class="results-header"><h2>💡 ' + 
+                (currentView === 'liked' ? '我喜欢的电影' : 
+                 currentView === 'watched' ? '我看过的电影' : '为你推荐') + 
+                '</h2>';
+            
+            if (useMBTI && useLife && currentView === 'all') {
+                html += '<p>MBTI: ' + useMBTI + ' | 人生阶段: ' + useLife + '</p>';
+            } else if (currentView === 'all') {
+                html += '<p>点击卡片查看详情</p>';
+            }
+            html += '</div>';
+            
+            if (movieList.length === 0) {
+                const icons = { liked: '💔', watched: '🎬', all: '🎥' };
+                const texts = { liked: '还没有喜欢的电影', watched: '还没有看过的电影', all: '暂无电影' };
+                html += `<div class="empty-state">
+                    <div class="icon">${icons[currentView]}</div>
+                    <p>${texts[currentView]}</p>
+                </div>`;
+            }
+            
+            movieList.slice(0, 20).forEach((movie, index) => {
+                const rec = generateRecommendation(movie, useMBTI || 'ENFP', useLife || '自我实现');
+                const liked = isLiked(movie.title_cn);
+                const watched = isWatched(movie.title_cn);
+                const cardClass = 'movie-card' + (watched ? ' watched' : '') + (liked ? ' liked' : '');
+                
+                html += `<div class="${cardClass}" onclick="toggleDetail(this)">
+                    <div class="movie-basic">
+                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23eee%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23999%22>${movie.title_cn}</text></svg>'">
+                        <div class="movie-content">
+                            <div class="movie-header">
+                                <h3 class="movie-title">${movie.title_cn}</h3>
+                                <span class="movie-rating">⭐ ${movie.rating}</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>📅 ${movie.year}</span>
+                                ${movie.director ? '<span>🎬 '+movie.director+'</span>' : ''}
+                                ${movie.actors && movie.actors.length ? '<span>⭐ '+movie.actors.slice(0,2).join(',')+'</span>' : ''}
+                            </div>
+                            <div class="movie-tags">
+                                ${movie.mbti_group ? movie.mbti_group.map(m => '<span class="tag mbti">'+m+'</span>').join('') : ''}
+                                ${movie.life_stage ? movie.life_stage.map(l => '<span class="tag life">'+l+'</span>').join('') : ''}
+                            </div>
+                            <div class="movie-recommendation">
+                                <p>💡 ${rec}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            
+            resultsDiv.innerHTML = html;
+        }
+        
+        let expandedCard = null;
+        function toggleDetail(card) {
+            if (expandedCard && expandedCard !== card) {
+                expandedCard.innerHTML = expandedCard.querySelector('.movie-basic').outerHTML;
+            }
+            
+            const movieTitle = card.querySelector('.movie-title').textContent;
+            const movie = movies.find(m => m.title_cn === movieTitle);
+            const mbti = currentMBTI || 'ENFP';
+            const life = currentLifeStage || '自我实现';
+            const rec = generateRecommendation(movie, mbti, life);
+            const liked = isLiked(movieTitle);
+            const watched = isWatched(movieTitle);
+            
+            if (card.classList.contains('expanded')) {
+                // 收起
+                const basic = card.querySelector('.movie-basic').outerHTML;
+                card.innerHTML = basic;
+                card.classList.remove('expanded');
+                expandedCard = null;
+            } else {
+                // 展开
+                const detailHTML = `
+                    <div class="movie-basic">
+                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23eee%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23999%22>${movie.title_cn}</text></svg>'">
+                        <div class="movie-content">
+                            <div class="movie-header">
+                                <h3 class="movie-title">${movie.title_cn}</h3>
+                                <span class="movie-rating">⭐ ${movie.rating}</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>📅 ${movie.year}</span>
+                                ${movie.director ? '<span>🎬 '+movie.director+'</span>' : ''}
+                                ${movie.actors && movie.actors.length ? '<span>⭐ '+movie.actors.slice(0,2).join(',')+'</span>' : ''}
+                            </div>
+                            <div class="movie-tags">
+                                ${movie.mbti_group ? movie.mbti_group.map(m => '<span class="tag mbti">'+m+'</span>').join('') : ''}
+                                ${movie.life_stage ? movie.life_stage.map(l => '<span class="tag life">'+l+'</span>').join('') : ''}
+                            </div>
+                            <div class="movie-recommendation">
+                                <p>💡 ${rec}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding: 16px; background: #fafafa; border-top: 1px solid #eee;">
+                        <p style="color: #888; font-size: 0.85rem; margin-bottom: 12px; font-style: italic;">"${movie.story || '暂无简介'}"</p>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="my-btn ${liked ? 'active' : ''}" onclick="toggleLike('${movie.title_cn}', this)" style="${liked ? 'background:var(--primary);color:white;' : ''}">${liked ? '❤️ 已喜欢' : '❤️ 喜欢'}</button>
+                            <button class="my-btn ${watched ? 'active' : ''}" onclick="toggleWatched('${movie.title_cn}', this)" style="${watched ? 'background:var(--secondary);color:white;' : ''}">${watched ? '✓ 已看过' : '✓ 看过'}</button>
+                        </div>
+                    </div>`;
+                card.innerHTML = detailHTML;
+                card.classList.add('expanded');
+                expandedCard = card;
+            }
+        }
+        
+        function filterMovies() {
+            let filtered = recommendedMovies.length > 0 ? recommendedMovies : movies;
+            
+            if (currentView === 'liked') {
+                filtered = movies.filter(m => likedMovies.includes(m.title_cn));
+            } else if (currentView === 'watched') {
+                filtered = movies.filter(m => watchedMovies.includes(m.title_cn));
+            }
+            
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(m => m.genre && m.genre.includes(currentFilter));
+                // 类型筛选后也应用占位图权重
+                filtered.sort((a, b) => {
+                    const aPenalty = a.is_placeholder ? 0.5 : 0;
+                    const bPenalty = b.is_placeholder ? 0.5 : 0;
+                    return (b.rating - bPenalty) - (a.rating - aPenalty);
+                });
+            }
+            
+            renderResults(filtered, currentMBTI, currentLifeStage);
+        }
+        
+        function showLiked() {
+            currentView = 'liked';
+            updateBarButtons();
+            filterMovies();
+        }
+        
+        function showWatched() {
+            currentView = 'watched';
+            updateBarButtons();
+            filterMovies();
+        }
+        
+        function showAll() {
+            currentView = 'all';
+            updateBarButtons();
+            filterMovies();
+        }
+        
+        function updateBarButtons() {
+            document.querySelectorAll('.my-btn').forEach(btn => btn.classList.remove('active'));
+            if (currentView === 'liked') document.getElementById('btnLiked').classList.add('active');
+            else if (currentView === 'watched') document.getElementById('btnWatched').classList.add('active');
+            else document.getElementById('btnAll').classList.add('active');
+        }
+        
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                filterMovies();
+            });
+        });
+        
+        document.getElementById('recommendForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const mbti = document.getElementById('mbti').value;
+            const lifeStage = document.getElementById('lifeStage').value;
+            
+            currentMBTI = mbti;
+            currentLifeStage = lifeStage;
+            currentView = 'all';
+            
+            if (mbti || lifeStage) {
+                recommendedMovies = movies.filter(m => {
+                    const userGroup = mbti ? mbtiToGroup[mbti] : null;
+                    const mbtiMatch = mbti && userGroup && m.mbti_group && m.mbti_group.includes(userGroup);
+                    const lifeMatch = lifeStage && m.life_stage && m.life_stage.includes(lifeStage);
+                    return mbtiMatch || lifeMatch;
+                });
+                
+                // 先按匹配度排序，再降低占位图权重，最后加入随机因子
+                    recommendedMovies.sort((a, b) => {
+                        const aGroup = mbti ? mbtiToGroup[mbti] : null;
+                        const aMatch = (mbti && aGroup && a.mbti_group && a.mbti_group.includes(aGroup) ? 1 : 0) + (lifeStage && a.life_stage && a.life_stage.includes(lifeStage) ? 1 : 0);
+                        const aPlaceholderPenalty = a.is_placeholder ? 0.6 : 0;  // 占位图惩罚加倍
+                        
+                        const bGroup = mbti ? mbtiToGroup[mbti] : null;
+                        const bMatch = (mbti && bGroup && b.mbti_group && b.mbti_group.includes(bGroup) ? 1 : 0) + (lifeStage && b.life_stage && b.life_stage.includes(lifeStage) ? 1 : 0);
+                        const bPlaceholderPenalty = b.is_placeholder ? 0.6 : 0;  // 占位图惩罚加倍
+                        
+                        const aScore = aMatch - aPlaceholderPenalty;
+                        const bScore = bMatch - bPlaceholderPenalty;
+                        
+                        if (aScore !== bScore) return bScore - aScore;
+                        return (Math.random() - 0.5) * 0.4;
+                    });
+                    
+                    // 确保前三名评分>8
+                    const topRated = recommendedMovies.filter(m => m.rating >= 8);
+                    if (topRated.length >= 3) {
+                        // 把高评分电影排到前面
+                        recommendedMovies.sort((a, b) => {
+                            if (a.rating >= 8 && b.rating < 8) return -1;
+                            if (a.rating < 8 && b.rating >= 8) return 1;
+                            return b.rating - a.rating + (Math.random() - 0.5) * 0.2;
+                        });
+                    }
+            } else {
+                // 默认推荐：真实海报优先，降低占位图权重
+                recommendedMovies = [...movies].sort((a, b) => {
+                    const aPenalty = a.is_placeholder ? 0.8 : 0;  // 占位图惩罚更大
+                    const bPenalty = b.is_placeholder ? 0.8 : 0;
+                    return (b.rating - bPenalty) - (a.rating - aPenalty) + (Math.random() - 0.5) * 0.3;
+                });
+            }
+            
+            currentFilter = 'all';
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector('.tab-btn[data-filter="all"]').classList.add('active');
+            
+            updateBarButtons();
+            filterMovies();
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // 初始化
+        updateCounts();
+        // 初始显示随机推荐
+            recommendedMovies = [...movies].sort(() => Math.random() - 0.5);
+            filterMovies();
+    </script>
+</body>
+</html>
