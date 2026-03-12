@@ -6,227 +6,367 @@
     <title>泰坦尼克号 - 电影详情</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #ffd700;
+            --bg-dark: #0f0f1a;
+            --bg-card: rgba(255,255,255,0.05);
+            --text-primary: #fff;
+            --text-secondary: rgba(255,255,255,0.7);
         }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        /* Header */
         .header {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+            padding: 18px 30px;
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .header a {
-            color: #fff;
+            color: var(--text-secondary);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
+        .header a:hover { color: var(--primary); }
+        
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px 80px;
         }
+        
+        /* Hero Section */
         .hero {
             display: flex;
-            gap: 40px;
-            margin-bottom: 50px;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: flex-start;
         }
-        @media (max-width: 600px) {
-            .hero { flex-direction: column; align-items: center; text-align: center; }
+        @media (max-width: 700px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
+        }
+        
+        .poster-wrap {
+            position: relative;
+            flex-shrink: 0;
         }
         .poster {
-            width: 280px;
+            width: 260px;
             border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+            transition: transform 0.4s ease;
         }
-        .info { flex: 1; }
+        .poster:hover { transform: translateY(-5px); }
+        
+        .info { flex: 1; min-width: 0; }
+        
         .title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #fff, #aaa);
+            margin-bottom: 16px;
+            line-height: 1.3;
+            background: linear-gradient(90deg, #fff 0%, #bbb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
+        
         .meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
             margin-bottom: 20px;
         }
-        .tag {
-            background: rgba(255,255,255,0.15);
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card);
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
+            color: var(--text-secondary);
         }
-        .rating {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1.2rem;
-            color: #ffd700;
-        }
-        .awards {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 20px;
-            border-radius: 12px;
+        .rating { color: var(--accent) !important; font-weight: 600; }
+        
+        /* Awards Card */
+        .awards-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 14px;
+            padding: 20px 24px;
             margin-bottom: 30px;
         }
-        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
-        .awards p { opacity: 0.9; }
-        
-        .section {
-            background: rgba(255,255,255,0.08);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 25px;
+        .awards-card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            opacity: 0.9;
         }
-        .section-title {
+        .awards-card p {
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        
+        /* Quotes Section */
+        .quotes-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 35px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .quotes-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            gap: 10px;
+        }
+        .quotes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.2), transparent);
+        }
+        
+        .quote-item {
+            position: relative;
+            padding: 18px 20px;
+            padding-left: 50px;
+            margin-bottom: 14px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            border-left: 3px solid var(--accent);
+        }
+        .quote-item:last-child { margin-bottom: 0; }
+        .quote-mark {
+            position: absolute;
+            left: 16px;
+            top: 14px;
+            font-size: 1.5rem;
+            color: var(--accent);
+            opacity: 0.6;
+        }
+        .quote-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+        
+        /* Content Sections */
+        .section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: border-color 0.3s;
+        }
+        .section:hover {
+            border-color: rgba(255,255,255,0.12);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .section-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            flex-shrink: 0;
         }
-        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
         
         .section-content {
-            line-height: 1.9;
-            color: rgba(255,255,255,0.85);
+            color: var(--text-secondary);
             font-size: 1rem;
+            line-height: 1.85;
         }
-        .section-content p { margin-bottom: 15px; }
+        .section-content p { margin-bottom: 14px; }
+        .section-content p:last-child { margin-bottom: 0; }
+        .section-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
         
-        .quote {
-            background: rgba(255,215,0,0.1);
-            border-left: 4px solid #ffd700;
-            padding: 20px;
+        /* Quote highlight */
+        .quote-highlight {
+            background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+            border: 1px solid rgba(255,215,0,0.25);
+            border-radius: 12px;
+            padding: 20px 24px;
             margin: 20px 0;
+            position: relative;
+        }
+        .quote-highlight::before {
+            content: '"';
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        .quote-highlight p {
+            padding-left: 30px;
             font-style: italic;
-            color: #ffd700;
+            color: var(--accent);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin: 0;
         }
         
-        .summary-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .summary-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 10px;
+        /* Footer */
+        .footer {
             text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 40px;
         }
-        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
-        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">← 返回推荐</a>
+        <a href="index.html">← 返回电影推荐</a>
     </div>
+    
     <div class="container">
+        <!-- Hero -->
         <div class="hero">
-            <img class="poster" src="movie_images/003_泰坦尼克号.jpg" alt="泰坦尼克号">
+            <div class="poster-wrap">
+                <img class="poster" src="movie_images/003_泰坦尼克号.jpg" alt="泰坦尼克号">
+            </div>
             <div class="info">
                 <h1 class="title">泰坦尼克号</h1>
                 <div class="meta">
-                    <span class="rating">⭐ 9.5 分</span>
-                    <span class="tag">1997</span>
-                    <span class="tag">剧情 / 爱情</span>
+                    <span class="meta-item rating">⭐ 9.5 分</span>
+                    <span class="meta-item">1997</span>
+                    <span class="meta-item">剧情 / 爱情</span>
                 </div>
-                <div class="awards">
-                <h3>🏆 获奖信息</h3>
-                <p>奥斯卡最佳影片 / 全球票房冠军</p>
+                
+                <div class="awards-card">
+                <h3>🏆 获奖荣誉</h3>
+                <p>奥斯卡最佳影片 · 全球票房冠军</p>
             </div>
             </div>
         </div>
         
+        <!-- Quotes Section -->
+        <div class="quotes-section"><div class="quotes-title">经典台词</div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">You jump, I jump. 你跳，我也跳。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">我会永远爱你。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">生活本来就全靠运气</p>
+                </div></div>
         
-        <div class="section">
-            <div class="section-title">
+        <!-- Content Sections -->
+        
+        <div class="section section-1">
+            <div class="section-header">
                 <div class="section-icon">🎬</div>
-                影片概述
+                <h2 class="section-title">影片概述</h2>
             </div>
-            <div class="section-content">《泰坦尼克号》是詹姆斯·卡梅隆的史诗级爱情巨制，于1997年上映，由莱昂纳多·迪卡普里奥和凯特·温斯莱特主演。影片以1912年泰坦尼克号沉没事件为背景，讲述了一段跨越阶级与生死的爱情故事。
+            <div class="section-content"><p>《泰坦尼克号》是詹姆斯·卡梅隆的史诗级爱情巨制，于1997年上映，由莱昂纳多·迪卡普里奥和凯特·温斯莱特主演。影片以1912年泰坦尼克号沉没事件为背景，讲述了一段跨越阶级与生死的爱情故事。
 这部电影创下了多项票房纪录，是史上票房最高的爱情电影之一，曾获得11项奥斯卡提名并最终斩获11座小金人。豆瓣评分9.5分，是无数人心中的爱情圣经。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-2">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                主题解析：爱情与阶级
+                <h2 class="section-title">主题解析：爱情与阶级</h2>
             </div>
-            <div class="section-content">影片深刻探讨了爱情与阶级的主题。穷画家杰克与富家女露丝相遇在泰坦尼克号上，他们来自完全不同的世界——一个是街头画家，一个是贵族千金。然而爱情的力量超越了阶层的藩篱，让他们彼此深爱。
+            <div class="section-content"><p>影片深刻探讨了爱情与阶级的主题。穷画家杰克与富家女露丝相遇在泰坦尼克号上，他们来自完全不同的世界——一个是街头画家，一个是贵族千金。然而爱情的力量超越了阶层的藩篱，让他们彼此深爱。
 露丝的母亲和未婚夫卡尔代表着森严的阶级观念，他们无法容忍露丝与一个穷小子的爱情。而正是这种压迫，让露丝更加坚定了对杰克的感情。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-3">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                经典场景
+                <h2 class="section-title">经典场景</h2>
             </div>
-            <div class="section-content">"飞镜头"：杰克带着露丝在船头飞翔的场景，是电影史上最浪漫的镜头之一。露丝张开双臂迎风而立，喊出"I'm flying"的画面成为了永恒的经典。
+            <div class="section-content"><p>"飞镜头"：杰克带着露丝在船头飞翔的场景，是电影史上最浪漫的镜头之一。露丝张开双臂迎风而立，喊出"I'm flying"的画面成为了永恒的经典。
 沉船场景：泰坦尼克号断裂沉没的场景震撼人心，展现了人类在自然灾害面前的渺小，也衬托出爱情的伟大。
 浮板上的告别：杰克把生的机会留给露丝，自己浸泡在冰冷的海水中，最终冻死。这一幕赚取了无数观众的眼泪。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-4">
+            <div class="section-header">
                 <div class="section-icon">👤</div>
-                人物塑造
+                <h2 class="section-title">人物塑造</h2>
             </div>
-            <div class="section-content">杰克·道森（莱昂纳多·迪卡普里奥饰）是一个自由的灵魂，他浪迹天涯，画画为生。他教会了露丝如何真正地生活，如何摆脱贵族的枷锁。
+            <div class="section-content"><p>杰克·道森（莱昂纳多·迪卡普里奥饰）是一个自由的灵魂，他浪迹天涯，画画为生。他教会了露丝如何真正地生活，如何摆脱贵族的枷锁。
 露丝·布克特（凯特·温斯莱特饰）是一个被贵族生活压抑的女性，她渴望自由，渴望真爱的来临。杰克的出现点燃了她生命的火花。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-5">
+            <div class="section-header">
                 <div class="section-icon">🌟</div>
-                观影启示
+                <h2 class="section-title">观影启示</h2>
             </div>
-            <div class="section-content">《泰坦尼克号》告诉我们：爱情可以超越一切——超越阶级、超越金钱、甚至超越生死。真正的爱情不是权衡利弊后的选择，而是心与心的碰撞。
+            <div class="section-content"><p>《泰坦尼克号》告诉我们：爱情可以超越一切——超越阶级、超越金钱、甚至超越生死。真正的爱情不是权衡利弊后的选择，而是心与心的碰撞。
 同时影片也展现了人性的复杂性——有杰克的舍己救人，也有船员的坚守岗位；有用生命保护妻儿的丈夫，也有自私自利只想逃生的乘客。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-6">
+            <div class="section-header">
                 <div class="section-icon">⭐</div>
-                总结
+                <h2 class="section-title">总结</h2>
             </div>
-            <div class="section-content">《泰坦尼克号》是一部关于爱情的史诗。它让我们相信，这个世界上真有不计回报的爱情存在。虽然杰克和露丝最终阴阳两隔，但他们的爱情却跨越了时空，成为永恒。
-这部电影适合和心爱的人一起观看，感受爱情的美好与力量。
-
-⭐ 推荐指数：★★★★★
+            <div class="section-content"><p>《泰坦尼克号》是一部关于爱情的史诗。它让我们相信，这个世界上真有不计回报的爱情存在。虽然杰克和露丝最终阴阳两隔，但他们的爱情却跨越了时空，成为永恒。
+这部电影适合和心爱的人一起观看，感受爱情的美好与力量。</p><p>⭐ 推荐指数：★★★★★
 🎬 适合人群：情侣、爱情电影爱好者
-💡 观影场景：约会、回忆经典、感动落泪</div>
+💡 观影场景：约会、回忆经典、感动落泪</p></div>
         </div>
         
+        <div class="footer">
+            爱看电影 · MBTI个性化电影推荐
+        </div>
     </div>
 </body>
 </html>

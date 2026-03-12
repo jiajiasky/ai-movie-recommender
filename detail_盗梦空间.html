@@ -6,242 +6,382 @@
     <title>盗梦空间 - 电影详情</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #ffd700;
+            --bg-dark: #0f0f1a;
+            --bg-card: rgba(255,255,255,0.05);
+            --text-primary: #fff;
+            --text-secondary: rgba(255,255,255,0.7);
         }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        /* Header */
         .header {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+            padding: 18px 30px;
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .header a {
-            color: #fff;
+            color: var(--text-secondary);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
+        .header a:hover { color: var(--primary); }
+        
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px 80px;
         }
+        
+        /* Hero Section */
         .hero {
             display: flex;
-            gap: 40px;
-            margin-bottom: 50px;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: flex-start;
         }
-        @media (max-width: 600px) {
-            .hero { flex-direction: column; align-items: center; text-align: center; }
+        @media (max-width: 700px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
+        }
+        
+        .poster-wrap {
+            position: relative;
+            flex-shrink: 0;
         }
         .poster {
-            width: 280px;
+            width: 260px;
             border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+            transition: transform 0.4s ease;
         }
-        .info { flex: 1; }
+        .poster:hover { transform: translateY(-5px); }
+        
+        .info { flex: 1; min-width: 0; }
+        
         .title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #fff, #aaa);
+            margin-bottom: 16px;
+            line-height: 1.3;
+            background: linear-gradient(90deg, #fff 0%, #bbb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
+        
         .meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
             margin-bottom: 20px;
         }
-        .tag {
-            background: rgba(255,255,255,0.15);
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card);
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
+            color: var(--text-secondary);
         }
-        .rating {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1.2rem;
-            color: #ffd700;
-        }
-        .awards {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 20px;
-            border-radius: 12px;
+        .rating { color: var(--accent) !important; font-weight: 600; }
+        
+        /* Awards Card */
+        .awards-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 14px;
+            padding: 20px 24px;
             margin-bottom: 30px;
         }
-        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
-        .awards p { opacity: 0.9; }
-        
-        .section {
-            background: rgba(255,255,255,0.08);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 25px;
+        .awards-card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            opacity: 0.9;
         }
-        .section-title {
+        .awards-card p {
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        
+        /* Quotes Section */
+        .quotes-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 35px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .quotes-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            gap: 10px;
+        }
+        .quotes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.2), transparent);
+        }
+        
+        .quote-item {
+            position: relative;
+            padding: 18px 20px;
+            padding-left: 50px;
+            margin-bottom: 14px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            border-left: 3px solid var(--accent);
+        }
+        .quote-item:last-child { margin-bottom: 0; }
+        .quote-mark {
+            position: absolute;
+            left: 16px;
+            top: 14px;
+            font-size: 1.5rem;
+            color: var(--accent);
+            opacity: 0.6;
+        }
+        .quote-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+        
+        /* Content Sections */
+        .section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: border-color 0.3s;
+        }
+        .section:hover {
+            border-color: rgba(255,255,255,0.12);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .section-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            flex-shrink: 0;
         }
-        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
         
         .section-content {
-            line-height: 1.9;
-            color: rgba(255,255,255,0.85);
+            color: var(--text-secondary);
             font-size: 1rem;
+            line-height: 1.85;
         }
-        .section-content p { margin-bottom: 15px; }
+        .section-content p { margin-bottom: 14px; }
+        .section-content p:last-child { margin-bottom: 0; }
+        .section-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
         
-        .quote {
-            background: rgba(255,215,0,0.1);
-            border-left: 4px solid #ffd700;
-            padding: 20px;
+        /* Quote highlight */
+        .quote-highlight {
+            background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+            border: 1px solid rgba(255,215,0,0.25);
+            border-radius: 12px;
+            padding: 20px 24px;
             margin: 20px 0;
+            position: relative;
+        }
+        .quote-highlight::before {
+            content: '"';
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        .quote-highlight p {
+            padding-left: 30px;
             font-style: italic;
-            color: #ffd700;
+            color: var(--accent);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin: 0;
         }
         
-        .summary-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .summary-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 10px;
+        /* Footer */
+        .footer {
             text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 40px;
         }
-        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
-        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">← 返回推荐</a>
+        <a href="index.html">← 返回电影推荐</a>
     </div>
+    
     <div class="container">
+        <!-- Hero -->
         <div class="hero">
-            <img class="poster" src="movie_images/009_盗梦空间.jpg" alt="盗梦空间">
+            <div class="poster-wrap">
+                <img class="poster" src="movie_images/009_盗梦空间.jpg" alt="盗梦空间">
+            </div>
             <div class="info">
                 <h1 class="title">盗梦空间</h1>
                 <div class="meta">
-                    <span class="rating">⭐ 9.4 分</span>
-                    <span class="tag">2010</span>
-                    <span class="tag">科幻 / 动作</span>
+                    <span class="meta-item rating">⭐ 9.4 分</span>
+                    <span class="meta-item">2010</span>
+                    <span class="meta-item">科幻 / 动作</span>
                 </div>
-                <div class="awards">
-                <h3>🏆 获奖信息</h3>
-                <p>奥斯卡最佳摄影 / 诺兰烧脑神作</p>
+                
+                <div class="awards-card">
+                <h3>🏆 获奖荣誉</h3>
+                <p>奥斯卡最佳摄影 · 诺兰烧脑神作</p>
             </div>
             </div>
         </div>
         
+        <!-- Quotes Section -->
+        <div class="quotes-section"><div class="quotes-title">经典台词</div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">你必须得更勇敢，亲爱的，在梦里你可以更大胆一点。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">你记得你曾经到过这里，但你不知道是什么时候。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">想法就像病毒一样，顽强适应，层层蔓延。</p>
+                </div></div>
         
-        <div class="section">
-            <div class="section-title">
+        <!-- Content Sections -->
+        
+        <div class="section section-1">
+            <div class="section-header">
                 <div class="section-icon">🎬</div>
-                影片概述
+                <h2 class="section-title">影片概述</h2>
             </div>
-            <div class="section-content">《盗梦空间》是克里斯托弗·诺兰的烧脑力作，于2010年上映，由莱昂纳多·迪卡普里奥主演。影片讲述了盗梦师柯布带领团队进入他人梦境窃取机密的科幻故事。
+            <div class="section-content"><p>《盗梦空间》是克里斯托弗·诺兰的烧脑力作，于2010年上映，由莱昂纳多·迪卡普里奥主演。影片讲述了盗梦师柯布带领团队进入他人梦境窃取机密的科幻故事。
 这部电影获得4项奥斯卡大奖，豆瓣评分9.4分，是21世纪最伟大的科幻电影之一，也是"烧脑电影"的代名词。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-2">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                主题解析：梦境与现实
+                <h2 class="section-title">主题解析：梦境与现实</h2>
             </div>
-            <div class="section-content">诺兰在电影中提出了一个深刻的问题：如何确定自己不是在梦中？
+            <div class="section-content"><p>诺兰在电影中提出了一个深刻的问题：如何确定自己不是在梦中？
 影片构建了一个精密的"梦中梦"世界——第一层梦境、第二层梦境、第三层梦境，甚至还有"Limbo"（迷失域）。每一层梦，时间流逝的速度都不同。
 柯布一直在逃避现实——他深爱的妻子茉儿自杀身亡，成为他心中永远的痛。他妻子的投影经常出现在他的梦中，不断地试图杀死他。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-3">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                核心概念
+                <h2 class="section-title">核心概念</h2>
             </div>
-            <div class="section-content">盗梦：进入他人梦境，窃取潜意识中的秘密
+            <div class="section-content"><p>盗梦：进入他人梦境，窃取潜意识中的秘密
 筑梦：设计梦境的场景和情节
 植入：在他人梦中植入一个想法，让它成为被执行者的潜意识
 Kick：梦中梦的唤醒机制，需要在同一时刻唤醒每一层梦境的人
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-4">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                经典场景
+                <h2 class="section-title">经典场景</h2>
             </div>
-            <div class="section-content">旋转陀螺：影片结尾，柯布在机场转起陀螺，画面定格。陀螺是否停止，成为影史最大悬念。
+            <div class="section-content"><p>旋转陀螺：影片结尾，柯布在机场转起陀螺，画面定格。陀螺是否停止，成为影史最大悬念。
 Paris Folding：在第二层梦境中，阿里阿德涅让巴黎折叠，城市像纸片一样卷起来。这个镜头是视觉奇观的经典。
 茉儿的背叛：在第三层梦境中，柯布的妻子茉儿杀死了费舍尔，这是柯布心中永远的痛。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-5">
+            <div class="section-header">
                 <div class="section-icon">👤</div>
-                人物塑造
+                <h2 class="section-title">人物塑造</h2>
             </div>
-            <div class="section-content">柯布（莱昂纳多·迪卡普里奥饰）是盗梦团队的领袖，也是最成功的盗梦师。他因为妻子的死而陷入深深的自责，无法回到孩子们身边。他既是天才，也是病人。
+            <div class="section-content"><p>柯布（莱昂纳多·迪卡普里奥饰）是盗梦团队的领袖，也是最成功的盗梦师。他因为妻子的死而陷入深深的自责，无法回到孩子们身边。他既是天才，也是病人。
 阿里阿德涅（玛丽昂·歌迪亚饰）是新加入的筑梦师，她的设计天赋和理性思维成为团队的关键。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-6">
+            <div class="section-header">
                 <div class="section-icon">🌟</div>
-                观影启示
+                <h2 class="section-title">观影启示</h2>
             </div>
-            <div class="section-content">《盗梦空间》教会我们：
+            <div class="section-content"><p>《盗梦空间》教会我们：
 1. 区分梦境与现实：有时候我们太执着于某个想法，需要跳出来重新审视
 2. 潜意识的力量：我们头脑中的想法会潜移默化地影响我们的行为
 3. 面对过去：只有真正面对心中的痛苦，才能获得解脱
 4. 珍惜当下：不要总是活在过去或幻想未来，要珍惜眼前的生活
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-7">
+            <div class="section-header">
                 <div class="section-icon">⭐</div>
-                总结
+                <h2 class="section-title">总结</h2>
             </div>
-            <div class="section-content">《盗梦空间》是一部需要多看几遍才能完全理解的电影。诺兰用精密的逻辑构建了一个宏大的梦境世界，每看一遍都会有新的发现。
-无论你相信结局是梦境还是现实，这部电影都会让你重新思考：什么是真实？什么是虚幻？
-
-⭐ 推荐指数：★★★★★
+            <div class="section-content"><p>《盗梦空间》是一部需要多看几遍才能完全理解的电影。诺兰用精密的逻辑构建了一个宏大的梦境世界，每看一遍都会有新的发现。
+无论你相信结局是梦境还是现实，这部电影都会让你重新思考：什么是真实？什么是虚幻？</p><p>⭐ 推荐指数：★★★★★
 🎬 适合人群：科幻爱好者、烧脑电影爱好者
-💡 观影场景：思考人生、二刷三刷、电影讨论</div>
+💡 观影场景：思考人生、二刷三刷、电影讨论</p></div>
         </div>
         
+        <div class="footer">
+            爱看电影 · MBTI个性化电影推荐
+        </div>
     </div>
 </body>
 </html>

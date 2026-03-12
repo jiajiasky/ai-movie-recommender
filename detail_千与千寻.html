@@ -6,232 +6,372 @@
     <title>千与千寻 - 电影详情</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #ffd700;
+            --bg-dark: #0f0f1a;
+            --bg-card: rgba(255,255,255,0.05);
+            --text-primary: #fff;
+            --text-secondary: rgba(255,255,255,0.7);
         }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        /* Header */
         .header {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+            padding: 18px 30px;
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .header a {
-            color: #fff;
+            color: var(--text-secondary);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
+        .header a:hover { color: var(--primary); }
+        
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px 80px;
         }
+        
+        /* Hero Section */
         .hero {
             display: flex;
-            gap: 40px;
-            margin-bottom: 50px;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: flex-start;
         }
-        @media (max-width: 600px) {
-            .hero { flex-direction: column; align-items: center; text-align: center; }
+        @media (max-width: 700px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
+        }
+        
+        .poster-wrap {
+            position: relative;
+            flex-shrink: 0;
         }
         .poster {
-            width: 280px;
+            width: 260px;
             border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+            transition: transform 0.4s ease;
         }
-        .info { flex: 1; }
+        .poster:hover { transform: translateY(-5px); }
+        
+        .info { flex: 1; min-width: 0; }
+        
         .title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #fff, #aaa);
+            margin-bottom: 16px;
+            line-height: 1.3;
+            background: linear-gradient(90deg, #fff 0%, #bbb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
+        
         .meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
             margin-bottom: 20px;
         }
-        .tag {
-            background: rgba(255,255,255,0.15);
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card);
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
+            color: var(--text-secondary);
         }
-        .rating {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1.2rem;
-            color: #ffd700;
-        }
-        .awards {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 20px;
-            border-radius: 12px;
+        .rating { color: var(--accent) !important; font-weight: 600; }
+        
+        /* Awards Card */
+        .awards-card {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 14px;
+            padding: 20px 24px;
             margin-bottom: 30px;
         }
-        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
-        .awards p { opacity: 0.9; }
-        
-        .section {
-            background: rgba(255,255,255,0.08);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 25px;
+        .awards-card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            opacity: 0.9;
         }
-        .section-title {
+        .awards-card p {
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        
+        /* Quotes Section */
+        .quotes-section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 35px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .quotes-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            gap: 10px;
+        }
+        .quotes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.2), transparent);
+        }
+        
+        .quote-item {
+            position: relative;
+            padding: 18px 20px;
+            padding-left: 50px;
+            margin-bottom: 14px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            border-left: 3px solid var(--accent);
+        }
+        .quote-item:last-child { margin-bottom: 0; }
+        .quote-mark {
+            position: absolute;
+            left: 16px;
+            top: 14px;
+            font-size: 1.5rem;
+            color: var(--accent);
+            opacity: 0.6;
+        }
+        .quote-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+        
+        /* Content Sections */
+        .section {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: border-color 0.3s;
+        }
+        .section:hover {
+            border-color: rgba(255,255,255,0.12);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .section-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            flex-shrink: 0;
         }
-        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
         
         .section-content {
-            line-height: 1.9;
-            color: rgba(255,255,255,0.85);
+            color: var(--text-secondary);
             font-size: 1rem;
+            line-height: 1.85;
         }
-        .section-content p { margin-bottom: 15px; }
+        .section-content p { margin-bottom: 14px; }
+        .section-content p:last-child { margin-bottom: 0; }
+        .section-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
         
-        .quote {
-            background: rgba(255,215,0,0.1);
-            border-left: 4px solid #ffd700;
-            padding: 20px;
+        /* Quote highlight */
+        .quote-highlight {
+            background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
+            border: 1px solid rgba(255,215,0,0.25);
+            border-radius: 12px;
+            padding: 20px 24px;
             margin: 20px 0;
+            position: relative;
+        }
+        .quote-highlight::before {
+            content: '"';
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        .quote-highlight p {
+            padding-left: 30px;
             font-style: italic;
-            color: #ffd700;
+            color: var(--accent);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin: 0;
         }
         
-        .summary-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .summary-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 10px;
+        /* Footer */
+        .footer {
             text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 40px;
         }
-        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
-        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">← 返回推荐</a>
+        <a href="index.html">← 返回电影推荐</a>
     </div>
+    
     <div class="container">
+        <!-- Hero -->
         <div class="hero">
-            <img class="poster" src="movie_images/005_千与千寻.jpg" alt="千与千寻">
+            <div class="poster-wrap">
+                <img class="poster" src="movie_images/005_千与千寻.jpg" alt="千与千寻">
+            </div>
             <div class="info">
                 <h1 class="title">千与千寻</h1>
                 <div class="meta">
-                    <span class="rating">⭐ 9.4 分</span>
-                    <span class="tag">2001</span>
-                    <span class="tag">动画 / 冒险</span>
+                    <span class="meta-item rating">⭐ 9.4 分</span>
+                    <span class="meta-item">2001</span>
+                    <span class="meta-item">动画 / 冒险</span>
                 </div>
-                <div class="awards">
-                <h3>🏆 获奖信息</h3>
-                <p>奥斯卡最佳动画 / 宫崎骏代表作</p>
+                
+                <div class="awards-card">
+                <h3>🏆 获奖荣誉</h3>
+                <p>奥斯卡最佳动画 · 宫崎骏代表作</p>
             </div>
             </div>
         </div>
         
+        <!-- Quotes Section -->
+        <div class="quotes-section"><div class="quotes-title">经典台词</div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">曾经发生过的事情不可能忘记，只是想不起来而已。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。</p>
+                </div><div class="quote-item">
+                    <span class="quote-mark">"</span>
+                    <p class="quote-text">你不懂么？能救我的只有我自己</p>
+                </div></div>
         
-        <div class="section">
-            <div class="section-title">
+        <!-- Content Sections -->
+        
+        <div class="section section-1">
+            <div class="section-header">
                 <div class="section-icon">🎬</div>
-                影片概述
+                <h2 class="section-title">影片概述</h2>
             </div>
-            <div class="section-content">《千与千寻》是宫崎骏的巅峰之作，于2001年上映，是日本动画电影的里程碑。影片讲述了少女千寻误入神隐世界，为了拯救被变成猪的父母，必须在汤婆婆的澡堂工作的奇幻故事。
+            <div class="section-content"><p>《千与千寻》是宫崎骏的巅峰之作，于2001年上映，是日本动画电影的里程碑。影片讲述了少女千寻误入神隐世界，为了拯救被变成猪的父母，必须在汤婆婆的澡堂工作的奇幻故事。
 这部电影荣获奥斯卡最佳动画长片奖，豆瓣评分9.4分，是日本票房最高的动画电影，也是无数人心中的"动画圣经"。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-2">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                主题解析：成长与自我
+                <h2 class="section-title">主题解析：成长与自我</h2>
             </div>
-            <div class="section-content">影片的核心主题是成长与自我寻找。千寻从一开始的娇气、任性，逐渐成长为勇敢、坚强的小女孩。她在神隐世界的经历，就是她成长的缩影。
+            <div class="section-content"><p>影片的核心主题是成长与自我寻找。千寻从一开始的娇气、任性，逐渐成长为勇敢、坚强的小女孩。她在神隐世界的经历，就是她成长的缩影。
 "千" 是汤婆婆给千寻取的名字，代表着剥夺了她的自我。而"千寻" 是她的本名，代表着真正的自己。找回名字的过程，就是找回自我的过程。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-3">
+            <div class="section-header">
                 <div class="section-icon">📌</div>
-                经典角色
+                <h2 class="section-title">经典角色</h2>
             </div>
-            <div class="section-content">千寻：一个普通的10岁女孩，她的成长让每个观众都能找到共鸣。她的勇气和善良感染了身边的人，也救赎了白龙、无脸男等角色。
+            <div class="section-content"><p>千寻：一个普通的10岁女孩，她的成长让每个观众都能找到共鸣。她的勇气和善良感染了身边的人，也救赎了白龙、无脸男等角色。
 白龙：汤婆婆的弟子，一只白色的河神。他曾经是人类，为了学习魔法失去了名字。他对千寻的帮助和感情，是影片中最动人的情感线。
 无脸男：一个孤独的幽灵，他在汤婆婆的澡堂里用金钱诱惑人们，最终被千寻的善良打动，决定留在钱婆婆那里。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-4">
+            <div class="section-header">
                 <div class="section-icon">📝</div>
-                经典台词
+                <h2 class="section-title">经典台词</h2>
             </div>
-            <div class="section-content">> “曾经发生过的事情不可能忘记，只是想不起来而已。”
+            <div class="section-content"><p>> “曾经发生过的事情不可能忘记，只是想不起来而已。”
 这句台词告诉我们，有些记忆虽然暂时遗忘，但永远藏在心底。
  “不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。”
 这是宫崎骏对成长的诠释。
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-5">
+            <div class="section-header">
                 <div class="section-icon">🌟</div>
-                观影启示
+                <h2 class="section-title">观影启示</h2>
             </div>
-            <div class="section-content">《千与千寻》教会我们：
+            <div class="section-content"><p>《千与千寻》教会我们：
 1. 勇敢面对：不要逃避困难，勇敢地迈出第一步
 2. 保持善良：即使世界复杂，也要保持内心的纯真
 3. 记住自我：无论环境如何变化，都要记住真正的自己
 4. 学会独立：成长就是学会独自面对问题
-</div>
+</p></div>
         </div>
-        <div class="section">
-            <div class="section-title">
+        <div class="section section-6">
+            <div class="section-header">
                 <div class="section-icon">⭐</div>
-                总结
+                <h2 class="section-title">总结</h2>
             </div>
-            <div class="section-content">《千与千寻》不仅是一部动画，更是一部关于成长的寓言。它适合所有年龄段的人观看——孩子在千寻身上看到冒险，大人在千寻身上看到自己曾经的模样。
-这部电影是宫崎骏送给所有人的礼物，提醒我们：无论生活多么艰难，都要保持善良和勇气。
-
-⭐ 推荐指数：★★★★★
+            <div class="section-content"><p>《千与千寻》不仅是一部动画，更是一部关于成长的寓言。它适合所有年龄段的人观看——孩子在千寻身上看到冒险，大人在千寻身上看到自己曾经的模样。
+这部电影是宫崎骏送给所有人的礼物，提醒我们：无论生活多么艰难，都要保持善良和勇气。</p><p>⭐ 推荐指数：★★★★★
 🎬 适合人群：所有人
-💡 观影场景：放松、思考成长、亲子时光</div>
+💡 观影场景：放松、思考成长、亲子时光</p></div>
         </div>
         
+        <div class="footer">
+            爱看电影 · MBTI个性化电影推荐
+        </div>
     </div>
 </body>
 </html>
