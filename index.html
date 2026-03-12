@@ -420,6 +420,7 @@
                         <div style="display: flex; gap: 10px;">
                             <button class="my-btn ${liked ? 'active' : ''}" onclick="toggleLike('${movie.title_cn}', this)" style="${liked ? 'background:var(--primary);color:white;' : ''}">${liked ? '❤️ 已喜欢' : '❤️ 喜欢'}</button>
                             <button class="my-btn ${watched ? 'active' : ''}" onclick="toggleWatched('${movie.title_cn}', this)" style="${watched ? 'background:var(--secondary);color:white;' : ''}">${watched ? '✓ 已看过' : '✓ 看过'}</button>
+                            ${movie.review ? '<button class="my-btn" onclick="showReview(\'' + movie.title_cn + '\')" style="background:#667eea;color:white;">📖 影评</button>' : ''}
                         </div>
                     </div>`;
                 card.innerHTML = detailHTML;
