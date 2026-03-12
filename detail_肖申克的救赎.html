@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肖申克的救赎 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/001_肖申克的救赎.jpg" alt="肖申克的救赎">
+            <div class="info">
+                <h1 class="title">肖申克的救赎</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.7 分</span>
+                    <span class="tag">1994</span>
+                    <span class="tag">剧情 / 犯罪</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>奥斯卡最佳影片提名 / IMDb评分第一</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《肖申克的救赎》（The Shawshank Redemption）改编自美国作家斯蒂芬·金的中篇小说《丽塔·海华丝与肖申克的救赎》，于1994年上映，由弗兰克·达拉邦特执导，蒂姆·罗宾斯和摩根·弗里曼主演。影片讲述了银行家安迪·杜佛兰被冤枉入狱后，在肖申克监狱中度过的二十年光阴，以及他与狱友瑞德之间深厚的友谊。
+尽管在当年奥斯卡颁奖典礼上颗粒无收，但随着时间的推移，这部电影逐渐凭借其深刻的人文关怀和震撼人心的力量，成为IMDb评分第一的影史经典，豆瓣评分高达9.7分，是无数影迷心中当之无愧的"神作"。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：希望与自由
+            </div>
+            <div class="section-content">影片的核心主题是希望与自由。安迪在狱中从未放弃对自由的渴望，他用一把小小的石锤，在墙上凿出了一条通往外界的通道，整整用了十九年时间。这不仅仅是一个越狱的故事，更是一个关于精神自由的寓言。
+正如瑞德在片中所说："这些墙很有趣。一开始你恨它，然后你习惯它。时间久了，你就会依赖它。" 肖申克监狱就像一个微型社会大多数人最终被"制度化"，忘记了外面的世界，忘记了希望的存在。而安迪的存在，就像一道光，照亮了周围人的内心世界。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                人物塑造：灵魂的救赎
+            </div>
+            <div class="section-content">安迪·杜佛兰（蒂姆·罗宾斯饰）是一个复杂的角色。他表面沉默寡言，内心却坚定而智慧。他利用自己的银行专业知识为狱警处理财务问题，获得了相对自由的行动空间；同时他也用自己的行动影响着身边的每一个人——他每周坚持给州议会写信，最终为监狱图书馆争取到了资金；他在狱中播放莫扎特的歌剧，让所有囚犯第一次感受到音乐的美好。
+埃利斯·博伊德·"瑞德"·雷丁（摩根·弗里曼饰）是故事的叙述者，也是安迪的灵魂伴侣。瑞德在监狱中待了四十年，已经习惯了监狱的生活，甚至害怕假释后的自由。是安迪让他明白了"希望"的意义，最终他在假释后遵循与安迪的约定，踏上了寻找自由的旅程。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典台词与细节解析
+            </div>
+            <div class="section-content">影片中有许多令人难忘的经典台词：
+ "希望是世界上最美好的东西，也许是世界上最美好的东西，而美好的东西永远不会消逝。"
+这句台词是安迪留给瑞德的遗言，也是整部电影的灵魂所在。它告诉我们，无论身处何种困境，只要心中保有希望，就没有什么能够打败我们。
+ "有些鸟儿是注定不会被关在牢笼里的，因为它们的每一片羽毛都闪耀着自由的光辉。"
+这是安迪越狱前留给瑞德的话，也是对自由最诗意的诠释。
+影片中还有许多值得细细品味的细节：安迪在墙上刻下的名字、他用海报遮住的通道、那颗留给瑞德的黑色石头……每一个细节都暗示着希望与救赎的主题。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《肖申克的救赎》之所以能够打动一代又一代观众，是因为它触及了人类内心最深处的渴望——对自由的渴望，对希望的坚守。
+在生活中，我们每个人都可能是"肖申克"的囚徒——被工作压力所困，被生活重担所压，甚至被自己的恐惧和惰性所束缚。而安迪的故事告诉我们：无论身处何种境地，都不要放弃希望。只要心中保有希望，就一定能找到出路。
+这部电影适合在人生低谷时观看，它会让你相信：只要坚持，终有一天会迎来属于自己的自由。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《肖申克的救赎》不仅仅是一部电影，它是一部关于人性、关于希望、关于自由的启示录。它教会我们如何面对困境，如何坚守信念，如何在黑暗中寻找光明。
+如果你还没有看过这部电影，请找一个安静的下午，慢慢品味这部不朽的经典。如果你已经看过，不妨再重温一遍——每一次观看，都会有新的感悟。
+因为希望，永远是世界上最美好的东西。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：所有人
+💡 观影场景：人生低谷时、思考生命意义时、与朋友讨论经典电影时</div>
+        </div>
+        
+    </div>
+</body>
+</html>

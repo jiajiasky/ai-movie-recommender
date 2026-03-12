@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿甘正传 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/004_阿甘正传.jpg" alt="阿甘正传">
+            <div class="info">
+                <h1 class="title">阿甘正传</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.5 分</span>
+                    <span class="tag">1994</span>
+                    <span class="tag">剧情 / 爱情</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>奥斯卡最佳影片 / 经典美国梦</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《阿甘正传》由罗伯特·泽米吉斯执导，汤姆·汉克斯主演，于1994年上映。影片讲述了一个智商只有75的"傻子"阿甘，凭借自己的单纯和坚持，跑进大学、参军、创业，成为人生赢家的传奇故事。
+这部电影获得6项奥斯卡大奖，豆瓣评分9.5分，是美国梦的完美诠释，也是温情电影的代表作。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：傻人有傻福
+            </div>
+            <div class="section-content">阿甘的故事看似是一个童话，却蕴含着深刻的人生哲理。智商75的阿甘，却完成了无数正常人都无法完成的成就——他成为橄榄球明星、越战英雄、乒乓外交使者、捕虾船长、成功商人。
+这一切是怎么发生的？答案是：单纯的相信和坚持。
+阿甘不懂什么是怀疑，什么是放弃。他只知道"Run, Forrest, run!"（跑，福斯特，跑！）当他认定一件事值得做，就会一直做下去。正是这种近乎愚蠢的执着，让他创造了奇迹。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📝</div>
+                经典台词
+            </div>
+            <div class="section-content">> “生活就像一盒巧克力，你永远不知道下一颗是什么味道。”
+这是阿甘妈妈留给他的话，也是整部电影的核心主题。生命中充满了未知，但只要保持希望和勇气，就能面对一切。
+ “我不懂我们是否有着各自的命运，还是我们只是在风中飘荡。”
+这句台词体现了阿甘对命运的思考，也是对人生意义的追问。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">👤</div>
+                人物塑造
+            </div>
+            <div class="section-content">阿甘（汤姆·汉克斯饰）虽然智商低于常人，却拥有最宝贵的品质——真诚、善良、执着。他的故事证明了：有时候，最傻的人反而是最聪明的人。
+珍妮是阿甘一生的挚爱。她代表着阿甘心中美好的向往。虽然她的人生充满曲折，但阿甘始终如一地爱着她。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《阿甘正传》给我们以下启示：
+1. 保持单纯：不要想太多just do it
+2. 坚持不懈：认定目标就坚持到底
+3. 真诚待人：用真心换取真心
+4. 懂得感恩：记住生命中每一个帮助过你的人
+阿甘的故事告诉我们：成功不是靠聪明，而是靠简单和坚持。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《阿甘正传》是一部温暖人心的电影。它让我们相信，即使智商不高，即使起点很低，只要保持善良和坚持，也能创造属于自己的精彩人生。
+这部电影适合在迷茫时观看，它会给你继续前进的力量。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：所有人
+💡 观影场景：迷茫时、感动时、励志</div>
+        </div>
+        
+    </div>
+</body>
+</html>

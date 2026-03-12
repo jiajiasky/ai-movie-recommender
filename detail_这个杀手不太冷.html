@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这个杀手不太冷 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/008_这个杀手不太冷.jpg" alt="这个杀手不太冷">
+            <div class="info">
+                <h1 class="title">这个杀手不太冷</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.4 分</span>
+                    <span class="tag">1994</span>
+                    <span class="tag">剧情 / 动作</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>经典法式黑帮片 / 让·雷诺代表作</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《这个杀手不太冷》由吕克·贝松执导，让·雷诺和娜塔莉·波特曼主演，于1994年上映。影片讲述了一个孤独的职业杀手莱昂，收养了一个被灭门的少女玛蒂尔达，他们彼此温暖对方孤独灵魂的故事。
+这部电影豆瓣评分9.4分，是法式黑帮片的经典，也是让·雷诺的代表作，更是娜塔莉·波特曼的银幕处女作。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：孤独与温暖
+            </div>
+            <div class="section-content">莱昂是一个专业的杀手，他独来独往，没有朋友，没有爱人，只有一盆绿植陪伴。他的人生是灰色的，直到玛蒂尔达的出现。
+玛蒂尔达是一个12岁的少女，她生活在一个破碎的家庭里，父亲吸毒，继母冷漠，唯一爱的弟弟被杀害。她的人生同样是灰色的。
+两个孤独的灵魂相遇了。他们彼此温暖，彼此救赎，成为对方生命中的一道光。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典场景
+            </div>
+            <div class="section-content">走廊里的牛奶：玛蒂尔达每天给莱昂买牛奶，这个细节展现了她的关心。
+杀手训练：玛蒂尔达要学做杀手，莱昂教她各种技能。这段时光是两人最快乐的时光。
+分别前的告白：玛蒂尔达说"Leon, I think I'm kinda falling in love with you."（莱昂，我好像爱上你了。）莱昂说"Perfect."（你不会有事的。）
+最后的复仇：莱昂为了就玛蒂尔达牺牲了自己。临死前，他替玛蒂尔达报了仇，并把她推出了生门。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">👤</div>
+                人物塑造
+            </div>
+            <div class="section-content">莱昂（让·雷诺饰）是一个职业杀手，但他内心柔软。他不杀女人和孩子，保持着最后的人性。他和玛蒂尔达之间的感情超越了爱情，更像是一种父女情。
+玛蒂尔达（娜塔莉·波特曼饰）是一个早熟的女孩，她坚强、勇敢，敢于表达爱意。她的出现让莱昂的人生有了色彩。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《这个杀手不太冷》教会我们：
+1. 孤独可以被治愈：即使是最孤独的人，也需要被爱
+2. 爱无关年龄：真挚的感情可以超越年龄的界限
+3. 保持善良：即使身处黑暗，也要保持内心的光明
+4. 珍惜身边的人：生命短暂，要好好珍惜爱我们的人
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">这是一部让人看完久久不能平静的电影。莱昂和玛蒂尔达之间的感情复杂而纯粹，让人感动又心痛。
+莱昂的结局是悲剧的，但他完成了自己的救赎——他让玛蒂尔达重新看到了生活的希望，他把爱传递了下去。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：文艺青年、爱情电影爱好者
+💡 观影场景：思考爱情、感动落泪、夜深人静时</div>
+        </div>
+        
+    </div>
+</body>
+</html>

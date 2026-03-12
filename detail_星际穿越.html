@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星际穿越 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/007_星际穿越.jpg" alt="星际穿越">
+            <div class="info">
+                <h1 class="title">星际穿越</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.4 分</span>
+                    <span class="tag">2014</span>
+                    <span class="tag">科幻 / 冒险</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>奥斯卡最佳视觉效果 / 诺兰神作</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《星际穿越》是克里斯托弗·诺兰的科幻巨制，于2014年上映，由马修·麦康纳、安妮·海瑟薇主演。影片讲述了一组宇航员穿越虫洞寻找人类新家园的史诗故事。
+这部电影获得奥斯卡最佳视觉效果奖，豆瓣评分9.4分，是硬科幻的巅峰之作，也是最感人的父女情电影。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：爱与时空
+            </div>
+            <div class="section-content">诺兰在这部电影中提出了一个深刻的问题：爱能否超越时空？
+库珀为了拯救女儿和人类，离开了地球，在星际空间中穿越。当他再次见到女儿时，女儿已经是一位老人，而他却几乎没有老去。这种时间的相对性让人泪目。
+"他们"（五维生物）让库珀在女儿的书房里出现，实际上是爱让他找到了回家的路。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典场景
+            </div>
+            <div class="section-content">米勒星球：库珀一行来到米勒星球，却发现那里一个小时等于地球七年。短短几分钟的探索，却让在轨道上等待的罗米利等了23年。
+库珀与墨菲的对话：父女二人在不同时空的对话，是影片中最催泪的部分。墨菲说："爸爸，你让我等了你太久。"库珀泪流满面。
+"Stay"：年轻时的墨菲对库珀说"Stay"（留下来），这是改变命运的时刻。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">👤</div>
+                人物塑造
+            </div>
+            <div class="section-content">库珀（马修·麦康纳饰）是一位前NASA宇航员和工程师，也是两个孩子的父亲。他的使命感让他离开了家人，但内心深处始终牵挂着女儿墨菲。
+墨菲（童年由麦肯基·弗恩饰演）是库珀的女儿，她聪慧过人，始终相信父亲会回来。她在书房里发现了父亲传递的信息，最终解开了引力方程，拯救了人类。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《星际穿越》教会我们：
+1. 爱是超越维度的力量：理性让我们探索宇宙，爱让我们找到回家的路
+2. 父女情深：真正的连接不会因为距离和时间而断开
+3. 保护地球：我们只有一个地球
+4. 探索精神：人类之所以伟大，是因为我们有探索未知的勇气
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《星际穿越》是一部罕见的既科幻又温情的电影。它有硬核的科学理论（虫洞、黑洞、相对论），也有柔软的父女之情。
+诺兰用宏大的宇宙观，讲述了一个关于爱和回家的故事。看完电影，你会想要抱抱身边的家人。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：科幻爱好者、父子情深的观众
+💡 观影场景：思考人生、科幻迷必看、亲子时光</div>
+        </div>
+        
+    </div>
+</body>
+</html>

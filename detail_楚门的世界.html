@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楚门的世界 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/010_楚门的世界.jpg" alt="楚门的世界">
+            <div class="info">
+                <h1 class="title">楚门的世界</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.4 分</span>
+                    <span class="tag">1998</span>
+                    <span class="tag">剧情 / 科幻</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>柏林金熊奖 / 反乌托邦经典</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《楚门的世界》由彼得·威尔执导，金·凯瑞主演，于1998年上映。影片讲述了一个名叫楚门的男人，发现自己生活在一档真人秀节目中的人生，决定逃离这个虚假世界的故事。
+这部电影获得奥斯卡最佳导演提名，豆瓣评分9.4分，是反乌托邦电影的经典，也是对现代媒体最深刻的批判。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：真实与自由
+            </div>
+            <div class="section-content">楚门从出生开始就生活在"桃源岛"——一个巨大的摄影棚。他的生活是一场24小时不间断的直播节目，全世界的人都在观看他，却只有他自己不知道。
+我们是否也生活在某种"楚门的世界"中？ 也许我们以为的生活真相，其实只是别人想让我们看到的样子。社交媒体、新闻报道、消费主义……这些是否也在悄悄塑造着我们的认知？
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典场景
+            </div>
+            <div class="section-content">楚门的日常：影片开头展示了楚门千篇一律的生活——同样的邻居、同样的问候、同样的意外。这些看似正常的细节，细思极恐。
+父亲的"复活"：楚门的父亲在节目中"去世"，但有一天突然出现在街头。这是节目组的失误，也是楚门开始怀疑的导火索。
+寻找西尔维亚：楚门深爱的女孩西尔维亚试图告诉他真相，被强行带离。这成为楚门心中永远的痛。
+ exit 的门：楚门划船到达了"海洋"的尽头，找到了摄影棚的边界。他摸到了那扇通往真实世界的门。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">👤</div>
+                人物塑造
+            </div>
+            <div class="section-content">楚门（金·凯瑞饰）是一个普通的保险经纪人，他善良、乐观、热情。直到30岁那年，他开始怀疑周围的一切。他代表着追求真相和自由的普通人。
+克里斯托弗是节目的导演，他创造了楚门的世界，也是楚门"父亲"般的存在。他对楚门的"爱"是复杂的——他给了楚门一个"完美"的人生，却剥夺了他知道真相的权利。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📝</div>
+                经典台词
+            </div>
+            <div class="section-content">> “假如再也见不到你，祝你早安、午安、晚安。”
+这是楚门的标志性台词，也是他离开前对观众说的最后一句话。这句话既是对观众的告别，也是对虚假世界的告别。
+ “你是一个聪明人，应该走你真正的路。其实电视节目不需要什么观众，我只需要楚门。”
+这是克里斯托弗对楚门说的话，也是全片最发人深省的台词。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《楚门的世界》教会我们：
+1. 追求真相：不要盲目接受别人告诉你的世界，要自己去探索
+2. 保持怀疑：有时候习以为常的事情并不一定是真实的
+3. 勇气很重要：逃离舒适区需要巨大的勇气
+4. 珍惜自由：真正的自由不是物质的丰富，而是精神的独立
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《楚门的世界》是一部让人看完会感到脊背发凉的电影。它让我们反思：我们生活的世界到底是真实的，还是被某种力量塑造的？
+也许我们永远无法确定答案，但楚门的故事告诉我们：即使面对不确定的未来，也要有勇气走出那扇门。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：所有人、媒体从业者、哲学爱好者
+💡 观影场景：思考人生、媒体反思、独处时</div>
+        </div>
+        
+    </div>
+</body>
+</html>

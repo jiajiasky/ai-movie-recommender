@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美丽人生 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/006_美丽人生.jpg" alt="美丽人生">
+            <div class="info">
+                <h1 class="title">美丽人生</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.5 分</span>
+                    <span class="tag">1997</span>
+                    <span class="tag">剧情 / 战争</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>奥斯卡最佳外语片 / 豆瓣评分第一</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《美丽人生》由罗伯托·贝尼尼执导并主演，于1997年上映。影片以二战时期为背景，讲述了一位幽默乐观的犹太父亲，用想象力保护儿子童心，在纳粹集中营中展现父爱伟大的感人故事。
+这部电影获得奥斯卡最佳男主角、最佳外语片等多项大奖，豆瓣评分9.5分，是意大利电影的巅峰之作，也是最感人的战争片之一。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：父爱与希望
+            </div>
+            <div class="section-content">影片的上半部分是轻松的喜剧——犹太青年圭多追求女神多拉的各种搞笑场景。但当圭多和儿子被关进集中营后，影片基调骤变。
+圭多用一个巨大的"谎言"保护了儿子的心灵。他告诉儿子这是一场游戏，只要遵守规则、完成任务，就能得到真正的坦克。儿子在父亲的保护下，始终保持着童真的笑容，直到最后一刻。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典场景
+            </div>
+            <div class="section-content">集中营的"游戏"：圭多告诉儿子他们在玩一个游戏，积分可以兑换坦克。这个善意的谎言让儿子在人间炼狱中依然保持着希望。
+广播站喊"早安，公主"：圭多趁做苦工的机会，通过广播站向妻子喊"早安，公主"，让妻子知道他们还活着。
+走向死亡前的"舞蹈"：圭多在被枪决前，为了让儿子躲藏起来不被发现，装作轻松的样子走路。这最后一幕让无数观众泪崩。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">👤</div>
+                人物塑造
+            </div>
+            <div class="section-content">圭多（罗伯托·贝尼尼饰）是一个完美的父亲形象。他幽默、乐观、智慧，用自己的方式守护着家人。即使在最黑暗的时刻，他也没有放弃希望。
+多拉是圭多的妻子，她深爱着丈夫和儿子。当她可以留在外面时，她选择进入集中营与家人在一起。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《美丽人生》告诉我们：
+1. 爱可以战胜一切：即使在最艰难的环境下，爱也能给人带来希望
+2. 保护家人的尊严：真正的爱是守护他们的心灵
+3. 保持乐观：态度决定了我们如何看待世界
+4. 珍惜当下：好好爱身边的人，因为明天不确定
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《美丽人生》是一部笑着流泪的电影。前半部分是喜剧，后半部分是悲剧，但正是这种反差，让父爱显得更加伟大。
+圭多用生命诠释了什么是最伟大的父爱——不是给孩子留下多少财富，而是守护他们的心灵，让他们相信世界是美好的。
+这部电影让我们明白：无论生活多么艰难，都要保持希望和微笑。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：所有人
+💡 观影场景：感动落泪、思考父爱、家庭时光</div>
+        </div>
+        
+    </div>
+</body>
+</html>

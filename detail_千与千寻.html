@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千与千寻 - 电影详情</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 600px) {
+            .hero { flex-direction: column; align-items: center; text-align: center; }
+        }
+        .poster {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .info { flex: 1; }
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .awards {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .awards h3 { margin-bottom: 10px; font-size: 1.1rem; }
+        .awards p { opacity: 0.9; }
+        
+        .section {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .section:nth-child(2) .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .section:nth-child(3) .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .section:nth-child(4) .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .section:nth-child(5) .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .section:nth-child(6) .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
+        
+        .section-content {
+            line-height: 1.9;
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+        .section-content p { margin-bottom: 15px; }
+        
+        .quote {
+            background: rgba(255,215,0,0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .summary-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .summary-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+        .summary-item .label { font-size: 0.8rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">← 返回推荐</a>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <img class="poster" src="movie_images/005_千与千寻.jpg" alt="千与千寻">
+            <div class="info">
+                <h1 class="title">千与千寻</h1>
+                <div class="meta">
+                    <span class="rating">⭐ 9.4 分</span>
+                    <span class="tag">2001</span>
+                    <span class="tag">动画 / 冒险</span>
+                </div>
+                <div class="awards">
+                <h3>🏆 获奖信息</h3>
+                <p>奥斯卡最佳动画 / 宫崎骏代表作</p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🎬</div>
+                影片概述
+            </div>
+            <div class="section-content">《千与千寻》是宫崎骏的巅峰之作，于2001年上映，是日本动画电影的里程碑。影片讲述了少女千寻误入神隐世界，为了拯救被变成猪的父母，必须在汤婆婆的澡堂工作的奇幻故事。
+这部电影荣获奥斯卡最佳动画长片奖，豆瓣评分9.4分，是日本票房最高的动画电影，也是无数人心中的"动画圣经"。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                主题解析：成长与自我
+            </div>
+            <div class="section-content">影片的核心主题是成长与自我寻找。千寻从一开始的娇气、任性，逐渐成长为勇敢、坚强的小女孩。她在神隐世界的经历，就是她成长的缩影。
+"千" 是汤婆婆给千寻取的名字，代表着剥夺了她的自我。而"千寻" 是她的本名，代表着真正的自己。找回名字的过程，就是找回自我的过程。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📌</div>
+                经典角色
+            </div>
+            <div class="section-content">千寻：一个普通的10岁女孩，她的成长让每个观众都能找到共鸣。她的勇气和善良感染了身边的人，也救赎了白龙、无脸男等角色。
+白龙：汤婆婆的弟子，一只白色的河神。他曾经是人类，为了学习魔法失去了名字。他对千寻的帮助和感情，是影片中最动人的情感线。
+无脸男：一个孤独的幽灵，他在汤婆婆的澡堂里用金钱诱惑人们，最终被千寻的善良打动，决定留在钱婆婆那里。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">📝</div>
+                经典台词
+            </div>
+            <div class="section-content">> “曾经发生过的事情不可能忘记，只是想不起来而已。”
+这句台词告诉我们，有些记忆虽然暂时遗忘，但永远藏在心底。
+ “不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。”
+这是宫崎骏对成长的诠释。
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">🌟</div>
+                观影启示
+            </div>
+            <div class="section-content">《千与千寻》教会我们：
+1. 勇敢面对：不要逃避困难，勇敢地迈出第一步
+2. 保持善良：即使世界复杂，也要保持内心的纯真
+3. 记住自我：无论环境如何变化，都要记住真正的自己
+4. 学会独立：成长就是学会独自面对问题
+</div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon">⭐</div>
+                总结
+            </div>
+            <div class="section-content">《千与千寻》不仅是一部动画，更是一部关于成长的寓言。它适合所有年龄段的人观看——孩子在千寻身上看到冒险，大人在千寻身上看到自己曾经的模样。
+这部电影是宫崎骏送给所有人的礼物，提醒我们：无论生活多么艰难，都要保持善良和勇气。
+
+⭐ 推荐指数：★★★★★
+🎬 适合人群：所有人
+💡 观影场景：放松、思考成长、亲子时光</div>
+        </div>
+        
+    </div>
+</body>
+</html>
