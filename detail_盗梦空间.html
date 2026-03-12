@@ -22,8 +22,6 @@
             color: var(--text-primary);
             line-height: 1.7;
         }
-        
-        /* Header */
         .header {
             background: rgba(0,0,0,0.3);
             backdrop-filter: blur(20px);
@@ -43,237 +41,105 @@
             transition: color 0.3s;
         }
         .header a:hover { color: var(--primary); }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 24px 80px;
-        }
+        .hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
+        @media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
         
-        /* Hero Section */
-        .hero {
-            display: flex;
-            gap: 50px;
-            margin-bottom: 60px;
-            align-items: flex-start;
-        }
-        @media (max-width: 700px) {
-            .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
-        }
-        
-        .poster-wrap {
-            position: relative;
-            flex-shrink: 0;
-        }
-        .poster {
-            width: 260px;
-            border-radius: 16px;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.6);
-            transition: transform 0.4s ease;
-        }
+        .poster-wrap { position: relative; flex-shrink: 0; }
+        .poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s; }
         .poster:hover { transform: translateY(-5px); }
-        
         .info { flex: 1; min-width: 0; }
         
-        .title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            line-height: 1.3;
-            background: linear-gradient(90deg, #fff 0%, #bbb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+        .title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
-        .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .meta-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--bg-card);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
+        .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
         .rating { color: var(--accent) !important; font-weight: 600; }
         
-        /* Awards Card */
-        .awards-card {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 14px;
-            padding: 20px 24px;
-            margin-bottom: 30px;
-        }
-        .awards-card h3 {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            opacity: 0.9;
-        }
-        .awards-card p {
-            font-size: 1.05rem;
-            font-weight: 500;
-        }
+        .awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
+        .awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
+        .awards-card p { font-size: 1.05rem; font-weight: 500; }
         
-        /* Quotes Section */
+        /* 经典台词 - 新样式 */
         .quotes-section {
-            background: var(--bg-card);
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.03));
             border-radius: 16px;
             padding: 28px;
             margin-bottom: 35px;
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,215,0,0.2);
         }
         .quotes-title {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #ffd700;
+            margin-bottom: 24px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            font-weight: 600;
         }
         .quotes-title::after {
             content: '';
             flex: 1;
             height: 1px;
-            background: linear-gradient(90deg, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, rgba(255,215,0,0.4), transparent);
         }
         
-        .quote-item {
+        .quote-grid { display: grid; gap: 14px; }
+        
+        .quote-card {
+            background: rgba(0,0,0,0.35);
+            border-radius: 10px;
+            padding: 18px 22px;
             position: relative;
-            padding: 18px 20px;
-            padding-left: 50px;
-            margin-bottom: 14px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 12px;
-            border-left: 3px solid var(--accent);
+            border-left: 3px solid #ffd700;
         }
-        .quote-item:last-child { margin-bottom: 0; }
-        .quote-mark {
+        
+        .quote-card::before {
+            content: '"';
             position: absolute;
-            left: 16px;
-            top: 14px;
-            font-size: 1.5rem;
-            color: var(--accent);
-            opacity: 0.6;
+            left: 10px;
+            top: 6px;
+            font-size: 1.8rem;
+            color: #ffd700;
+            opacity: 0.5;
+            font-family: Georgia, serif;
+            line-height: 1;
         }
-        .quote-text {
-            font-size: 1rem;
+        
+        .quote-card p {
+            padding-left: 26px;
+            font-size: 0.92rem;
             line-height: 1.7;
-            color: var(--text-primary);
-            font-style: italic;
+            color: rgba(255,255,255,0.92);
+            margin: 0;
         }
         
-        /* Content Sections */
-        .section {
-            background: var(--bg-card);
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 24px;
-            border: 1px solid rgba(255,255,255,0.06);
-            transition: border-color 0.3s;
-        }
-        .section:hover {
-            border-color: rgba(255,255,255,0.12);
-        }
-        
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 24px;
-            padding-bottom: 18px;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .section-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            flex-shrink: 0;
-        }
-        
+        .section { background: var(--bg-card); border-radius: 16px; padding: 32px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.06); }
+        .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
         .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
         .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
         .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
         .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
         .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
-        
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        
-        .section-content {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.85;
-        }
+        .section-title { font-size: 1.25rem; font-weight: 600; }
+        .section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
         .section-content p { margin-bottom: 14px; }
-        .section-content p:last-child { margin-bottom: 0; }
-        .section-content strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
+        .section-content strong { color: var(--text-primary); font-weight: 600; }
+        .quote-highlight { background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05)); border: 1px solid rgba(255,215,0,0.25); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+        .quote-highlight p { padding-left: 30px; font-style: italic; color: var(--accent); font-size: 1.05rem; line-height: 1.6; margin: 0; }
         
-        /* Quote highlight */
-        .quote-highlight {
-            background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05));
-            border: 1px solid rgba(255,215,0,0.25);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin: 20px 0;
-            position: relative;
-        }
-        .quote-highlight::before {
-            content: '"';
-            position: absolute;
-            left: 20px;
-            top: 10px;
-            font-size: 3rem;
-            color: var(--accent);
-            opacity: 0.3;
-            font-family: Georgia, serif;
-        }
-        .quote-highlight p {
-            padding-left: 30px;
-            font-style: italic;
-            color: var(--accent);
-            font-size: 1.05rem;
-            line-height: 1.6;
-            margin: 0;
-        }
-        
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            border-top: 1px solid rgba(255,255,255,0.06);
-            margin-top: 40px;
-        }
+        .footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
     </style>
 </head>
 <body>
     <div class="header">
         <a href="index.html">← 返回电影推荐</a>
     </div>
-    
     <div class="container">
-        <!-- Hero -->
         <div class="hero">
             <div class="poster-wrap">
                 <img class="poster" src="movie_images/009_盗梦空间.jpg" alt="盗梦空间">
@@ -285,27 +151,10 @@
                     <span class="meta-item">2010</span>
                     <span class="meta-item">科幻 / 动作</span>
                 </div>
-                
-                <div class="awards-card">
-                <h3>🏆 获奖荣誉</h3>
-                <p>奥斯卡最佳摄影 · 诺兰烧脑神作</p>
-            </div>
+                <div class="awards-card"><h3>🏆 获奖荣誉</h3><p>奥斯卡最佳摄影 · 诺兰烧脑神作</p></div>
             </div>
         </div>
-        
-        <!-- Quotes Section -->
-        <div class="quotes-section"><div class="quotes-title">经典台词</div><div class="quote-item">
-                    <span class="quote-mark">"</span>
-                    <p class="quote-text">你必须得更勇敢，亲爱的，在梦里你可以更大胆一点。</p>
-                </div><div class="quote-item">
-                    <span class="quote-mark">"</span>
-                    <p class="quote-text">你记得你曾经到过这里，但你不知道是什么时候。</p>
-                </div><div class="quote-item">
-                    <span class="quote-mark">"</span>
-                    <p class="quote-text">想法就像病毒一样，顽强适应，层层蔓延。</p>
-                </div></div>
-        
-        <!-- Content Sections -->
+        <div class="quotes-section"><div class="quotes-title">🎯 经典台词</div><div class="quote-grid"><div class="quote-card"><p>你必须得更勇敢，亲爱的，在梦里你可以更大胆一点。</p></div><div class="quote-card"><p>你记得你曾经到过这里，但你不知道是什么时候。</p></div><div class="quote-card"><p>想法就像病毒一样，顽强适应，层层蔓延。</p></div></div></div>
         
         <div class="section section-1">
             <div class="section-header">
@@ -378,10 +227,7 @@ Paris Folding：在第二层梦境中，阿里阿德涅让巴黎折叠，城市�
 🎬 适合人群：科幻爱好者、烧脑电影爱好者
 💡 观影场景：思考人生、二刷三刷、电影讨论</p></div>
         </div>
-        
-        <div class="footer">
-            爱看电影 · MBTI个性化电影推荐
-        </div>
+        <div class="footer">爱看电影 · MBTI个性化电影推荐</div>
     </div>
 </body>
 </html>
