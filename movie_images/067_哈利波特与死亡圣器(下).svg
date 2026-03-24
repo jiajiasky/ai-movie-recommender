@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 220">
+        <rect fill="#96ceb4" width="150" height="220"/>
+        <text x="75" y="100" font-size="50" fill="white" text-anchor="middle" font-family="SimHei, sans-serif" font-weight="bold">哈</text>
+        <text x="75" y="150" font-size="10" fill="white" text-anchor="middle" font-family="SimHei, sans-serif">哈利·波特与死亡</text>
+        <text x="75" y="170" font-size="8" fill="white" text-anchor="middle" opacity="0.8">点击查看详情</text>
+    </svg>

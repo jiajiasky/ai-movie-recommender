@@ -345,7 +345,7 @@
                 
                 html += `<div class="${cardClass}" onclick="toggleDetail(this)">
                     <div class="movie-basic">
-                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23eee%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23999%22>${movie.title_cn}</text></svg>'">
+                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2214%22>${movie.title_cn}</text></svg>'">
                         <div class="movie-content">
                             <div class="movie-header">
                                 <h3 class="movie-title">${movie.title_cn}</h3>
@@ -395,7 +395,7 @@
                 // 展开
                 const detailHTML = `
                     <div class="movie-basic">
-                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23eee%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23999%22>${movie.title_cn}</text></svg>'">
+                        <img class="movie-poster" src="${movie.cover_url}" alt="${movie.title_cn}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2214%22>${movie.title_cn}</text></svg>'">
                         <div class="movie-content">
                             <div class="movie-header">
                                 <h3 class="movie-title">${movie.title_cn}</h3>
@@ -416,11 +416,11 @@
                         </div>
                     </div>
                     <div style="padding: 16px; background: #fafafa; border-top: 1px solid #eee;">
-                        <p style="color: #888; font-size: 0.85rem; margin-bottom: 12px; font-style: italic;">"${movie.story || '暂无简介'}"</p>
+                        <p style="color: #888; font-size: 0.85rem; margin-bottom: 12px; font-style: italic;">${(movie.story && movie.story.length > 5) ? movie.story : (movie.year ? movie.year + '年' + (movie.genre || '') + '类型' + (movie.director ? '，' + movie.director + '执导' : '佳作') : '暂无简介')}</p>
                         <div style="display: flex; gap: 10px;">
                             <button class="my-btn ${liked ? 'active' : ''}" onclick="toggleLike('${movie.title_cn}', this)" style="${liked ? 'background:var(--primary);color:white;' : ''}">${liked ? '❤️ 已喜欢' : '❤️ 喜欢'}</button>
                             <button class="my-btn ${watched ? 'active' : ''}" onclick="toggleWatched('${movie.title_cn}', this)" style="${watched ? 'background:var(--secondary);color:white;' : ''}">${watched ? '✓ 已看过' : '✓ 看过'}</button>
-                            ${movie.review ? '<a href="detail_' + movie.title_cn.replace('/', '_').replace('?', '') + '.html" target="_blank" class="my-btn" style="background:#667eea;color:white;text-decoration:none;">📖 影评</a>' : ''}
+                            ${'<a href="detail_' + movie.title_cn.replace('/', '_').replace('?', '') + '.html" target="_blank" class="my-btn" style="background:#667eea;color:white;text-decoration:none;">📖 详情</a>'}
                         </div>
                     </div>`;
                 card.innerHTML = detailHTML;

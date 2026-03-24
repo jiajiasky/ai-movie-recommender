@@ -1,0 +1,294 @@
+<!-- 
+  影评功能演示组件
+  实际使用时嵌入到 detail_*.html 页面底部
+-->
+
+<style>
+.review-section {
+    background: var(--bg-card, rgba(255,255,255,0.05));
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+.review-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.review-form {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 16px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 0.95rem;
+}
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.rating-input {
+    display: flex;
+    gap: 8px;
+}
+.rating-input .star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    transition: color 0.2s;
+}
+.rating-input .star.active {
+    color: #ffd700;
+}
+.rating-input .star:hover {
+    color: #ffd700;
+}
+.btn-submit {
+    background: linear-gradient(135deg, var(--primary, #667eea), var(--secondary, #764ba2));
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.btn-submit:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+.btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.review-item {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 3px solid var(--primary, #667eea);
+}
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.review-user {
+    font-weight: 600;
+    color: #fff;
+}
+.review-rating {
+    color: #ffd700;
+}
+.review-date {
+    color: #666;
+    font-size: 0.8rem;
+}
+.review-content {
+    color: #bbb;
+    line-height: 1.6;
+}
+.review-empty {
+    color: #666;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+<div class="review-section">
+    <h3>💬 用户影评</h3>
+    
+    <!-- 提交表单 -->
+    <div class="review-form" id="reviewForm">
+        <div class="form-group">
+            <label>昵称</label>
+            <input type="text" id="username" placeholder="请输入你的昵称" maxlength="20">
+        </div>
+        <div class="form-group">
+            <label>评分</label>
+            <div class="rating-input" id="ratingInput">
+                <span class="star" data-value="1">⭐</span>
+                <span class="star" data-value="2">⭐</span>
+                <span class="star" data-value="3">⭐</span>
+                <span class="star" data-value="4">⭐</span>
+                <span class="star" data-value="5">⭐</span>
+                <span class="star" data-value="6">⭐</span>
+                <span class="star" data-value="7">⭐</span>
+                <span class="star" data-value="8">⭐</span>
+                <span class="star" data-value="9">⭐</span>
+                <span class="star" data-value="10">⭐</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>影评内容</label>
+            <textarea id="reviewContent" placeholder="写下你的观影感受..." maxlength="500"></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitReview()">提交影评</button>
+    </div>
+    
+    <!-- 影评列表 -->
+    <div class="reviews-list" id="reviewsList">
+        <div class="review-empty">暂无影评，快来抢先评论吧！</div>
+    </div>
+</div>
+
+<script>
+// 当前电影名称（从页面标题提取）
+const currentMovie = document.title.split(' - ')[0] || '肖申克的救赎';
+let selectedRating = 0;
+
+// 初始化
+document.addEventListener('DOMContentLoaded', function() {
+    initRating();
+    loadReviews();
+});
+
+// 评分交互
+function initRating() {
+    const stars = document.querySelectorAll('#ratingInput .star');
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            selectedRating = parseInt(this.dataset.value);
+            updateStars();
+        });
+        star.addEventListener('mouseenter', function() {
+            const hoverValue = parseInt(this.dataset.value);
+            stars.forEach(s => {
+                s.classList.toggle('active', parseInt(s.dataset.value) <= hoverValue);
+            });
+        });
+        star.addEventListener('mouseleave', function() {
+            updateStars();
+        });
+    });
+}
+
+function updateStars() {
+    const stars = document.querySelectorAll('#ratingInput .star');
+    stars.forEach(s => {
+        s.classList.toggle('active', parseInt(s.dataset.value) <= selectedRating);
+    });
+}
+
+// 提交影评
+async function submitReview() {
+    const username = document.getElementById('username').value.trim();
+    const content = document.getElementById('reviewContent').value.trim();
+    
+    if (!username) {
+        alert('请输入昵称');
+        return;
+    }
+    if (selectedRating === 0) {
+        alert('请选择评分');
+        return;
+    }
+    if (!content) {
+        alert('请填写影评内容');
+        return;
+    }
+    
+    const btn = document.querySelector('.btn-submit');
+    btn.disabled = true;
+    btn.textContent = '提交中...';
+    
+    try {
+        const reviewData = {
+            movie: currentMovie,
+            username: username,
+            rating: selectedRating,
+            review: content,
+            date: new Date().toISOString().split('T')[0]
+        };
+        
+        // 保存到本地存储（演示用）
+        saveReviewLocal(reviewData);
+        
+        // 重置表单
+        document.getElementById('username').value = '';
+        document.getElementById('reviewContent').value = '';
+        selectedRating = 0;
+        updateStars();
+        
+        // 重新加载列表
+        loadReviews();
+        
+        alert('提交成功！感谢你的影评 🎉');
+        
+    } catch (error) {
+        console.error(error);
+        alert('提交失败，请稍后重试');
+    } finally {
+        btn.disabled = false;
+        btn.textContent = '提交影评';
+    }
+}
+
+// 本地存储（演示用）
+function saveReviewLocal(review) {
+    let reviews = JSON.parse(localStorage.getItem('movie_reviews') || '{}');
+    if (!reviews[review.movie]) {
+        reviews[review.movie] = [];
+    }
+    reviews[review.movie].unshift(review);
+    localStorage.setItem('movie_reviews', JSON.stringify(reviews));
+}
+
+function loadReviewsLocal() {
+    const reviews = JSON.parse(localStorage.getItem('movie_reviews') || '{}');
+    return reviews[currentMovie] || [];
+}
+
+// 加载影评列表（先从本地加载演示）
+function loadReviews() {
+    const reviews = loadReviewsLocal();
+    const container = document.getElementById('reviewsList');
+    
+    if (reviews.length === 0) {
+        container.innerHTML = '<div class="review-empty">暂无影评，快来抢先评论吧！</div>';
+        return;
+    }
+    
+    container.innerHTML = reviews.map(r => `
+        <div class="review-item">
+            <div class="review-header">
+                <span class="review-user">${escapeHtml(r.username)}</span>
+                <span class="review-rating">${'⭐'.repeat(Math.round(r.rating / 2))} ${r.rating}分</span>
+            </div>
+            <div class="review-date">${r.date}</div>
+            <div class="review-content">${escapeHtml(r.review)}</div>
+        </div>
+    `).join('');
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+</script>

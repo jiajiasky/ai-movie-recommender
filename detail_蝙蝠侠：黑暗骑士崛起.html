@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蝙蝠侠：黑暗骑士崛起 - 电影详情</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #667eea; --secondary: #764ba2; --accent: #ffd700; --bg-dark: #0f0f1a; --bg-card: rgba(255,255,255,0.05); --text-primary: #fff; --text-secondary: rgba(255,255,255,0.7); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%); min-height: 100vh; color: var(--text-primary); line-height: 1.7; }
+.header { background: rgba(0,0,0,0.3); backdrop-filter: blur(20px); padding: 18px 30px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.header a { color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: color 0.3s; }
+.header a:hover { color: var(--primary); }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+.hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
+@media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
+.poster-wrap { position: relative; flex-shrink: 0; }
+.poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s ease; }
+.poster:hover { transform: translateY(-5px); }
+.info { flex: 1; min-width: 0; }
+.title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
+.rating { color: var(--accent) !important; font-weight: 600; }
+.director-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.director-label { color: var(--text-secondary); font-size: 0.9rem; }
+.director-name { color: var(--text-primary); font-size: 1rem; }
+.awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
+.awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
+.awards-card p { font-size: 1.05rem; font-weight: 500; }
+.quotes-section, .section, .reviews-section { background: var(--bg-card); border-radius: 16px; padding: 28px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.08); }
+.section:hover, .quotes-section:hover, .reviews-section:hover { border-color: rgba(255,255,255,0.12); }
+.quotes-title, .section-header, .reviews-title { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; background: linear-gradient(135deg, #667eea, #764ba2); }
+.section-title { font-size: 1.25rem; font-weight: 600; }
+.quote-item { position: relative; padding: 18px 20px; padding-left: 50px; margin-bottom: 14px; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 3px solid var(--accent); }
+.quote-item:last-child { margin-bottom: 0; }
+.quote-mark { position: absolute; left: 16px; top: 14px; font-size: 1.5rem; color: var(--accent); opacity: 0.6; }
+.quote-text { font-size: 1rem; line-height: 1.7; color: var(--text-primary); font-style: italic; }
+.section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
+.section-content p { margin-bottom: 14px; }
+.section-content p:last-child { margin-bottom: 0; }
+.review-form { background: rgba(0,0,0,0.2); padding: 24px; border-radius: 12px; margin-bottom: 24px; }
+.review-form h4 { font-size: 1.1rem; margin-bottom: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-size: 0.9rem; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.3); color: #fff; font-size: 0.95rem; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.rating-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.rating-group input { display: none; }
+.rating-group label { padding: 8px 16px; background: rgba(255,255,255,0.1); border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+.rating-group input:checked + label { background: var(--primary); color: #fff; }
+.submit-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; border: none; padding: 12px 32px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: transform 0.2s; }
+.submit-btn:hover { transform: translateY(-2px); }
+.user-review { background: rgba(0,0,0,0.2); padding: 16px; border-radius: 10px; margin-bottom: 12px; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.review-author { font-weight: 600; color: var(--text-primary); }
+.review-score { color: var(--accent); }
+.review-time { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+.review-content { color: var(--text-secondary); line-height: 1.6; }
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.rec-card { background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; text-decoration: none; display: block; transition: transform 0.3s; }
+.rec-card:hover { transform: translateY(-5px); }
+.rec-card img { width: 100%; height: 200px; object-fit: cover; }
+.rec-info { padding: 12px; }
+.rec-title { color: #fff; font-size: 0.9rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-rating { color: var(--accent); font-size: 0.85rem; margin-top: 4px; }
+.no-rec, .no-quotes, .no-reviews { color: rgba(255,255,255,0.5); text-align: center; padding: 20px; }
+.footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="header"><a href="index.html">← 返回电影推荐</a></div>
+<div class="container">
+<div class="hero">
+<div class="poster-wrap"><img class="poster" src="movie_images/106_蝙蝠侠黑暗骑士崛起.jpg" alt="蝙蝠侠：黑暗骑士崛起" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'"></div>
+<div class="info">
+<h1 class="title">蝙蝠侠：黑暗骑士崛起</h1>
+<div class="meta"><span class="meta-item rating">⭐ 8.9 分</span><span class="meta-item">2012</span><span class="meta-item">动作/科幻</span></div>
+<div class="director-item"><span class="director-label">导演：</span><span class="director-name">克里斯托弗·诺兰</span></div>
+<div class="director-item"><span class="director-label">主演：</span><span class="director-name">克里斯蒂安·贝尔、汤姆·哈迪</span></div>
+<div class="awards-card"><h3>🏆 获奖荣誉</h3><p>暂无</p></div>
+</div>
+</div>
+<div class="quotes-section"><div class="quotes-title">💬 经典台词</div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">观看蝙蝠侠：黑暗骑士崛起，感受电影的独特魅力。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">这部蝙蝠侠：黑暗骑士崛起值得细细品味。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">经典之作，推荐观看！</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">📖</div><h2 class="section-title">影片概述</h2></div><div class="section-content"><p>暂无简介</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">🎬</div><h2 class="section-title">主题解析</h2></div><div class="section-content"><p>蝙蝠侠：黑暗骑士崛起是一部2012年上映的动作/科幻类型电影，由克里斯托弗·诺兰执导。这部影片通过细腻的叙事手法，展现了人物的成长与情感变化。影片探讨了人性、命运、爱情等深刻主题，让观众在观影过程中产生共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">👤</div><h2 class="section-title">人物塑造</h2></div><div class="section-content"><p>导演克里斯托弗·诺兰以其独特的视听语言著称，在这部作品中展现了高超的导演技巧。克里斯蒂安·贝尔、汤姆·哈迪的表演精彩绝伦，将角色的内心世界展现得细腻而真实。观众能够感受到角色的喜怒哀乐，与他们产生情感共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">💡</div><h2 class="section-title">观影启示</h2></div><div class="section-content"><p>观看蝙蝠侠：黑暗骑士崛起，是一部8.9分的电影，值得每一个电影爱好者观看。无论你是动作/科幻题材的忠实粉丝，还是只是想找一部好电影消磨时间，这部作品都不会让你失望。它既有商业片的娱乐性，也有艺术片的深度。</p></div></div>
+<div class="reviews-section">
+<div class="reviews-title"><div class="section-icon">⭐</div><h2 class="section-title">用户影评</h2></div>
+<div class="review-form">
+<h4>✍️ 发表评论</h4>
+<div class="form-group"><label>昵称</label><input type="text" id="reviewerName" placeholder="请输入你的昵称" maxlength="20"></div>
+<div class="form-group"><label>评分</label><div class="rating-group" id="ratingInput">
+<input type="radio" name="rating" value="10" id="r10"><label for="r10">10</label>
+<input type="radio" name="rating" value="9" id="r9"><label for="r9">9</label>
+<input type="radio" name="rating" value="8" id="r8"><label for="r8">8</label>
+<input type="radio" name="rating" value="7" id="r7"><label for="r7">7</label>
+<input type="radio" name="rating" value="6" id="r6"><label for="r6">6</label>
+<input type="radio" name="rating" value="5" id="r5"><label for="r5">5</label>
+<input type="radio" name="rating" value="4" id="r4"><label for="r4">4</label>
+<input type="radio" name="rating" value="3" id="r3"><label for="r3">3</label>
+<input type="radio" name="rating" value="2" id="r2"><label for="r2">2</label>
+<input type="radio" name="rating" value="1" id="r1"><label for="r1">1</label>
+</div></div>
+<div class="form-group"><label>影评内容</label><textarea id="reviewContent" placeholder="写下你对这部电影的看法..." maxlength="500"></textarea></div>
+<button class="submit-btn" onclick="submitReview()">提交评论</button>
+</div>
+<div id="userReviewsList"><div class="no-reviews">暂无用户影评，快来抢先评论吧！</div></div>
+</div>
+<div class="section"><div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">相似电影推荐</h2></div><div class="rec-grid"><a href="detail_蝙蝠侠：黑暗骑士.html" class="rec-card">
+                <img src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB</text></svg>" alt="蝙蝠侠：黑暗骑士" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">蝙蝠侠：黑暗骑士</div><div class="rec-rating">⭐ 9.2</div></div>
+            </a><a href="detail_盗梦空间.html" class="rec-card">
+                <img src="movie_images/09_盗梦空间.jpg" alt="盗梦空间" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">盗梦空间</div><div class="rec-rating">⭐ 9.4</div></div>
+            </a><a href="detail_致命魔术.html" class="rec-card">
+                <img src="movie_images/085_致命魔术.jpg" alt="致命魔术" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">致命魔术</div><div class="rec-rating">⭐ 8.9</div></div>
+            </a><a href="detail_星际穿越.html" class="rec-card">
+                <img src="movie_images/07_星际穿越.jpg" alt="星际穿越" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">星际穿越</div><div class="rec-rating">⭐ 9.4</div></div>
+            </a><a href="detail_头号玩家.html" class="rec-card">
+                <img src="movie_images/155_头号玩家.jpg" alt="头号玩家" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">头号玩家</div><div class="rec-rating">⭐ 8.6</div></div>
+            </a><a href="detail_闪电侠.html" class="rec-card">
+                <img src="movie_images/249_闪电侠.jpg" alt="闪电侠"<rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%9D%99%E8%9D%A0%E4%BE%A0%EF%BC%9A%E9%BB%91%E6%9A%97%E9%AA%91%E5%A3%AB%E5%B4%9B%E8%B5%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">闪电侠</div><div class="rec-rating">⭐ 7.0</div></div>
+            </a></div></div>
+<div class="footer">爱看电影 · MBTI个性化电影推荐</div>
+</div>
+<script>
+function submitReview(){var t=document.title.split(' - ')[0];var ni=document.getElementById('reviewerName');var ci=document.getElementById('reviewContent');var rs=document.getElementsByName('rating');var name=ni.value.trim();var content=ci.value.trim();var score=0;for(var i=0;i<rs.length;i++){if(rs[i].checked){score=parseInt(rs[i].value);break;}}if(!name){alert('请输入昵称');return;}if(score===0){alert('请选择评分');return;}if(!content){alert('请输入影评内容');return;}var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');reviews.push({name:name,score:score,content:content,time:Date.now()});localStorage.setItem(key,JSON.stringify(reviews));ni.value='';ci.value='';for(var i=0;i<rs.length;i++){rs[i].checked=false;}loadUserReviews();alert('评论提交成功！');}
+function loadUserReviews(){var c=document.getElementById('userReviewsList');if(!c)return;var t=document.title.split(' - ')[0];var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');if(reviews.length===0){c.innerHTML='<div class="no-reviews">暂无用户影评，快来抢先评论吧！</div>';return;}reviews.sort(function(a,b){return b.time-a.time;});var html='';for(var i=0;i<reviews.length;i++){var r=reviews[i];var d=new Date(r.time).toLocaleDateString('zh-CN');html+='<div class="user-review"><div class="review-header"><span class="review-author">'+r.name+'</span><span class="review-score">⭐ '+r.score+'/10</span></div><div class="review-time">'+d+'</div><div class="review-content">'+r.content+'</div></div>';}c.innerHTML=html;}
+document.addEventListener('DOMContentLoaded',loadUserReviews);
+</script>
+</body>
+</html>

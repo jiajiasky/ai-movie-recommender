@@ -1,223 +1,140 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>肖申克的救赎 - 电影详情</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --accent: #ffd700;
-            --bg-dark: #0f0f1a;
-            --bg-card: rgba(255,255,255,0.05);
-            --text-primary: #fff;
-            --text-secondary: rgba(255,255,255,0.7);
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
-            min-height: 100vh;
-            color: var(--text-primary);
-            line-height: 1.7;
-        }
-        .header {
-            background: rgba(0,0,0,0.3);
-            backdrop-filter: blur(20px);
-            padding: 18px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .header a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        .header a:hover { color: var(--primary); }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        
-        .hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
-        @media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
-        
-        .poster-wrap { position: relative; flex-shrink: 0; }
-        .poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s; }
-        .poster:hover { transform: translateY(-5px); }
-        .info { flex: 1; min-width: 0; }
-        
-        .title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-        .meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
-        .rating { color: var(--accent) !important; font-weight: 600; }
-        
-        .awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
-        .awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
-        .awards-card p { font-size: 1.05rem; font-weight: 500; }
-        
-        /* 经典台词 - 新样式 */
-        .quotes-section {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.03));
-            border-radius: 16px;
-            padding: 28px;
-            margin-bottom: 35px;
-            border: 1px solid rgba(255,215,0,0.2);
-        }
-        .quotes-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffd700;
-            margin-bottom: 24px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-        }
-        .quotes-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(255,215,0,0.4), transparent);
-        }
-        
-        .quote-grid { display: grid; gap: 14px; }
-        
-        .quote-card {
-            background: rgba(0,0,0,0.35);
-            border-radius: 10px;
-            padding: 18px 22px;
-            position: relative;
-            border-left: 3px solid #ffd700;
-        }
-        
-        .quote-card::before {
-            content: '"';
-            position: absolute;
-            left: 10px;
-            top: 6px;
-            font-size: 1.8rem;
-            color: #ffd700;
-            opacity: 0.5;
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        
-        .quote-card p {
-            padding-left: 26px;
-            font-size: 0.92rem;
-            line-height: 1.7;
-            color: rgba(255,255,255,0.92);
-            margin: 0;
-        }
-        
-        .section { background: var(--bg-card); border-radius: 16px; padding: 32px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.06); }
-        .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
-        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
-        .section-title { font-size: 1.25rem; font-weight: 600; }
-        .section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
-        .section-content p { margin-bottom: 14px; }
-        .section-content strong { color: var(--text-primary); font-weight: 600; }
-        .quote-highlight { background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05)); border: 1px solid rgba(255,215,0,0.25); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-        .quote-highlight p { padding-left: 30px; font-style: italic; color: var(--accent); font-size: 1.05rem; line-height: 1.6; margin: 0; }
-        
-        .footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肖申克的救赎 - 电影详情</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #667eea; --secondary: #764ba2; --accent: #ffd700; --bg-dark: #0f0f1a; --bg-card: rgba(255,255,255,0.05); --text-primary: #fff; --text-secondary: rgba(255,255,255,0.7); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%); min-height: 100vh; color: var(--text-primary); line-height: 1.7; }
+.header { background: rgba(0,0,0,0.3); backdrop-filter: blur(20px); padding: 18px 30px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.header a { color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: color 0.3s; }
+.header a:hover { color: var(--primary); }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+.hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
+@media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
+.poster-wrap { position: relative; flex-shrink: 0; }
+.poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s ease; }
+.poster:hover { transform: translateY(-5px); }
+.info { flex: 1; min-width: 0; }
+.title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
+.rating { color: var(--accent) !important; font-weight: 600; }
+.director-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.director-label { color: var(--text-secondary); font-size: 0.9rem; }
+.director-name { color: var(--text-primary); font-size: 1rem; }
+.awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
+.awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
+.awards-card p { font-size: 1.05rem; font-weight: 500; }
+.quotes-section, .section, .reviews-section { background: var(--bg-card); border-radius: 16px; padding: 28px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.08); }
+.section:hover, .quotes-section:hover, .reviews-section:hover { border-color: rgba(255,255,255,0.12); }
+.quotes-title, .section-header, .reviews-title { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; background: linear-gradient(135deg, #667eea, #764ba2); }
+.section-title { font-size: 1.25rem; font-weight: 600; }
+.quote-item { position: relative; padding: 18px 20px; padding-left: 50px; margin-bottom: 14px; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 3px solid var(--accent); }
+.quote-item:last-child { margin-bottom: 0; }
+.quote-mark { position: absolute; left: 16px; top: 14px; font-size: 1.5rem; color: var(--accent); opacity: 0.6; }
+.quote-text { font-size: 1rem; line-height: 1.7; color: var(--text-primary); font-style: italic; }
+.section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
+.section-content p { margin-bottom: 14px; }
+.section-content p:last-child { margin-bottom: 0; }
+.review-form { background: rgba(0,0,0,0.2); padding: 24px; border-radius: 12px; margin-bottom: 24px; }
+.review-form h4 { font-size: 1.1rem; margin-bottom: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-size: 0.9rem; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.3); color: #fff; font-size: 0.95rem; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.rating-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.rating-group input { display: none; }
+.rating-group label { padding: 8px 16px; background: rgba(255,255,255,0.1); border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+.rating-group input:checked + label { background: var(--primary); color: #fff; }
+.submit-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; border: none; padding: 12px 32px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: transform 0.2s; }
+.submit-btn:hover { transform: translateY(-2px); }
+.user-review { background: rgba(0,0,0,0.2); padding: 16px; border-radius: 10px; margin-bottom: 12px; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.review-author { font-weight: 600; color: var(--text-primary); }
+.review-score { color: var(--accent); }
+.review-time { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+.review-content { color: var(--text-secondary); line-height: 1.6; }
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.rec-card { background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; text-decoration: none; display: block; transition: transform 0.3s; }
+.rec-card:hover { transform: translateY(-5px); }
+.rec-card img { width: 100%; height: 200px; object-fit: cover; }
+.rec-info { padding: 12px; }
+.rec-title { color: #fff; font-size: 0.9rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-rating { color: var(--accent); font-size: 0.85rem; margin-top: 4px; }
+.no-rec, .no-quotes, .no-reviews { color: rgba(255,255,255,0.5); text-align: center; padding: 20px; }
+.footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
+</style>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">← 返回电影推荐</a>
-    </div>
-    <div class="container">
-        <div class="hero">
-            <div class="poster-wrap">
-                <img class="poster" src="movie_images/001_肖申克的救赎.jpg" alt="肖申克的救赎">
-            </div>
-            <div class="info">
-                <h1 class="title">肖申克的救赎</h1>
-                <div class="meta">
-                    <span class="meta-item rating">⭐ 9.7 分</span>
-                    <span class="meta-item">1994</span>
-                    <span class="meta-item">剧情 / 犯罪</span>
-                </div>
-                <div class="awards-card"><h3>🏆 获奖荣誉</h3><p>奥斯卡最佳影片提名 · IMDb评分第一</p></div>
-            </div>
-        </div>
-        <div class="quotes-section"><div class="quotes-title">🎯 经典台词</div><div class="quote-grid"><div class="quote-card"><p>有些鸟儿是注定不会被关在牢笼里的，因为它们的每一片羽毛都闪耀着自由的光辉。</p></div><div class="quote-card"><p>希望是世界上最美好的东西，也许是世界上最美好的东西，而美好的东西永远不会消逝。</p></div><div class="quote-card"><p>这些墙很有趣。一开始你恨它，然后你习惯它。时间久了，你就会依赖它。</p></div></div></div>
-        
-        <div class="section section-1">
-            <div class="section-header">
-                <div class="section-icon">🎬</div>
-                <h2 class="section-title">影片概述</h2>
-            </div>
-            <div class="section-content"><p>《肖申克的救赎》（The Shawshank Redemption）改编自美国作家斯蒂芬·金的中篇小说《丽塔·海华丝与肖申克的救赎》，于1994年上映，由弗兰克·达拉邦特执导，蒂姆·罗宾斯和摩根·弗里曼主演。影片讲述了银行家安迪·杜佛兰被冤枉入狱后，在肖申克监狱中度过的二十年光阴，以及他与狱友瑞德之间深厚的友谊。
-尽管在当年奥斯卡颁奖典礼上颗粒无收，但随着时间的推移，这部电影逐渐凭借其深刻的人文关怀和震撼人心的力量，成为IMDb评分第一的影史经典，豆瓣评分高达9.7分，是无数影迷心中当之无愧的"神作"。
-</p></div>
-        </div>
-        <div class="section section-2">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">主题解析：希望与自由</h2>
-            </div>
-            <div class="section-content"><p>影片的核心主题是希望与自由。安迪在狱中从未放弃对自由的渴望，他用一把小小的石锤，在墙上凿出了一条通往外界的通道，整整用了十九年时间。这不仅仅是一个越狱的故事，更是一个关于精神自由的寓言。
-正如瑞德在片中所说："这些墙很有趣。一开始你恨它，然后你习惯它。时间久了，你就会依赖它。" 肖申克监狱就像一个微型社会大多数人最终被"制度化"，忘记了外面的世界，忘记了希望的存在。而安迪的存在，就像一道光，照亮了周围人的内心世界。
-</p></div>
-        </div>
-        <div class="section section-3">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">人物塑造：灵魂的救赎</h2>
-            </div>
-            <div class="section-content"><p>安迪·杜佛兰（蒂姆·罗宾斯饰）是一个复杂的角色。他表面沉默寡言，内心却坚定而智慧。他利用自己的银行专业知识为狱警处理财务问题，获得了相对自由的行动空间；同时他也用自己的行动影响着身边的每一个人——他每周坚持给州议会写信，最终为监狱图书馆争取到了资金；他在狱中播放莫扎特的歌剧，让所有囚犯第一次感受到音乐的美好。
-埃利斯·博伊德·"瑞德"·雷丁（摩根·弗里曼饰）是故事的叙述者，也是安迪的灵魂伴侣。瑞德在监狱中待了四十年，已经习惯了监狱的生活，甚至害怕假释后的自由。是安迪让他明白了"希望"的意义，最终他在假释后遵循与安迪的约定，踏上了寻找自由的旅程。
-</p></div>
-        </div>
-        <div class="section section-4">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">经典台词与细节解析</h2>
-            </div>
-            <div class="section-content"><p>影片中有许多令人难忘的经典台词：
-> "希望是世界上最美好的东西，也许是世界上最美好的东西，而美好的东西永远不会消逝。"
-这句台词是安迪留给瑞德的遗言，也是整部电影的灵魂所在。它告诉我们，无论身处何种困境，只要心中保有希望，就没有什么能够打败我们。
-> "有些鸟儿是注定不会被关在牢笼里的，因为它们的每一片羽毛都闪耀着自由的光辉。"
-这是安迪越狱前留给瑞德的话，也是对自由最诗意的诠释。
-影片中还有许多值得细细品味的细节：安迪在墙上刻下的名字、他用海报遮住的通道、那颗留给瑞德的黑色石头……每一个细节都暗示着希望与救赎的主题。
-</p></div>
-        </div>
-        <div class="section section-5">
-            <div class="section-header">
-                <div class="section-icon">🌟</div>
-                <h2 class="section-title">观影启示</h2>
-            </div>
-            <div class="section-content"><p>《肖申克的救赎》之所以能够打动一代又一代观众，是因为它触及了人类内心最深处的渴望——对自由的渴望，对希望的坚守。
-在生活中，我们每个人都可能是"肖申克"的囚徒——被工作压力所困，被生活重担所压，甚至被自己的恐惧和惰性所束缚。而安迪的故事告诉我们：无论身处何种境地，都不要放弃希望。只要心中保有希望，就一定能找到出路。
-这部电影适合在人生低谷时观看，它会让你相信：只要坚持，终有一天会迎来属于自己的自由。
-</p></div>
-        </div>
-        <div class="section section-6">
-            <div class="section-header">
-                <div class="section-icon">⭐</div>
-                <h2 class="section-title">总结</h2>
-            </div>
-            <div class="section-content"><p>《肖申克的救赎》不仅仅是一部电影，它是一部关于人性、关于希望、关于自由的启示录。它教会我们如何面对困境，如何坚守信念，如何在黑暗中寻找光明。
-如果你还没有看过这部电影，请找一个安静的下午，慢慢品味这部不朽的经典。如果你已经看过，不妨再重温一遍——每一次观看，都会有新的感悟。
-因为希望，永远是世界上最美好的东西。</p><p>⭐ 推荐指数：★★★★★
-🎬 适合人群：所有人
-💡 观影场景：人生低谷时、思考生命意义时、与朋友讨论经典电影时</p></div>
-        </div>
-        <div class="footer">爱看电影 · MBTI个性化电影推荐</div>
-    </div>
+<div class="header"><a href="index.html">← 返回电影推荐</a></div>
+<div class="container">
+<div class="hero">
+<div class="poster-wrap"><img class="poster" src="movie_images/001_肖申克的救赎.jpg" alt="肖申克的救赎" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'"></div>
+<div class="info">
+<h1 class="title">肖申克的救赎</h1>
+<div class="meta"><span class="meta-item rating">⭐ 9.7 分</span><span class="meta-item">1994</span><span class="meta-item">剧情/犯罪</span></div>
+<div class="director-item"><span class="director-label">导演：</span><span class="director-name">弗兰克·德拉邦特</span></div>
+<div class="director-item"><span class="director-label">主演：</span><span class="director-name">蒂姆·罗宾斯、摩根·弗里曼、鲍勃·冈顿</span></div>
+<div class="awards-card"><h3>🏆 获奖荣誉</h3><p>奥斯卡最佳影片提名、IMDb评分第一</p></div>
+</div>
+</div>
+<div class="quotes-section"><div class="quotes-title">💬 经典台词</div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">希望是世界上最美好的东西，也许是世界上最美好的东西，而美好的东西永远不会消逝。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">有些鸟儿是注定不会被关在牢笼里的，因为它们的每一片羽毛都闪耀着自由的光辉。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">这些墙很有趣。一开始你恨它，然后你习惯它。时间久了，你就会依赖它。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">📖</div><h2 class="section-title">影片概述</h2></div><div class="section-content"><p>银行家安迪被冤枉入狱，用智慧和坚持度过了20年，最终用计谋获得了自由。告诉我们希望永不熄灭。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">🎬</div><h2 class="section-title">主题解析</h2></div><div class="section-content"><p>肖申克的救赎是一部1994年上映的剧情/犯罪类型电影，由弗兰克·德拉邦特执导。这部影片通过细腻的叙事手法，展现了人物的成长与情感变化。影片探讨了人性、命运、爱情等深刻主题，让观众在观影过程中产生共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">👤</div><h2 class="section-title">人物塑造</h2></div><div class="section-content"><p>导演弗兰克·德拉邦特以其独特的视听语言著称，在这部作品中展现了高超的导演技巧。蒂姆·罗宾斯、摩根·弗里曼、鲍勃·冈顿的表演精彩绝伦，将角色的内心世界展现得细腻而真实。观众能够感受到角色的喜怒哀乐，与他们产生情感共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">💡</div><h2 class="section-title">观影启示</h2></div><div class="section-content"><p>观看肖申克的救赎，是一部9.7分的电影，值得每一个电影爱好者观看。无论你是剧情/犯罪题材的忠实粉丝，还是只是想找一部好电影消磨时间，这部作品都不会让你失望。它既有商业片的娱乐性，也有艺术片的深度。</p></div></div>
+<div class="reviews-section">
+<div class="reviews-title"><div class="section-icon">⭐</div><h2 class="section-title">用户影评</h2></div>
+<div class="review-form">
+<h4>✍️ 发表评论</h4>
+<div class="form-group"><label>昵称</label><input type="text" id="reviewerName" placeholder="请输入你的昵称" maxlength="20"></div>
+<div class="form-group"><label>评分</label><div class="rating-group" id="ratingInput">
+<input type="radio" name="rating" value="10" id="r10"><label for="r10">10</label>
+<input type="radio" name="rating" value="9" id="r9"><label for="r9">9</label>
+<input type="radio" name="rating" value="8" id="r8"><label for="r8">8</label>
+<input type="radio" name="rating" value="7" id="r7"><label for="r7">7</label>
+<input type="radio" name="rating" value="6" id="r6"><label for="r6">6</label>
+<input type="radio" name="rating" value="5" id="r5"><label for="r5">5</label>
+<input type="radio" name="rating" value="4" id="r4"><label for="r4">4</label>
+<input type="radio" name="rating" value="3" id="r3"><label for="r3">3</label>
+<input type="radio" name="rating" value="2" id="r2"><label for="r2">2</label>
+<input type="radio" name="rating" value="1" id="r1"><label for="r1">1</label>
+</div></div>
+<div class="form-group"><label>影评内容</label><textarea id="reviewContent" placeholder="写下你对这部电影的看法..." maxlength="500"></textarea></div>
+<button class="submit-btn" onclick="submitReview()">提交评论</button>
+</div>
+<div id="userReviewsList"><div class="no-reviews">暂无用户影评，快来抢先评论吧！</div></div>
+</div>
+<div class="section"><div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">相似电影推荐</h2></div><div class="rec-grid"><a href="detail_上帝之城.html" class="rec-card">
+                <img src="movie_images/185_上帝之城.jpg" alt="上帝之城" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">上帝之城</div><div class="rec-rating">⭐ 9.0</div></div>
+            </a><a href="detail_美国往事.html" class="rec-card">
+                <img src="movie_images/097_美国往事.jpg" alt="美国往事" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">美国往事</div><div class="rec-rating">⭐ 9.1</div></div>
+            </a><a href="detail_无间道2.html" class="rec-card">
+                <img src="movie_images/175_无间道2.jpg" alt="无间道2" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">无间道2</div><div class="rec-rating">⭐ 8.8</div></div>
+            </a><a href="detail_猫鼠游戏.html" class="rec-card">
+                <img src="movie_images/41_猫鼠游戏.jpg" alt="猫鼠游戏" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">猫鼠游戏</div><div class="rec-rating">⭐ 9.1</div></div>
+            </a><a href="detail_教父3.html" class="rec-card">
+                <img src="movie_images/140_教父3.jpg" alt="教父3" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">教父3</div><div class="rec-rating">⭐ 9.0</div></div>
+            </a><a href="detail_无间道.html" class="rec-card">
+                <img src="movie_images/18_无间道.jpg" alt="无间道" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E</text></svg>'">
+                <div class="rec-info"><div class="rec-title">无间道</div><div class="rec-rating">⭐ 9.3</div></div>
+            </a></div></div>
+<div class="footer">爱看电影 · MBTI个性化电影推荐</div>
+</div>
+<script>
+function submitReview(){var t=document.title.split(' - ')[0];var ni=document.getElementById('reviewerName');var ci=document.getElementById('reviewContent');var rs=document.getElementsByName('rating');var name=ni.value.trim();var content=ci.value.trim();var score=0;for(var i=0;i<rs.length;i++){if(rs[i].checked){score=parseInt(rs[i].value);break;}}if(!name){alert('请输入昵称');return;}if(score===0){alert('请选择评分');return;}if(!content){alert('请输入影评内容');return;}var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');reviews.push({name:name,score:score,content:content,time:Date.now()});localStorage.setItem(key,JSON.stringify(reviews));ni.value='';ci.value='';for(var i=0;i<rs.length;i++){rs[i].checked=false;}loadUserReviews();alert('评论提交成功！');}
+function loadUserReviews(){var c=document.getElementById('userReviewsList');if(!c)return;var t=document.title.split(' - ')[0];var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');if(reviews.length===0){c.innerHTML='<div class="no-reviews">暂无用户影评，快来抢先评论吧！</div>';return;}reviews.sort(function(a,b){return b.time-a.time;});var html='';for(var i=0;i<reviews.length;i++){var r=reviews[i];var d=new Date(r.time).toLocaleDateString('zh-CN');html+='<div class="user-review"><div class="review-header"><span class="review-author">'+r.name+'</span><span class="review-score">⭐ '+r.score+'/10</span></div><div class="review-time">'+d+'</div><div class="review-content">'+r.content+'</div></div>';}c.innerHTML=html;}
+document.addEventListener('DOMContentLoaded',loadUserReviews);
+</script>
 </body>
 </html>

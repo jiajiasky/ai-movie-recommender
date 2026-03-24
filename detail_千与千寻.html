@@ -1,223 +1,140 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>千与千寻 - 电影详情</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --accent: #ffd700;
-            --bg-dark: #0f0f1a;
-            --bg-card: rgba(255,255,255,0.05);
-            --text-primary: #fff;
-            --text-secondary: rgba(255,255,255,0.7);
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
-            min-height: 100vh;
-            color: var(--text-primary);
-            line-height: 1.7;
-        }
-        .header {
-            background: rgba(0,0,0,0.3);
-            backdrop-filter: blur(20px);
-            padding: 18px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .header a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        .header a:hover { color: var(--primary); }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        
-        .hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
-        @media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
-        
-        .poster-wrap { position: relative; flex-shrink: 0; }
-        .poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s; }
-        .poster:hover { transform: translateY(-5px); }
-        .info { flex: 1; min-width: 0; }
-        
-        .title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-        .meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
-        .rating { color: var(--accent) !important; font-weight: 600; }
-        
-        .awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
-        .awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
-        .awards-card p { font-size: 1.05rem; font-weight: 500; }
-        
-        /* 经典台词 - 新样式 */
-        .quotes-section {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.03));
-            border-radius: 16px;
-            padding: 28px;
-            margin-bottom: 35px;
-            border: 1px solid rgba(255,215,0,0.2);
-        }
-        .quotes-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffd700;
-            margin-bottom: 24px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-        }
-        .quotes-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(255,215,0,0.4), transparent);
-        }
-        
-        .quote-grid { display: grid; gap: 14px; }
-        
-        .quote-card {
-            background: rgba(0,0,0,0.35);
-            border-radius: 10px;
-            padding: 18px 22px;
-            position: relative;
-            border-left: 3px solid #ffd700;
-        }
-        
-        .quote-card::before {
-            content: '"';
-            position: absolute;
-            left: 10px;
-            top: 6px;
-            font-size: 1.8rem;
-            color: #ffd700;
-            opacity: 0.5;
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        
-        .quote-card p {
-            padding-left: 26px;
-            font-size: 0.92rem;
-            line-height: 1.7;
-            color: rgba(255,255,255,0.92);
-            margin: 0;
-        }
-        
-        .section { background: var(--bg-card); border-radius: 16px; padding: 32px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.06); }
-        .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
-        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
-        .section-title { font-size: 1.25rem; font-weight: 600; }
-        .section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
-        .section-content p { margin-bottom: 14px; }
-        .section-content strong { color: var(--text-primary); font-weight: 600; }
-        .quote-highlight { background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05)); border: 1px solid rgba(255,215,0,0.25); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-        .quote-highlight p { padding-left: 30px; font-style: italic; color: var(--accent); font-size: 1.05rem; line-height: 1.6; margin: 0; }
-        
-        .footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>千与千寻 - 电影详情</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #667eea; --secondary: #764ba2; --accent: #ffd700; --bg-dark: #0f0f1a; --bg-card: rgba(255,255,255,0.05); --text-primary: #fff; --text-secondary: rgba(255,255,255,0.7); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%); min-height: 100vh; color: var(--text-primary); line-height: 1.7; }
+.header { background: rgba(0,0,0,0.3); backdrop-filter: blur(20px); padding: 18px 30px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.header a { color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: color 0.3s; }
+.header a:hover { color: var(--primary); }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+.hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
+@media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
+.poster-wrap { position: relative; flex-shrink: 0; }
+.poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s ease; }
+.poster:hover { transform: translateY(-5px); }
+.info { flex: 1; min-width: 0; }
+.title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
+.rating { color: var(--accent) !important; font-weight: 600; }
+.director-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.director-label { color: var(--text-secondary); font-size: 0.9rem; }
+.director-name { color: var(--text-primary); font-size: 1rem; }
+.awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
+.awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
+.awards-card p { font-size: 1.05rem; font-weight: 500; }
+.quotes-section, .section, .reviews-section { background: var(--bg-card); border-radius: 16px; padding: 28px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.08); }
+.section:hover, .quotes-section:hover, .reviews-section:hover { border-color: rgba(255,255,255,0.12); }
+.quotes-title, .section-header, .reviews-title { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; background: linear-gradient(135deg, #667eea, #764ba2); }
+.section-title { font-size: 1.25rem; font-weight: 600; }
+.quote-item { position: relative; padding: 18px 20px; padding-left: 50px; margin-bottom: 14px; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 3px solid var(--accent); }
+.quote-item:last-child { margin-bottom: 0; }
+.quote-mark { position: absolute; left: 16px; top: 14px; font-size: 1.5rem; color: var(--accent); opacity: 0.6; }
+.quote-text { font-size: 1rem; line-height: 1.7; color: var(--text-primary); font-style: italic; }
+.section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
+.section-content p { margin-bottom: 14px; }
+.section-content p:last-child { margin-bottom: 0; }
+.review-form { background: rgba(0,0,0,0.2); padding: 24px; border-radius: 12px; margin-bottom: 24px; }
+.review-form h4 { font-size: 1.1rem; margin-bottom: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-size: 0.9rem; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.3); color: #fff; font-size: 0.95rem; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.rating-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.rating-group input { display: none; }
+.rating-group label { padding: 8px 16px; background: rgba(255,255,255,0.1); border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+.rating-group input:checked + label { background: var(--primary); color: #fff; }
+.submit-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; border: none; padding: 12px 32px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: transform 0.2s; }
+.submit-btn:hover { transform: translateY(-2px); }
+.user-review { background: rgba(0,0,0,0.2); padding: 16px; border-radius: 10px; margin-bottom: 12px; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.review-author { font-weight: 600; color: var(--text-primary); }
+.review-score { color: var(--accent); }
+.review-time { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+.review-content { color: var(--text-secondary); line-height: 1.6; }
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.rec-card { background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; text-decoration: none; display: block; transition: transform 0.3s; }
+.rec-card:hover { transform: translateY(-5px); }
+.rec-card img { width: 100%; height: 200px; object-fit: cover; }
+.rec-info { padding: 12px; }
+.rec-title { color: #fff; font-size: 0.9rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-rating { color: var(--accent); font-size: 0.85rem; margin-top: 4px; }
+.no-rec, .no-quotes, .no-reviews { color: rgba(255,255,255,0.5); text-align: center; padding: 20px; }
+.footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
+</style>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">← 返回电影推荐</a>
-    </div>
-    <div class="container">
-        <div class="hero">
-            <div class="poster-wrap">
-                <img class="poster" src="movie_images/005_千与千寻.jpg" alt="千与千寻">
-            </div>
-            <div class="info">
-                <h1 class="title">千与千寻</h1>
-                <div class="meta">
-                    <span class="meta-item rating">⭐ 9.4 分</span>
-                    <span class="meta-item">2001</span>
-                    <span class="meta-item">动画 / 冒险</span>
-                </div>
-                <div class="awards-card"><h3>🏆 获奖荣誉</h3><p>奥斯卡最佳动画 · 宫崎骏代表作</p></div>
-            </div>
-        </div>
-        <div class="quotes-section"><div class="quotes-title">🎯 经典台词</div><div class="quote-grid"><div class="quote-card"><p>曾经发生过的事情不可能忘记，只是想不起来而已。</p></div><div class="quote-card"><p>不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。</p></div><div class="quote-card"><p>你不懂么？能救我的只有我自己</p></div></div></div>
-        
-        <div class="section section-1">
-            <div class="section-header">
-                <div class="section-icon">🎬</div>
-                <h2 class="section-title">影片概述</h2>
-            </div>
-            <div class="section-content"><p>《千与千寻》是宫崎骏的巅峰之作，于2001年上映，是日本动画电影的里程碑。影片讲述了少女千寻误入神隐世界，为了拯救被变成猪的父母，必须在汤婆婆的澡堂工作的奇幻故事。
-这部电影荣获奥斯卡最佳动画长片奖，豆瓣评分9.4分，是日本票房最高的动画电影，也是无数人心中的"动画圣经"。
-</p></div>
-        </div>
-        <div class="section section-2">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">主题解析：成长与自我</h2>
-            </div>
-            <div class="section-content"><p>影片的核心主题是成长与自我寻找。千寻从一开始的娇气、任性，逐渐成长为勇敢、坚强的小女孩。她在神隐世界的经历，就是她成长的缩影。
-"千" 是汤婆婆给千寻取的名字，代表着剥夺了她的自我。而"千寻" 是她的本名，代表着真正的自己。找回名字的过程，就是找回自我的过程。
-</p></div>
-        </div>
-        <div class="section section-3">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">经典角色</h2>
-            </div>
-            <div class="section-content"><p>千寻：一个普通的10岁女孩，她的成长让每个观众都能找到共鸣。她的勇气和善良感染了身边的人，也救赎了白龙、无脸男等角色。
-白龙：汤婆婆的弟子，一只白色的河神。他曾经是人类，为了学习魔法失去了名字。他对千寻的帮助和感情，是影片中最动人的情感线。
-无脸男：一个孤独的幽灵，他在汤婆婆的澡堂里用金钱诱惑人们，最终被千寻的善良打动，决定留在钱婆婆那里。
-</p></div>
-        </div>
-        <div class="section section-4">
-            <div class="section-header">
-                <div class="section-icon">📝</div>
-                <h2 class="section-title">经典台词</h2>
-            </div>
-            <div class="section-content"><p>> “曾经发生过的事情不可能忘记，只是想不起来而已。”
-这句台词告诉我们，有些记忆虽然暂时遗忘，但永远藏在心底。
-> “不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。”
-这是宫崎骏对成长的诠释。
-</p></div>
-        </div>
-        <div class="section section-5">
-            <div class="section-header">
-                <div class="section-icon">🌟</div>
-                <h2 class="section-title">观影启示</h2>
-            </div>
-            <div class="section-content"><p>《千与千寻》教会我们：
-1. 勇敢面对：不要逃避困难，勇敢地迈出第一步
-2. 保持善良：即使世界复杂，也要保持内心的纯真
-3. 记住自我：无论环境如何变化，都要记住真正的自己
-4. 学会独立：成长就是学会独自面对问题
-</p></div>
-        </div>
-        <div class="section section-6">
-            <div class="section-header">
-                <div class="section-icon">⭐</div>
-                <h2 class="section-title">总结</h2>
-            </div>
-            <div class="section-content"><p>《千与千寻》不仅是一部动画，更是一部关于成长的寓言。它适合所有年龄段的人观看——孩子在千寻身上看到冒险，大人在千寻身上看到自己曾经的模样。
-这部电影是宫崎骏送给所有人的礼物，提醒我们：无论生活多么艰难，都要保持善良和勇气。</p><p>⭐ 推荐指数：★★★★★
-🎬 适合人群：所有人
-💡 观影场景：放松、思考成长、亲子时光</p></div>
-        </div>
-        <div class="footer">爱看电影 · MBTI个性化电影推荐</div>
-    </div>
+<div class="header"><a href="index.html">← 返回电影推荐</a></div>
+<div class="container">
+<div class="hero">
+<div class="poster-wrap"><img class="poster" src="movie_images/005_千与千寻.jpg" alt="千与千寻" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'"></div>
+<div class="info">
+<h1 class="title">千与千寻</h1>
+<div class="meta"><span class="meta-item rating">⭐ 9.4 分</span><span class="meta-item">2001</span><span class="meta-item">动画/冒险</span></div>
+<div class="director-item"><span class="director-label">导演：</span><span class="director-name">宫崎骏</span></div>
+<div class="director-item"><span class="director-label">主演：</span><span class="director-name">柊瑠美、入野自由、夏木真理</span></div>
+<div class="awards-card"><h3>🏆 获奖荣誉</h3><p>奥斯卡最佳动画、宫崎骏代表作</p></div>
+</div>
+</div>
+<div class="quotes-section"><div class="quotes-title">💬 经典台词</div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">名字一旦被夺走，就再也找不到回家的路了。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">我只能送你到这里了，剩下的路你要自己走。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">不能吃太胖哦，会被杀掉的！</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">📖</div><h2 class="section-title">影片概述</h2></div><div class="section-content"><p>少女千寻误入神隐世界，为了救父母必须工作。成长就是学会勇敢和善良。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">🎬</div><h2 class="section-title">主题解析</h2></div><div class="section-content"><p>千与千寻是一部2001年上映的动画/冒险类型电影，由宫崎骏执导。这部影片通过细腻的叙事手法，展现了人物的成长与情感变化。影片探讨了人性、命运、爱情等深刻主题，让观众在观影过程中产生共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">👤</div><h2 class="section-title">人物塑造</h2></div><div class="section-content"><p>导演宫崎骏以其独特的视听语言著称，在这部作品中展现了高超的导演技巧。柊瑠美、入野自由、夏木真理的表演精彩绝伦，将角色的内心世界展现得细腻而真实。观众能够感受到角色的喜怒哀乐，与他们产生情感共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">💡</div><h2 class="section-title">观影启示</h2></div><div class="section-content"><p>观看千与千寻，是一部9.4分的电影，值得每一个电影爱好者观看。无论你是动画/冒险题材的忠实粉丝，还是只是想找一部好电影消磨时间，这部作品都不会让你失望。它既有商业片的娱乐性，也有艺术片的深度。</p></div></div>
+<div class="reviews-section">
+<div class="reviews-title"><div class="section-icon">⭐</div><h2 class="section-title">用户影评</h2></div>
+<div class="review-form">
+<h4>✍️ 发表评论</h4>
+<div class="form-group"><label>昵称</label><input type="text" id="reviewerName" placeholder="请输入你的昵称" maxlength="20"></div>
+<div class="form-group"><label>评分</label><div class="rating-group" id="ratingInput">
+<input type="radio" name="rating" value="10" id="r10"><label for="r10">10</label>
+<input type="radio" name="rating" value="9" id="r9"><label for="r9">9</label>
+<input type="radio" name="rating" value="8" id="r8"><label for="r8">8</label>
+<input type="radio" name="rating" value="7" id="r7"><label for="r7">7</label>
+<input type="radio" name="rating" value="6" id="r6"><label for="r6">6</label>
+<input type="radio" name="rating" value="5" id="r5"><label for="r5">5</label>
+<input type="radio" name="rating" value="4" id="r4"><label for="r4">4</label>
+<input type="radio" name="rating" value="3" id="r3"><label for="r3">3</label>
+<input type="radio" name="rating" value="2" id="r2"><label for="r2">2</label>
+<input type="radio" name="rating" value="1" id="r1"><label for="r1">1</label>
+</div></div>
+<div class="form-group"><label>影评内容</label><textarea id="reviewContent" placeholder="写下你对这部电影的看法..." maxlength="500"></textarea></div>
+<button class="submit-btn" onclick="submitReview()">提交评论</button>
+</div>
+<div id="userReviewsList"><div class="no-reviews">暂无用户影评，快来抢先评论吧！</div></div>
+</div>
+<div class="section"><div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">相似电影推荐</h2></div><div class="rec-grid"><a href="detail_疯狂动物城.html" class="rec-card">
+                <img src="movie_images/014_疯狂动物城.jpg" alt="疯狂动物城" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">疯狂动物城</div><div class="rec-rating">⭐ 9.3</div></div>
+            </a><a href="detail_飞屋环游记.html" class="rec-card">
+                <img src="movie_images/35_飞屋环游记.jpg" alt="飞屋环游记" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">飞屋环游记</div><div class="rec-rating">⭐ 9.1</div></div>
+            </a><a href="detail_功夫熊猫4.html" class="rec-card">
+                <img src="movie_images/256_功夫熊猫4.jpg" alt="功夫熊猫4"<rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">功夫熊猫4</div><div class="rec-rating">⭐ 7.0</div></div>
+            </a><a href="detail_天空之城.html" class="rec-card">
+                <img src="movie_images/042_天空之城.jpg" alt="天空之城" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">天空之城</div><div class="rec-rating">⭐ 9.2</div></div>
+            </a><a href="detail_魔女宅急便.html" class="rec-card">
+                <img src="movie_images/197_魔女宅急便.jpg" alt="魔女宅急便" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">魔女宅急便</div><div class="rec-rating">⭐ 8.7</div></div>
+            </a><a href="detail_龙猫.html" class="rec-card">
+                <img src="movie_images/28_龙猫.jpg" alt="龙猫" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB</text></svg>'">
+                <div class="rec-info"><div class="rec-title">龙猫</div><div class="rec-rating">⭐ 9.2</div></div>
+            </a></div></div>
+<div class="footer">爱看电影 · MBTI个性化电影推荐</div>
+</div>
+<script>
+function submitReview(){var t=document.title.split(' - ')[0];var ni=document.getElementById('reviewerName');var ci=document.getElementById('reviewContent');var rs=document.getElementsByName('rating');var name=ni.value.trim();var content=ci.value.trim();var score=0;for(var i=0;i<rs.length;i++){if(rs[i].checked){score=parseInt(rs[i].value);break;}}if(!name){alert('请输入昵称');return;}if(score===0){alert('请选择评分');return;}if(!content){alert('请输入影评内容');return;}var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');reviews.push({name:name,score:score,content:content,time:Date.now()});localStorage.setItem(key,JSON.stringify(reviews));ni.value='';ci.value='';for(var i=0;i<rs.length;i++){rs[i].checked=false;}loadUserReviews();alert('评论提交成功！');}
+function loadUserReviews(){var c=document.getElementById('userReviewsList');if(!c)return;var t=document.title.split(' - ')[0];var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');if(reviews.length===0){c.innerHTML='<div class="no-reviews">暂无用户影评，快来抢先评论吧！</div>';return;}reviews.sort(function(a,b){return b.time-a.time;});var html='';for(var i=0;i<reviews.length;i++){var r=reviews[i];var d=new Date(r.time).toLocaleDateString('zh-CN');html+='<div class="user-review"><div class="review-header"><span class="review-author">'+r.name+'</span><span class="review-score">⭐ '+r.score+'/10</span></div><div class="review-time">'+d+'</div><div class="review-content">'+r.content+'</div></div>';}c.innerHTML=html;}
+document.addEventListener('DOMContentLoaded',loadUserReviews);
+</script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 220">
+        <rect fill="#ff6b6b" width="150" height="220"/>
+        <rect fill="#ffa502" x="0" y="0" width="150" height="220" opacity="0.3"/>
+        <text x="75" y="120" font-size="60" fill="white" text-anchor="middle" font-family="SimHei, sans-serif">最</text>
+        <text x="75" y="180" font-size="14" fill="white" text-anchor="middle" font-family="SimHei, sans-serif">最好的我们</text>
+    </svg>

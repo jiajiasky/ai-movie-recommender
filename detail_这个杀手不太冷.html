@@ -1,223 +1,140 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>这个杀手不太冷 - 电影详情</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --accent: #ffd700;
-            --bg-dark: #0f0f1a;
-            --bg-card: rgba(255,255,255,0.05);
-            --text-primary: #fff;
-            --text-secondary: rgba(255,255,255,0.7);
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
-            min-height: 100vh;
-            color: var(--text-primary);
-            line-height: 1.7;
-        }
-        .header {
-            background: rgba(0,0,0,0.3);
-            backdrop-filter: blur(20px);
-            padding: 18px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .header a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        .header a:hover { color: var(--primary); }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
-        
-        .hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
-        @media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
-        
-        .poster-wrap { position: relative; flex-shrink: 0; }
-        .poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s; }
-        .poster:hover { transform: translateY(-5px); }
-        .info { flex: 1; min-width: 0; }
-        
-        .title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-        .meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
-        .rating { color: var(--accent) !important; font-weight: 600; }
-        
-        .awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
-        .awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
-        .awards-card p { font-size: 1.05rem; font-weight: 500; }
-        
-        /* 经典台词 - 新样式 */
-        .quotes-section {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.03));
-            border-radius: 16px;
-            padding: 28px;
-            margin-bottom: 35px;
-            border: 1px solid rgba(255,215,0,0.2);
-        }
-        .quotes-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ffd700;
-            margin-bottom: 24px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-        }
-        .quotes-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(255,215,0,0.4), transparent);
-        }
-        
-        .quote-grid { display: grid; gap: 14px; }
-        
-        .quote-card {
-            background: rgba(0,0,0,0.35);
-            border-radius: 10px;
-            padding: 18px 22px;
-            position: relative;
-            border-left: 3px solid #ffd700;
-        }
-        
-        .quote-card::before {
-            content: '"';
-            position: absolute;
-            left: 10px;
-            top: 6px;
-            font-size: 1.8rem;
-            color: #ffd700;
-            opacity: 0.5;
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        
-        .quote-card p {
-            padding-left: 26px;
-            font-size: 0.92rem;
-            line-height: 1.7;
-            color: rgba(255,255,255,0.92);
-            margin: 0;
-        }
-        
-        .section { background: var(--bg-card); border-radius: 16px; padding: 32px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.06); }
-        .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
-        .section-1 .section-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .section-2 .section-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .section-3 .section-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .section-4 .section-icon { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .section-5 .section-icon { background: linear-gradient(135deg, #fa709a, #fee140); }
-        .section-title { font-size: 1.25rem; font-weight: 600; }
-        .section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
-        .section-content p { margin-bottom: 14px; }
-        .section-content strong { color: var(--text-primary); font-weight: 600; }
-        .quote-highlight { background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05)); border: 1px solid rgba(255,215,0,0.25); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-        .quote-highlight p { padding-left: 30px; font-style: italic; color: var(--accent); font-size: 1.05rem; line-height: 1.6; margin: 0; }
-        
-        .footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>这个杀手不太冷 - 电影详情</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #667eea; --secondary: #764ba2; --accent: #ffd700; --bg-dark: #0f0f1a; --bg-card: rgba(255,255,255,0.05); --text-primary: #fff; --text-secondary: rgba(255,255,255,0.7); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%); min-height: 100vh; color: var(--text-primary); line-height: 1.7; }
+.header { background: rgba(0,0,0,0.3); backdrop-filter: blur(20px); padding: 18px 30px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.header a { color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; transition: color 0.3s; }
+.header a:hover { color: var(--primary); }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+.hero { display: flex; gap: 50px; margin-bottom: 60px; align-items: flex-start; }
+@media (max-width: 700px) { .hero { flex-direction: column; align-items: center; text-align: center; gap: 30px; } }
+.poster-wrap { position: relative; flex-shrink: 0; }
+.poster { width: 260px; border-radius: 16px; box-shadow: 0 25px 80px rgba(0,0,0,0.6); transition: transform 0.4s ease; }
+.poster:hover { transform: translateY(-5px); }
+.info { flex: 1; min-width: 0; }
+.title { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; background: linear-gradient(90deg, #fff 0%, #bbb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.meta-item { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-card); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); }
+.rating { color: var(--accent) !important; font-weight: 600; }
+.director-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.director-label { color: var(--text-secondary); font-size: 0.9rem; }
+.director-name { color: var(--text-primary); font-size: 1rem; }
+.awards-card { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 14px; padding: 20px 24px; margin-bottom: 30px; }
+.awards-card h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; opacity: 0.9; }
+.awards-card p { font-size: 1.05rem; font-weight: 500; }
+.quotes-section, .section, .reviews-section { background: var(--bg-card); border-radius: 16px; padding: 28px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.08); }
+.section:hover, .quotes-section:hover, .reviews-section:hover { border-color: rgba(255,255,255,0.12); }
+.quotes-title, .section-header, .reviews-title { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.section-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; background: linear-gradient(135deg, #667eea, #764ba2); }
+.section-title { font-size: 1.25rem; font-weight: 600; }
+.quote-item { position: relative; padding: 18px 20px; padding-left: 50px; margin-bottom: 14px; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 3px solid var(--accent); }
+.quote-item:last-child { margin-bottom: 0; }
+.quote-mark { position: absolute; left: 16px; top: 14px; font-size: 1.5rem; color: var(--accent); opacity: 0.6; }
+.quote-text { font-size: 1rem; line-height: 1.7; color: var(--text-primary); font-style: italic; }
+.section-content { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; }
+.section-content p { margin-bottom: 14px; }
+.section-content p:last-child { margin-bottom: 0; }
+.review-form { background: rgba(0,0,0,0.2); padding: 24px; border-radius: 12px; margin-bottom: 24px; }
+.review-form h4 { font-size: 1.1rem; margin-bottom: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 8px; color: var(--text-secondary); font-size: 0.9rem; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.3); color: #fff; font-size: 0.95rem; }
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.rating-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.rating-group input { display: none; }
+.rating-group label { padding: 8px 16px; background: rgba(255,255,255,0.1); border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+.rating-group input:checked + label { background: var(--primary); color: #fff; }
+.submit-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; border: none; padding: 12px 32px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: transform 0.2s; }
+.submit-btn:hover { transform: translateY(-2px); }
+.user-review { background: rgba(0,0,0,0.2); padding: 16px; border-radius: 10px; margin-bottom: 12px; }
+.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.review-author { font-weight: 600; color: var(--text-primary); }
+.review-score { color: var(--accent); }
+.review-time { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+.review-content { color: var(--text-secondary); line-height: 1.6; }
+.rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.rec-card { background: rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; text-decoration: none; display: block; transition: transform 0.3s; }
+.rec-card:hover { transform: translateY(-5px); }
+.rec-card img { width: 100%; height: 200px; object-fit: cover; }
+.rec-info { padding: 12px; }
+.rec-title { color: #fff; font-size: 0.9rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rec-rating { color: var(--accent); font-size: 0.85rem; margin-top: 4px; }
+.no-rec, .no-quotes, .no-reviews { color: rgba(255,255,255,0.5); text-align: center; padding: 20px; }
+.footer { text-align: center; padding: 40px 20px; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
+</style>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">← 返回电影推荐</a>
-    </div>
-    <div class="container">
-        <div class="hero">
-            <div class="poster-wrap">
-                <img class="poster" src="movie_images/008_这个杀手不太冷.jpg" alt="这个杀手不太冷">
-            </div>
-            <div class="info">
-                <h1 class="title">这个杀手不太冷</h1>
-                <div class="meta">
-                    <span class="meta-item rating">⭐ 9.4 分</span>
-                    <span class="meta-item">1994</span>
-                    <span class="meta-item">剧情 / 动作</span>
-                </div>
-                <div class="awards-card"><h3>🏆 获奖荣誉</h3><p>经典法式黑帮片 · 让·雷诺代表作</p></div>
-            </div>
-        </div>
-        <div class="quotes-section"><div class="quotes-title">🎯 经典台词</div><div class="quote-grid"><div class="quote-card"><p>生活总是这么艰难吗？还是只有童年是这样？</p></div><div class="quote-card"><p>Always like this. 总是这样。</p></div><div class="quote-card"><p>我认为最深沉的爱，莫过于分开以后，我将自己，活成了你的样子。</p></div></div></div>
-        
-        <div class="section section-1">
-            <div class="section-header">
-                <div class="section-icon">🎬</div>
-                <h2 class="section-title">影片概述</h2>
-            </div>
-            <div class="section-content"><p>《这个杀手不太冷》由吕克·贝松执导，让·雷诺和娜塔莉·波特曼主演，于1994年上映。影片讲述了一个孤独的职业杀手莱昂，收养了一个被灭门的少女玛蒂尔达，他们彼此温暖对方孤独灵魂的故事。
-这部电影豆瓣评分9.4分，是法式黑帮片的经典，也是让·雷诺的代表作，更是娜塔莉·波特曼的银幕处女作。
-</p></div>
-        </div>
-        <div class="section section-2">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">主题解析：孤独与温暖</h2>
-            </div>
-            <div class="section-content"><p>莱昂是一个专业的杀手，他独来独往，没有朋友，没有爱人，只有一盆绿植陪伴。他的人生是灰色的，直到玛蒂尔达的出现。
-玛蒂尔达是一个12岁的少女，她生活在一个破碎的家庭里，父亲吸毒，继母冷漠，唯一爱的弟弟被杀害。她的人生同样是灰色的。
-两个孤独的灵魂相遇了。他们彼此温暖，彼此救赎，成为对方生命中的一道光。
-</p></div>
-        </div>
-        <div class="section section-3">
-            <div class="section-header">
-                <div class="section-icon">📌</div>
-                <h2 class="section-title">经典场景</h2>
-            </div>
-            <div class="section-content"><p>走廊里的牛奶：玛蒂尔达每天给莱昂买牛奶，这个细节展现了她的关心。
-杀手训练：玛蒂尔达要学做杀手，莱昂教她各种技能。这段时光是两人最快乐的时光。
-分别前的告白：玛蒂尔达说"Leon, I think I'm kinda falling in love with you."（莱昂，我好像爱上你了。）莱昂说"Perfect."（你不会有事的。）
-最后的复仇：莱昂为了就玛蒂尔达牺牲了自己。临死前，他替玛蒂尔达报了仇，并把她推出了生门。
-</p></div>
-        </div>
-        <div class="section section-4">
-            <div class="section-header">
-                <div class="section-icon">👤</div>
-                <h2 class="section-title">人物塑造</h2>
-            </div>
-            <div class="section-content"><p>莱昂（让·雷诺饰）是一个职业杀手，但他内心柔软。他不杀女人和孩子，保持着最后的人性。他和玛蒂尔达之间的感情超越了爱情，更像是一种父女情。
-玛蒂尔达（娜塔莉·波特曼饰）是一个早熟的女孩，她坚强、勇敢，敢于表达爱意。她的出现让莱昂的人生有了色彩。
-</p></div>
-        </div>
-        <div class="section section-5">
-            <div class="section-header">
-                <div class="section-icon">🌟</div>
-                <h2 class="section-title">观影启示</h2>
-            </div>
-            <div class="section-content"><p>《这个杀手不太冷》教会我们：
-1. 孤独可以被治愈：即使是最孤独的人，也需要被爱
-2. 爱无关年龄：真挚的感情可以超越年龄的界限
-3. 保持善良：即使身处黑暗，也要保持内心的光明
-4. 珍惜身边的人：生命短暂，要好好珍惜爱我们的人
-</p></div>
-        </div>
-        <div class="section section-6">
-            <div class="section-header">
-                <div class="section-icon">⭐</div>
-                <h2 class="section-title">总结</h2>
-            </div>
-            <div class="section-content"><p>这是一部让人看完久久不能平静的电影。莱昂和玛蒂尔达之间的感情复杂而纯粹，让人感动又心痛。
-莱昂的结局是悲剧的，但他完成了自己的救赎——他让玛蒂尔达重新看到了生活的希望，他把爱传递了下去。</p><p>⭐ 推荐指数：★★★★★
-🎬 适合人群：文艺青年、爱情电影爱好者
-💡 观影场景：思考爱情、感动落泪、夜深人静时</p></div>
-        </div>
-        <div class="footer">爱看电影 · MBTI个性化电影推荐</div>
-    </div>
+<div class="header"><a href="index.html">← 返回电影推荐</a></div>
+<div class="container">
+<div class="hero">
+<div class="poster-wrap"><img class="poster" src="movie_images/008_这个杀手不太冷.jpg" alt="这个杀手不太冷" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'"></div>
+<div class="info">
+<h1 class="title">这个杀手不太冷</h1>
+<div class="meta"><span class="meta-item rating">⭐ 9.4 分</span><span class="meta-item">1994</span><span class="meta-item">剧情/动作</span></div>
+<div class="director-item"><span class="director-label">导演：</span><span class="director-name">吕克·贝松</span></div>
+<div class="director-item"><span class="director-label">主演：</span><span class="director-name">让·雷诺、娜塔莉·波特曼、加里·奥德曼</span></div>
+<div class="awards-card"><h3>🏆 获奖荣誉</h3><p>经典法式黑帮片、让·雷诺代表作</p></div>
+</div>
+</div>
+<div class="quotes-section"><div class="quotes-title">💬 经典台词</div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">人生总是这么苦么，还是只有童年是这样？</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">我爱你，所以我不杀你。</p></div><div class="quote-item"><span class="quote-mark">"</span><p class="quote-text">你没有情感，没有痛苦，没有恐惧。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">📖</div><h2 class="section-title">影片概述</h2></div><div class="section-content"><p>孤独杀手莱昂收养了少女玛蒂尔达，他们彼此温暖了对方孤独的灵魂。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">🎬</div><h2 class="section-title">主题解析</h2></div><div class="section-content"><p>这个杀手不太冷是一部1994年上映的剧情/动作类型电影，由吕克·贝松执导。这部影片通过细腻的叙事手法，展现了人物的成长与情感变化。影片探讨了人性、命运、爱情等深刻主题，让观众在观影过程中产生共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">👤</div><h2 class="section-title">人物塑造</h2></div><div class="section-content"><p>导演吕克·贝松以其独特的视听语言著称，在这部作品中展现了高超的导演技巧。让·雷诺、娜塔莉·波特曼、加里·奥德曼的表演精彩绝伦，将角色的内心世界展现得细腻而真实。观众能够感受到角色的喜怒哀乐，与他们产生情感共鸣。</p></div></div>
+<div class="section"><div class="section-header"><div class="section-icon">💡</div><h2 class="section-title">观影启示</h2></div><div class="section-content"><p>观看这个杀手不太冷，是一部9.4分的电影，值得每一个电影爱好者观看。无论你是剧情/动作题材的忠实粉丝，还是只是想找一部好电影消磨时间，这部作品都不会让你失望。它既有商业片的娱乐性，也有艺术片的深度。</p></div></div>
+<div class="reviews-section">
+<div class="reviews-title"><div class="section-icon">⭐</div><h2 class="section-title">用户影评</h2></div>
+<div class="review-form">
+<h4>✍️ 发表评论</h4>
+<div class="form-group"><label>昵称</label><input type="text" id="reviewerName" placeholder="请输入你的昵称" maxlength="20"></div>
+<div class="form-group"><label>评分</label><div class="rating-group" id="ratingInput">
+<input type="radio" name="rating" value="10" id="r10"><label for="r10">10</label>
+<input type="radio" name="rating" value="9" id="r9"><label for="r9">9</label>
+<input type="radio" name="rating" value="8" id="r8"><label for="r8">8</label>
+<input type="radio" name="rating" value="7" id="r7"><label for="r7">7</label>
+<input type="radio" name="rating" value="6" id="r6"><label for="r6">6</label>
+<input type="radio" name="rating" value="5" id="r5"><label for="r5">5</label>
+<input type="radio" name="rating" value="4" id="r4"><label for="r4">4</label>
+<input type="radio" name="rating" value="3" id="r3"><label for="r3">3</label>
+<input type="radio" name="rating" value="2" id="r2"><label for="r2">2</label>
+<input type="radio" name="rating" value="1" id="r1"><label for="r1">1</label>
+</div></div>
+<div class="form-group"><label>影评内容</label><textarea id="reviewContent" placeholder="写下你对这部电影的看法..." maxlength="500"></textarea></div>
+<button class="submit-btn" onclick="submitReview()">提交评论</button>
+</div>
+<div id="userReviewsList"><div class="no-reviews">暂无用户影评，快来抢先评论吧！</div></div>
+</div>
+<div class="section"><div class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">相似电影推荐</h2></div><div class="rec-grid"><a href="detail_摔跤吧！爸爸.html" class="rec-card">
+                <img src="movie_images/044_摔跤吧！爸爸.jpg" alt="摔跤吧！爸爸" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">摔跤吧！爸爸</div><div class="rec-rating">⭐ 9.0</div></div>
+            </a><a href="detail_七武士.html" class="rec-card">
+                <img src="movie_images/154_七武士.jpg" alt="七武士" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">七武士</div><div class="rec-rating">⭐ 9.3</div></div>
+            </a><a href="detail_搏击俱乐部.html" class="rec-card">
+                <img src="movie_images/063_搏击俱乐部.jpg" alt="搏击俱乐部" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">搏击俱乐部</div><div class="rec-rating">⭐ 9.0</div></div>
+            </a><a href="detail_被嫌弃的松子的一生.html" class="rec-card">
+                <img src="movie_images/113_被嫌弃的松子的一生.jpg" alt="被嫌弃的松子的一生" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">被嫌弃的松子的一生</div><div class="rec-rating">⭐ 8.8</div></div>
+            </a><a href="detail_末路狂花.html" class="rec-card">
+                <img src="movie_images/172_末路狂花.jpg" alt="末路狂花" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">末路狂花</div><div class="rec-rating">⭐ 9.0</div></div>
+            </a><a href="detail_纵横四海.html" class="rec-card">
+                <img src="movie_images/189_纵横四海.jpg" alt="纵横四海" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 150 250%22><rect fill=%22%23333%22 width=%22150%22 height=%22250%22/><text x=%2275%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2212%22>%E8%BF%99%E4%B8%AA%E6%9D%80%E6%89%8B%E4%B8%8D%E5%A4%AA%E5%86%B7</text></svg>'">
+                <div class="rec-info"><div class="rec-title">纵横四海</div><div class="rec-rating">⭐ 8.8</div></div>
+            </a></div></div>
+<div class="footer">爱看电影 · MBTI个性化电影推荐</div>
+</div>
+<script>
+function submitReview(){var t=document.title.split(' - ')[0];var ni=document.getElementById('reviewerName');var ci=document.getElementById('reviewContent');var rs=document.getElementsByName('rating');var name=ni.value.trim();var content=ci.value.trim();var score=0;for(var i=0;i<rs.length;i++){if(rs[i].checked){score=parseInt(rs[i].value);break;}}if(!name){alert('请输入昵称');return;}if(score===0){alert('请选择评分');return;}if(!content){alert('请输入影评内容');return;}var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');reviews.push({name:name,score:score,content:content,time:Date.now()});localStorage.setItem(key,JSON.stringify(reviews));ni.value='';ci.value='';for(var i=0;i<rs.length;i++){rs[i].checked=false;}loadUserReviews();alert('评论提交成功！');}
+function loadUserReviews(){var c=document.getElementById('userReviewsList');if(!c)return;var t=document.title.split(' - ')[0];var key='movie_reviews_'+t;var reviews=JSON.parse(localStorage.getItem(key)||'[]');if(reviews.length===0){c.innerHTML='<div class="no-reviews">暂无用户影评，快来抢先评论吧！</div>';return;}reviews.sort(function(a,b){return b.time-a.time;});var html='';for(var i=0;i<reviews.length;i++){var r=reviews[i];var d=new Date(r.time).toLocaleDateString('zh-CN');html+='<div class="user-review"><div class="review-header"><span class="review-author">'+r.name+'</span><span class="review-score">⭐ '+r.score+'/10</span></div><div class="review-time">'+d+'</div><div class="review-content">'+r.content+'</div></div>';}c.innerHTML=html;}
+document.addEventListener('DOMContentLoaded',loadUserReviews);
+</script>
 </body>
 </html>
